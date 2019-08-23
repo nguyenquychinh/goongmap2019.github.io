@@ -1,0 +1,13 @@
+.slick-box{
+  padding-bottom: 20px;
+  margin: 0 -15px;
+  @include breakpoint(md){
+    padding-bottom: 40px;
+  }
+  &__item{
+    padding: 0 15px;
+    cursor: auto;
+    overflow: hidden;
+  }
+
+}

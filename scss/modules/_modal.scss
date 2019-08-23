@@ -1,0 +1,6 @@
+.modal-dialog{
+  margin-top: 60px;
+  @include breakpoint(sm){
+    max-width: 700px;
+  }
+}

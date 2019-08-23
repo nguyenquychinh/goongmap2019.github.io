@@ -1,0 +1,93 @@
+.btn{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 15px;
+  border: none;
+  border-radius:2px;
+  text-transform: uppercase;
+}
+.btn-purple{
+  background-color: $main-color;
+  color: $white-1!important;
+  &:hover{
+    color: $white-1;
+    background-color:$main-color;
+  }
+  &:active, &:focus{
+    box-shadow: 0 0 0 0.2rem rgba(106, 40, 250, 0.5);
+  }
+}
+.btn-orange{
+  background-color: $orange;
+  color: $white-1!important;
+  &:hover{
+    color: $white-1;
+    background-color:$orange;
+  }
+  &:active, &:focus{
+    box-shadow: 0 0 0 0.2rem rgba(241, 135, 33, 0.5);
+  }
+}
+.btn-brown{
+  background-color: $brown;
+  color: $white-1!important;
+  &:hover{
+    color: $white-1;
+    background-color:$brown;
+  }
+  &:active, &:focus{
+    box-shadow: 0 0 0 0.2rem rgba(68, 38, 44, 0.5);
+  }
+}
+.btn-red{
+  background-color: $main-color;
+  color: $white-1!important;
+  &:hover{
+    color: $white-1;
+    background-color:$main-color;
+  }
+  &:active, &:focus{
+    box-shadow: 0 0 0 0.2rem rgba(205, 24, 30, 0.5);
+  }
+}
+.btn-disable{
+  pointer-events:none;
+  opacity: .5;
+}
+.btn-round{
+  border-radius: 60px;
+}
+.btn-outline{
+  background-color: #fff;
+  border:1px solid $main-color;
+  color: $main-color;
+}
+.btn-gray{
+  background-color: #BEBEBE;
+  color: #fff!important;
+}
+.btn-toggle{
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #fff;
+  background-clip: padding-box;
+  cursor: pointer;
+  &__icon{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ddd;
+  }
+  &__text{
+    width: calc(100% - 45px);
+    padding: 0 15px;
+    p{
+      font-size: 14px;
+      color: $text-color;
+    }
+  }
+}

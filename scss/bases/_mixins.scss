@@ -1,0 +1,56 @@
+
+@mixin breakpoint($point){
+  @if $point == xs{
+    @media (max-width: $screen-xs){ @content ;}
+  } @else if $point == sm {
+    @media (min-width: $screen-sm){ @content ;}
+  } @else if $point == md {
+    @media (min-width: $screen-md){ @content ;}
+  } @else if $point == lg {
+    @media (min-width: $screen-lg){ @content ;}
+  } @else if $point == max-sm {
+    @media (max-width: $screen-md - 1){ @content ;}
+  } @else if $point == max-md {
+    @media (max-width: $screen-lg - 1){ @content ;}
+  } @else if $point == only-sm {
+    @media (min-width: $screen-sm) and (max-width: $screen-md - 1){ @content ;}
+  } @else if $point == only-md {
+    @media (min-width: $screen-md) and (max-width: $screen-lg - 1){ @content ;}
+  }
+}
+
+//border
+@mixin add-border($size, $color, $position){
+  @if $position == 'all'{
+    border: $size solid $color;
+  } @else if $position == 'top'{
+    border-top: $size solid $color;
+  } @else if $position == 'bottom'{
+    border-bottom: $size solid $color;
+  } @else if $position == 'left'{
+    border-left: $size solid $color;
+  } @else if $position == 'right'{
+    border-right: $size solid $color;
+  } @else if $position == 'top-bottom'{
+    border-top: $size solid $color;
+    border-bottom: $size solid $color;
+  } @else if $position == 'right-left'{
+    border-right: $size solid $color;
+    border-left: $size solid $color;
+  }
+}
+
+//background-color
+@mixin add-background($color){
+  background-color: $color;
+}
+
+//width
+@mixin add-width($width){
+  width: $width;
+}
+
+//height
+@mixin add-height($height){
+  height: $height;
+}
