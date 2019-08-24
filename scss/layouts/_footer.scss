@@ -1,0 +1,45 @@
+.goong-footer{
+  box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+  .goong-navbar{
+    @include breakpoint(max-md){
+      justify-content: center;
+    }
+    &__logo{
+      @include breakpoint(max-md){
+        width: 100%;
+      }
+      @include breakpoint(lg){
+        display: flex;
+        align-items: center;
+      }
+      p{
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(86, 101, 113, 0.5);
+        @include breakpoint(max-md){
+          text-align: center;
+          margin-top: 10px;
+        }
+        @include breakpoint(lg){
+          padding-left: 25px;
+        }
+      }
+      h1{
+        a{
+          @include breakpoint(max-md){
+            justify-content: center;
+          }
+        }
+      }
+    }
+    &__nav{
+      @include breakpoint(xs){
+        display: none;
+      }
+    }
+    &__link{
+      color: $text-color;
+    }
+  }
+}

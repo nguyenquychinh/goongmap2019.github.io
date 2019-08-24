@@ -1,0 +1,56 @@
+.goong-header{
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  &__navbar{}
+}
+.goong-navbar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  &__logo{
+    h1{
+      a{
+        display: flex;
+      }
+    }
+  }
+  &__toggle{
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(sm){
+      display: none;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+  &__nav{
+    @include breakpoint(xs){
+      margin: 0 -15px;
+      padding: 10px 0;
+    }
+    @include breakpoint(sm){
+      display: flex;
+      flex-basis: auto;
+      justify-content: flex-end;
+    }
+  }
+  &__item{}
+  &__link{
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(31, 51, 73, 0.5);
+    transition: all .3s;
+    padding: 10px 15px;
+    &:hover{
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+}

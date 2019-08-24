@@ -1,0 +1,449 @@
+.intro-box{
+  @include breakpoint(xs){
+    padding-top: 40px;
+  }
+  @include breakpoint(sm){
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+  &__content{
+    @include breakpoint(xs){
+      text-align: center;
+      position: relative;
+    }
+    @include breakpoint(sm){
+      width: 40%;
+      padding:40px 15px 0;
+
+    }
+    @include breakpoint(md){
+      width: 33.333%;
+      padding: 60px 15px 0;
+    }
+    .p3{
+      @include breakpoint(max-sm){
+        font-size: 16px;
+      }
+      @include breakpoint(md){
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+  &__title{
+    margin-bottom: 30px;
+    .p1{
+      @include breakpoint(max-sm){
+        font-size: 36px;
+      }
+      @include breakpoint(md){
+        font-size: 45px;
+      }
+      @include breakpoint(lg){
+        font-size: 55px;
+        line-height: 80px;
+      }
+      span{
+        font-weight: $medium;
+      }
+    }
+    .p2{
+      @include breakpoint(max-sm){
+        font-size: 28px;
+      }
+      @include breakpoint(md){
+        font-size: 38px;
+      }
+      @include breakpoint(lg){
+        font-size: 48px;
+        line-height: 80px;
+      }
+    }
+  }
+  &__btn{
+    margin: 15px auto 0;
+    width: 290px;
+    @include breakpoint(sm){
+      width: 100%;
+    }
+    .btn{
+      width: 100%;
+    }
+  }
+  &__map{
+    @include breakpoint(xs){
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+    @include breakpoint(sm){
+      width: 60%;
+      padding: 0 15px;
+    }
+    @include breakpoint(md){
+      width: 66.666%;
+    }
+    @include breakpoint(lg){
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+.services-box{
+  font-size: 18px;
+  line-height: 30px;
+  @include breakpoint(sm){
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+  &__left{
+    @include breakpoint(sm){
+      width: 40%;
+      padding: 0 15px;
+    }
+    @include breakpoint(md){
+      width: 33.333%;
+    }
+  }
+  &__right{
+    @include breakpoint(sm){
+      width: 60%;
+      padding: 0 15px;
+    }
+    @include breakpoint(md){
+      width: 66.666%;
+    }
+    p{
+      a{
+        color: #48A0F8;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+.pricing-box{
+  @include breakpoint(sm){
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+  &__bg{
+    @include breakpoint(xs){
+      display: none;
+    }
+    @include breakpoint(sm){
+      width: 40%;
+      padding:  0 15px;
+    }
+    @include breakpoint(md){
+      width: 33.333%;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  &__content{
+    @include breakpoint(sm){
+      width: 60%;
+      padding:  0 15px;
+    }
+    @include breakpoint(md){
+      width: 66.666%;
+    }
+    > p{
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .home-title{
+      @include breakpoint(sm){
+        text-align: left;
+      }
+    }
+  }
+  &__table{
+    margin: 30px 0 0;
+    border: 1px solid #eee;
+    border-radius: 24px;
+    padding: 15px;
+    @include breakpoint(md){
+      padding: 30px;
+    }
+    .table{
+      margin: 0;
+      thead{
+        th{
+          vertical-align: top;
+          border: none;
+          &:nth-child(2n){
+            text-align: right;
+          }
+          p{
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: $medium;
+          }
+          .p2{
+            color: #469AF7;
+            text-transform: uppercase;
+          }
+          .p3{
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: $regular;
+            color: rgba(86, 101, 113, 0.5);
+          }
+        }
+      }
+      td{
+        border: none;
+        &:nth-child(2n){
+          text-align: right;
+        }
+        p{
+          font-size: 15px;
+          line-height: 40px;
+        }
+        .p2{
+          color: #469AF7;
+          font-weight: $medium;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .a1{
+      display: block;
+      text-align: center;
+      padding: 15px 0 0 0;
+      border-top: 1px solid #eee;
+    }
+  }
+}
+.functions-box{
+  &__content{
+    @include breakpoint(sm){
+      width: 65%;
+    }
+    @include breakpoint(md){
+      width: 50%;
+    }
+    p{
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      @include breakpoint(lg){
+        margin-bottom: 30px;
+      }
+      &:last-child{margin-bottom: 0;}
+      span{
+        font-weight: $medium;
+      }
+    }
+    .home-title{
+      @include breakpoint(sm){
+        text-align: left;
+      }
+    }
+  }
+}
+.data-box{
+  @include breakpoint(sm){
+    display: flex;
+    margin: 0 -15px;
+  }
+  &__item{
+    text-align: center;
+    padding: 15px 0;
+    @include breakpoint(sm){
+      width: 25%;
+      padding: 0 15px;
+    }
+    @include breakpoint(lg){
+      text-align: left;
+    }
+  }
+  &__content{
+    @include breakpoint(lg){
+      padding-left: 35px;
+    }
+  }
+  &__icon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    @include breakpoint(lg){
+      justify-content: flex-start;
+    }
+  }
+  &__border{
+    width: 65px;
+    height: 4px;
+    background-color:rgba(102, 175, 255, 0.5);
+    margin: 15px auto;
+    @include breakpoint(lg){
+      margin: 15px 0;
+    }
+  }
+  &__title{
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: $medium;
+    @include breakpoint(only-sm){
+      line-height: 26px;
+      height: 52px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 26px;
+    color: #566571;
+  }
+}
+.built-box{
+  @include breakpoint(sm){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -15px;
+  }
+  &__bg{
+    @include breakpoint(xs){
+      display: none;
+    }
+    @include breakpoint(sm){
+      width: 50%;
+      padding: 0 15px;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  &__content{
+    @include breakpoint(sm){
+      width: 50%;
+      padding: 0 15px;
+    }
+    .home-title{
+      @include breakpoint(sm){
+        text-align: left;
+      }
+    }
+    p{
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.end-box{
+  text-align: center;
+  @include breakpoint(sm){
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  @include breakpoint(lg){
+    justify-content: center;
+    margin: 0 -15px;
+  }
+  &__text{
+    @include breakpoint(xs){
+      margin-bottom: 15px;
+    }
+    @include breakpoint(lg){
+      padding: 0 15px;
+    }
+    p{
+      font-size: 22px;
+      line-height: 38px;
+    }
+  }
+  &__btn{
+    width: 290px;
+    margin: auto;
+    @include breakpoint(lg){
+      width: 350px;
+      margin: 0;
+      padding: 0 15px;
+    }
+    .btn{
+      width: 100%;
+    }
+  }
+}
+.goong-home{
+  &__intro{
+    position: relative;
+    margin-bottom: 40px;
+    @include breakpoint(xs){
+      height: 360px;
+    }
+    @include breakpoint(sm){
+
+    }
+    @include breakpoint(md){
+
+    }
+    &:before{
+      @include breakpoint(xs){
+        content: '';
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+  &__services{
+    margin-bottom: 40px;
+  }
+  &__pricing{
+    margin-bottom: 40px;
+  }
+  &__functions{
+    margin-bottom: 40px;
+    @include breakpoint(xs){
+      background: none!important;
+    }
+    @include breakpoint(sm){
+      padding-bottom: 50px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @include breakpoint(lg){
+      padding-bottom: 100px;
+    }
+  }
+  &__data{
+    margin-bottom: 40px;
+  }
+  &__built{
+    margin-bottom: 40px;
+    background: linear-gradient(0deg,rgba(235, 239, 247, 0.4) 3.45%,rgb(249, 250, 252) 100%);
+    @include breakpoint(max-sm){
+      padding: 30px 0;
+    }
+  }
+  &__end{
+    margin-bottom: 40px;
+    @include breakpoint(lg){
+      padding: 30px 0;
+    }
+  }
+}

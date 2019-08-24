@@ -1,53 +1,50 @@
 .btn{
-  font-size: 14px;
-  font-weight: 600;
-  padding: 5px 15px;
+  position: relative;
+  font-size: 16px;
+  font-weight: $medium;
+  line-height: 19px;
+  padding:13px 20px;
   border: none;
-  border-radius:2px;
-  text-transform: uppercase;
-}
-.btn-purple{
-  background-color: $main-color;
-  color: $white-1!important;
+  border-radius:10px;
+  overflow: hidden;
+  &:before{
+    @include breakpoint(md){
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.35);
+      transition: transform 0.3s ease;
+      transform: translateY(-100%);
+    }
+  }
+  &:focus{
+    box-shadow: none;
+  }
   &:hover{
-    color: $white-1;
-    background-color:$main-color;
+    @include breakpoint(md){
+      &:before{
+        transform: translateY(100%);
+      }
+    }
   }
-  &:active, &:focus{
-    box-shadow: 0 0 0 0.2rem rgba(106, 40, 250, 0.5);
-  }
-}
-.btn-orange{
-  background-color: $orange;
-  color: $white-1!important;
-  &:hover{
-    color: $white-1;
-    background-color:$orange;
-  }
-  &:active, &:focus{
-    box-shadow: 0 0 0 0.2rem rgba(241, 135, 33, 0.5);
-  }
-}
-.btn-brown{
-  background-color: $brown;
-  color: $white-1!important;
-  &:hover{
-    color: $white-1;
-    background-color:$brown;
-  }
-  &:active, &:focus{
-    box-shadow: 0 0 0 0.2rem rgba(68, 38, 44, 0.5);
+  &.btn-lg{
+    @include breakpoint(md){
+      font-size: 24px;
+      line-height: 28px;
+      padding: 22px;
+    }
   }
 }
-.btn-red{
-  background-color: $main-color;
+.btn-blue{
+  background: linear-gradient(348.64deg, #3197F8 1.17%, #51C5FE 99.21%);
+  box-shadow: 0 22px 34px rgba(47, 130, 218, 0.197225);
   color: $white-1!important;
-  &:hover{
-    color: $white-1;
-    background-color:$main-color;
-  }
-  &:active, &:focus{
-    box-shadow: 0 0 0 0.2rem rgba(205, 24, 30, 0.5);
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active{
+    background: linear-gradient(348.64deg, #3197F8 1.17%, #51C5FE 99.21%);
   }
 }
 .btn-disable{
@@ -61,33 +58,4 @@
   background-color: #fff;
   border:1px solid $main-color;
   color: $main-color;
-}
-.btn-gray{
-  background-color: #BEBEBE;
-  color: #fff!important;
-}
-.btn-toggle{
-  display: flex;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  background-color: #fff;
-  background-clip: padding-box;
-  cursor: pointer;
-  &__icon{
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid #ddd;
-  }
-  &__text{
-    width: calc(100% - 45px);
-    padding: 0 15px;
-    p{
-      font-size: 14px;
-      color: $text-color;
-    }
-  }
 }

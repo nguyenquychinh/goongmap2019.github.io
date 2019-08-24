@@ -1,27 +1,13 @@
 .home-title{
-  margin-bottom: 40px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  margin-bottom: 30px;
+  text-align: center;
   h2{
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: $semibold;
+    font-size: 28px;
+    font-weight: $medium;
     color: $text-color;
-    padding-left: 20px;
-    text-transform: uppercase;
-    position: relative;
     @include breakpoint(md){
-      font-size: 28px;
-    }
-    &:before{
-      content: '';
-      width: 5px;
-      height: 25px;
-      background-color: $red-1;
-      position: absolute;
-      top: 4px;
-      left: 0;
+      font-size: 38px;
+      line-height: 45px;
     }
   }
 }
