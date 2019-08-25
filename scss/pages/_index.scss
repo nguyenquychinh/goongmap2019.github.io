@@ -80,16 +80,26 @@
       z-index: -1;
     }
     @include breakpoint(sm){
-      width: 60%;
-      padding: 0 15px;
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      width: calc((100% - 720px)/2 + 432px);
+      padding: 0 0 0 15px;
     }
     @include breakpoint(md){
-      width: 66.666%;
+      width: calc((100% - 960px)/2 + 639.99px);
     }
     @include breakpoint(lg){
+      width: calc((100% - 1140px)/2 + 759.99px);
     }
     img{
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include breakpoint(sm){
+        border-radius:  0 0 0 30px;
+      }
     }
   }
 }
@@ -131,7 +141,7 @@
 .pricing-box{
   @include breakpoint(sm){
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 0 -15px;
   }
   &__bg{
@@ -139,14 +149,26 @@
       display: none;
     }
     @include breakpoint(sm){
-      width: 40%;
-      padding:  0 15px;
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      width: calc((100% - 720px)/2 + 288px);
+      padding: 0 15px 0 0;
     }
     @include breakpoint(md){
-      width: 33.333%;
+      width: calc((100% - 960px)/2 + 319.99px);
+    }
+    @include breakpoint(lg){
+      width: calc((100% - 1140px)/2 + 379.99px);
     }
     img{
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include breakpoint(sm){
+        border-radius:  0 30px 30px 0;
+      }
     }
   }
   &__content{
@@ -208,7 +230,6 @@
         }
         p{
           font-size: 15px;
-          line-height: 40px;
         }
         .p2{
           color: #469AF7;
@@ -228,10 +249,10 @@
 .functions-box{
   &__content{
     @include breakpoint(sm){
-      width: 65%;
+      width: 50%;
     }
     @include breakpoint(md){
-      width: 50%;
+
     }
     p{
       font-size: 18px;
@@ -313,7 +334,7 @@
 .built-box{
   @include breakpoint(sm){
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin: 0 -15px;
   }
@@ -322,11 +343,24 @@
       display: none;
     }
     @include breakpoint(sm){
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
       width: 50%;
-      padding: 0 15px;
+      padding: 0 15px 0 0;
     }
     img{
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include breakpoint(sm){
+        border-radius:  0 30px 0 0;
+      }
+      @include breakpoint(lg){
+        border-radius: 0;
+        object-fit: contain;
+      }
     }
   }
   &__content{
@@ -388,15 +422,18 @@
 .goong-home{
   &__intro{
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     @include breakpoint(xs){
       height: 360px;
     }
     @include breakpoint(sm){
-
+      min-height: 342px;
     }
     @include breakpoint(md){
-
+      min-height: 494px;
+    }
+    @include breakpoint(lg){
+      min-height: 600px;
     }
     &:before{
       @include breakpoint(xs){
@@ -411,37 +448,43 @@
     }
   }
   &__services{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
   }
   &__pricing{
-    margin-bottom: 40px;
+    position: relative;
+    margin-bottom: 100px;
   }
   &__functions{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     @include breakpoint(xs){
       background: none!important;
     }
     @include breakpoint(sm){
       padding-bottom: 50px;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100% 100%;
     }
     @include breakpoint(lg){
       padding-bottom: 100px;
     }
   }
   &__data{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
   }
   &__built{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     background: linear-gradient(0deg,rgba(235, 239, 247, 0.4) 3.45%,rgb(249, 250, 252) 100%);
-    @include breakpoint(max-sm){
-      padding: 30px 0;
+    position: relative;
+    padding: 30px 0;
+    @include breakpoint(sm){
+      padding: 50px 0;
+    }
+    @include breakpoint(md){
+      padding: 100px 0;
     }
   }
   &__end{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     @include breakpoint(lg){
       padding: 30px 0;
     }
