@@ -32,7 +32,6 @@
   &__nav{
     @include breakpoint(xs){
       margin: 0 -15px;
-      padding: 10px 0;
     }
     @include breakpoint(sm){
       display: flex;
@@ -40,7 +39,14 @@
       justify-content: flex-end;
     }
   }
-  &__item{}
+  &__item{
+    &.active{
+      .goong-navbar__link{
+        color: #1F3349;
+        font-weight: $medium;
+      }
+    }
+  }
   &__link{
     display: block;
     font-size: 16px;

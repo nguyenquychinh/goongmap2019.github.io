@@ -7,32 +7,28 @@
     cursor: pointer;
     margin-bottom: 0;
     padding-left: 25px;
-    height: 16px;
-    line-height: 16px;
-    &:active{color: $main-color;}
+    font-size: 12px;
+    line-height: 14px;
+    color:rgba(31, 51, 73, 0.6);
   }
   input[type="checkbox"] + label:before {
     content: "";
-    width: 16px;
-    height: 16px;
-    line-height: 16px;
-    background-color:$white-1;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background-color:#f9f9f9;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
     position: absolute;
     left: 0;
-    top:0;
-    display: inline-block;
+    top:50%;
+    transform: translateY(-50%);
     text-align: center;
-    @include add-border(1px, $gray-10,all);
-    border-radius: 2px;
   }
   input[type="checkbox"]:checked + label:before {
     font-family:'Font Awesome\ 5 Free';
     content: '\f00c';
     font-weight:$black;
-    background-color:$main-color;
-    color:$white-1;
-    font-size:$size-12;
-    box-shadow: none;
-    border: none;
+    color:#469AF7;
   }
 }

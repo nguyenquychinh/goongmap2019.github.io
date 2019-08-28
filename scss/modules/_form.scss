@@ -2,7 +2,7 @@ select.form-control:not([size]):not([multiple]){
   height: auto;
 }
 .form-group{
-  label{
+  > label{
     margin-bottom: 5px;
     font-size: 14px;
     color: #000;
@@ -14,13 +14,14 @@ select.form-control:not([size]):not([multiple]){
   }
 }
 .form-control{
-  border: 1px solid rgb(221, 221, 221);
-  border-radius:3px;
-  padding: 12px 15px;
-  font-size: 16px;
+  border: 1px solid #F0F2F8;
+  border-radius:10px;
+  padding: 13px 10px;
+  font-size: 14px;
+  line-height: 16px;
   font-weight: $regular;
-  color: $black-1;
-
+  color: $text-color;
+  background: rgba(244, 246, 251, 0.8);
 
   &:focus{
     color: $black-1;
@@ -91,5 +92,34 @@ select.form-control:not([size]):not([multiple]){
     font-size: 16px;
     font-weight: $semibold;
     color: $text-color;
+  }
+}
+[data-tip]{
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: calc(100% + 2px);
+    z-index:2;
+    border-top: 1px solid #d0011b;
+    border-left: 1px solid #d0011b;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    @include add-background(#d0011b);
+  }
+  &:after{
+    content: attr(data-tip);
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    z-index:1;
+    padding: 5px 10px;
+    display: block;
+    color: #fff;
+    font-size: $size-12;
+    @include add-background(#d0011b);
+    border-radius: 6px;
   }
 }

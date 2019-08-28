@@ -33,6 +33,20 @@
   }
   &__title{
     margin-bottom: 30px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 212px;
+      height: 4px;
+      background-color: $text-color;
+      @include breakpoint(xs){
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
     .p1{
       @include breakpoint(max-sm){
         font-size: 36px;
@@ -49,8 +63,10 @@
       }
     }
     .p2{
-      @include breakpoint(max-sm){
-        font-size: 28px;
+      padding-bottom: 20px;
+      font-size: 28px;
+      @include breakpoint(sm){
+
       }
       @include breakpoint(md){
         font-size: 38px;
@@ -62,7 +78,7 @@
     }
   }
   &__btn{
-    margin: 15px auto 0;
+    margin: 30px auto 0;
     width: 290px;
     @include breakpoint(sm){
       width: 100%;

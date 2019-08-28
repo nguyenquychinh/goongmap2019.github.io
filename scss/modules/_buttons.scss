@@ -35,6 +35,7 @@
       font-size: 24px;
       line-height: 28px;
       padding: 22px;
+      border-radius: 20px;
     }
   }
 }
@@ -46,6 +47,16 @@
   &:not(:disabled):not(.disabled):active{
     background: linear-gradient(348.64deg, #3197F8 1.17%, #51C5FE 99.21%);
   }
+}
+.btn-blue2{
+  background: $blue-2;
+  box-shadow: 0 8px 12px rgba(47, 130, 218, 0.102245);
+  color: $white-1;
+}
+.btn-red{
+  background: $red-1;
+  box-shadow: 0 8px 12px rgba(47, 130, 218, 0.102245);
+  color: $white-1;
 }
 .btn-disable{
   pointer-events:none;
