@@ -7,218 +7,29 @@ html(lang="vi")
         include jades/header.jade
 
         main.goong-wrapper
-            section.goong-home
-                .goong-home__intro
+            section.goong-docs
+                .goong-docs__intro
                     .container
-                        .intro-box
-                            .intro-box__content
-                                .intro-box__title
-                                    p.p1
-                                        span GOONG&nbsp;
-                                        | Maps
-                                    p.p2
-                                        | APIs/Platform
-                                p.p3 Looking to replace Google Maps API in your application? Goong is the complete, compatible solution you have been searching for.
-                                .intro-box__btn
-                                    button.btn.btn-blue.btn-lg(type='button') Get Started
-                            .intro-box__map
-                                img(src='images/intro-map.png')
-                .goong-home__services
-                    .container
-                        .home-title
-                            h2 THE Alternative For Google Maps APIs/ Platform In Vietnam
-                        .services-box
-                            .services-box__left
-                                p Full code compatibility with Google API for easy integration (only address and key change necessary)
-                                p.ptitle API featrues:
-                                ul
-                                    li
-                                        | - Geocode/ Revert Geocode
-                                        svg(width='16', height='12', viewbox='0 0 16 12', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                            path(d='M5.60994 8.89L2.49994 5.78L1.43994 6.84L5.60994 11L14.5599 2.05L13.4999 1L5.60994 8.89Z', fill='#469AF7', stroke='#469AF7')
-                                    li
-                                        | - Autocomplete
-                                        svg(width='16', height='12', viewbox='0 0 16 12', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                            path(d='M5.60994 8.89L2.49994 5.78L1.43994 6.84L5.60994 11L14.5599 2.05L13.4999 1L5.60994 8.89Z', fill='#469AF7', stroke='#469AF7')
-                                    li
-                                        | - Routing
-                                        svg(width='16', height='12', viewbox='0 0 16 12', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                            path(d='M5.60994 8.89L2.49994 5.78L1.43994 6.84L5.60994 11L14.5599 2.05L13.4999 1L5.60994 8.89Z', fill='#469AF7', stroke='#469AF7')
-                                    li
-                                        | - Distance Matrix
-                                        svg(width='16', height='12', viewbox='0 0 16 12', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                            path(d='M5.60994 8.89L2.49994 5.78L1.43994 6.84L5.60994 11L14.5599 2.05L13.4999 1L5.60994 8.89Z', fill='#469AF7', stroke='#469AF7')
-                                    li
-                                        | - Map View
-                                    li
-                                        | - Map SDK iOS
-                                    li
-                                        | - Map SDK Android
-                            .services-box__right
-                                p
-                                    | Rich, high-quality and up-to-date Map-data that you can view for yourself in the live comparison tool Goong vs Google below.&nbsp;
-                                    a(href='#') View full screen
-                                img(src='images/services.png')
-                .goong-home__pricing
-                    .container
-                        .pricing-box
-                            .pricing-box__bg
-                                img(src='images/bg-pricing.png')
-                            .pricing-box__content
+                        .docs-box
+                            .docs-box__content
                                 .home-title
-                                    h2 Pricing Comparison Table
-                                p Have you been hit by Google's price hike, which can raise your monthly bill up to 1400%? Take a look at below table to see how using Goong's API can help your company save operation cost with no technical drawbacks.
-                                .pricing-box__table
-                                    .table-responsive
-                                        table.table
-                                            thead
-                                                tr
-                                                    th
-                                                        p.p1 Services
-                                                    th
-                                                        p.p2 GOONG
-                                                        p.p3 (100k/day)
-                                                    th
-                                                        p.p1 Google
-                                                        p.p3 (100k/day)
-                                                    th
-                                                        p.p2 GOONG
-                                                        p.p3 (100k/day)
-                                                    th
-                                                        p.p1 Google
-                                                        p.p3 (100k/day)
-                                            tbody
-                                                tr
-                                                    td
-                                                        p.p1 Mapview
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 FREE
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 FREE
-                                                tr
-                                                    td
-                                                        p.p1 Autocomplete
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 $125
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 $125
-                                                tr
-                                                    td
-                                                        p.p1 Routing
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 $445
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 $445
-                                                tr
-                                                    td
-                                                        p.p1 Distance matrix
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 Yes
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 Yes
-                                                tr
-                                                    td
-                                                        p.p1 Place detail
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 Limited
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 Limited
-                                    a.a1(href='#') View Full Pricing Table
-                .goong-home__functions(style='background-image: url(images/bg-functions.png);')
-                    .container
-                        .functions-box
-                            .functions-box__content
-                                .home-title
-                                    h2 Functions
-                                p
-                                    span Auto suggestions:&nbsp;
-                                    | automatically suggest and return the most relevant results.
-                                p
-                                    span High performance:&nbsp;
-                                    | Free API suppo rts 600 requests per minute. Businesses start with 1200 requests per minute and range to 30,000+
-                                p
-                                    span Filter by type:&nbsp;
-                                    | filtering results only include the territory in Vietnam, POIs, points and more.
-                                p
-                                    span Store results:&nbsp;
-                                    | Business customers can save results permanently.
-                                p
-                                    span Bulk Geocoding:&nbsp;
-                                    | Business customers can query up to 50 locations per request.
-                .goong-home__data
-                    .container
-                        .home-title
-                            h2 Comprehensive Data
-                        .data-box
-                            .data-box__item
-                                .data-box__icon
-                                    img(src='images/data1.png')
-                                .data-box__content
-                                    .data-box__border
-                                    p.data-box__title Địa Điểm Toàn Việt Nam
-                                    p.data-box__text Map data encompassing all of Vietnam
-                            .data-box__item
-                                .data-box__icon
-                                    img(src='images/data2.png')
-                                .data-box__content
-                                    .data-box__border
-                                    p.data-box__title Kết Quả Cấp Địa Chỉ
-                                    p.data-box__text Exact addresses of all 54 cities/provinces
-                            .data-box__item
-                                .data-box__icon
-                                    img(src='images/data3.png')
-                                .data-box__content
-                                    .data-box__border
-                                    p.data-box__title POIs
-                                    p.data-box__text Hỗ trợ tên doanh nghiệp, mốc ranh giới và các điểm POIs.
-                            .data-box__item
-                                .data-box__icon
-                                    img(src='images/data4.png')
-                                .data-box__content
-                                    .data-box__border
-                                    p.data-box__title Dữ Liệu Mở
-                                    p.data-box__text Khách hàng sẽ nhận được dữ liệu mới trong ngày, không phải đợi lâu.
-                .goong-home__built
-                    .container
-                        .built-box
-                            .built-box__bg
-                                img(src='images/bg-built.png')
-                            .built-box__content
-                                .home-title
-                                    h2 Built For Developers
-                                p Our API is fully compatible with Google Maps API, ensuring its seamless integration into your applications.
-                                p Only minimal changes to your code required.
-                .goong-home__end
-                    .container
-                        .end-box
-                            .end-box__text
-                                p
-                                    | Fed up with high prices? Not being able to use Google's API in Vietnam?
-                                    br
-                                    | Switch to an adequate, reasonably priced replacement solution.
-                            .end-box__btn
-                                button.btn.btn-blue.btn-lg(type='button') Get Started
+                                    h2 Documents
+                                p.text We’ve got comprehensive guides for each platform that should help out with anything you need. You can also take a look at the detailed API references and tutorials for a better idea of how it all comes together.
+                            .docs-box__bg
+                                img(src='images/bg-docs.png' alt='bg-docs')
 
+
+                        .guides-box
+                            .guides-box__col
+                                .guides-box__item
+                                    .guides-box__title
+                                        svg(width='64', height='64', viewbox='0 0 64 64', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                            path(fill-rule='evenodd', clip-rule='evenodd', d='M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z', fill='#ECF5FE')
+                                            path(d='M63.9204 44.0099C63.0073 49.8164 61.2306 51.5137 58.0842 55.4144C54.9378 58.7196 50.4117 64.2382 43.9998 63.9305C38.1934 63.0174 36.4961 61.2407 32.5954 58.0943C29.2902 54.9479 23.7715 50.4218 24.0792 44.0099C24.9924 38.2035 26.7691 36.5062 29.9155 32.6055C33.0619 29.3003 37.5879 23.7816 43.9998 24.0893C49.8063 25.0025 51.5036 26.7792 55.4043 29.9256C58.7095 33.072 64.2281 37.598 63.9204 44.0099Z', fill='#469AF7')
+                                            path(d='M38.2533 36.4665H41.6578V46.0447C41.6578 50.3424 39.5833 51.871 36.3079 51.871C35.4841 51.871 34.4717 51.7519 33.8066 51.5236L34.1937 48.7444C34.6602 48.9032 35.2855 49.0223 35.9506 49.0223C37.3997 49.0223 38.293 48.3573 38.293 46.0546L38.2533 36.4665V36.4665Z', fill='white')
+                                            path(d='M44.665 48.1191C45.5682 48.5856 47.0074 49.062 48.4566 49.062C50.0248 49.062 50.8387 48.397 50.8387 47.3846C50.8387 46.4417 50.134 45.8958 48.2978 45.2705C45.7965 44.3673 44.1191 42.9677 44.1191 40.7345C44.1191 38.1936 46.3126 36.2382 49.866 36.2382C51.5831 36.2382 52.8337 36.5856 53.737 37.0223L52.9528 39.7618C52.3672 39.4839 51.2754 39.0571 49.8263 39.0571C48.3375 39.0571 47.6427 39.7618 47.6427 40.5062C47.6427 41.4789 48.4665 41.9156 50.4516 42.6601C53.1117 43.6328 54.3623 45.0422 54.3623 47.196C54.3623 49.737 52.4466 51.8908 48.268 51.8908C46.5509 51.8908 44.8238 51.4243 43.9702 50.9479L44.665 48.1191Z', fill='white')
+
+                                        h5 Javascript
 
         include jades/footer.jade
         script(type='text/javascript' src="js/jquery-3.3.1.min.js")
