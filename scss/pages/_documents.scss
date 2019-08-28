@@ -2,6 +2,13 @@
   &__intro{
     position: relative;
   }
+  &__guides{
+    margin-bottom: 80px;
+    @include breakpoint(md){
+      margin-top: -110px;
+      position: relative;
+    }
+  }
 }
 
 .docs-box{
@@ -33,13 +40,76 @@
       width: 50%;
       padding: 40px 15px;
     }
-    @include breakpoint(lg){
-      padding: 80px 15px 100px;
+    @include breakpoint(md){
+      padding: 80px 15px 110px;
     }
   }
   .home-title{
     @include breakpoint(sm){
       text-align: left;
     }
+  }
+}
+
+.guides-box{
+  @include breakpoint(sm){
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  &__col{
+    @include breakpoint(sm){
+      width: 50%;
+      padding: 0 15px;
+    }
+    @include breakpoint(md){
+      width: 25%;
+    }
+  }
+  &__item{
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 0.05);
+    border-radius: 0 40px 40px 40px;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 45px;
+    @include breakpoint(md){
+      margin: 0;
+    }
+  }
+  &__title{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    position: relative;
+    &:before{
+      content: '';
+      width: 48px;
+      height: 4px;
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      background-color: rgba(102, 175, 255, 0.6);
+    }
+    h5{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      padding-left: 10px;
+    }
+  }
+  &__btn{
+    margin: 0 auto -30px;
+    .btn{
+      width: 100%;
+      padding: 15px 20px;
+    }
+  }
+  &__link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 20px 0 20px 15px;
   }
 }
