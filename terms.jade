@@ -113,9 +113,8 @@ html(lang="vi")
                                     p.medium 06. Nghiêm Cấm
                                     p Chúng tôi nghiêm cấm các hành động bẻ khóa phần mềm, phát tán các phiên bản bẻ khóa hoặc tìm cách sử dụng bất hợp pháp. Nếu bạn đang sử dụng phần mềm mà chưa được sự đồng ý của GOONG, có nghĩa là bạn đang vi phạm phát luật và sẽ chịu trách nhiệm trước pháp luật về hành vi vi phạm của mình
         include jades/footer.jade
-        script(type='text/javascript' src="js/jquery-3.3.1.min.js")
-        script(type='text/javascript' src="js/popper.min.js")
-        script(type='text/javascript' src="js/bootstrap.min.js")
+        script(src="js/libs/jquery.min.js")
+        script(src="js/main.js")
         script.
             $(".form-sign__btn .btn").click(function () {
                 var tab_id = $(this).attr('data-id');
