@@ -1,18 +1,132 @@
+.hidden{display: none!important;}
+.show{display: block!important;}
 
-.white-1{
-  color: $white-1!important;
+.d-table{display: table!important;}
+.d-cell{display: table-cell!important;}
+.d-block{display: block!important;}
+.d-none{display: none!important;}
+.d-inline{display: inline!important;}
+.d-inline-block{display: inline-block!important;}
+.d-flex{display: flex!important;}
+
+.text-left{text-align: left!important;}
+.text-center{text-align: center!important;}
+.text-right{text-align: right!important;}
+.italic{font-style: italic!important;}
+
+.light{font-weight: $light!important;}
+.regular{font-weight: $regular!important;}
+.semibold{font-weight: $semibold!important;}
+.bold{font-weight: $bold!important;}
+
+.float-left{float: left!important;}
+.float-right{float: right!important;}
+.float-none{float: none!important;}
+
+.no-padding{padding: 0!important;}
+.no-padding-xs{@include breakpoint(xs){padding: 0!important;}}
+.no-padding-sm{@include breakpoint(sm){padding: 0!important;}}
+.no-padding-md{@include breakpoint(md){padding: 0!important;}}
+
+.no-margin{margin: 0!important;}
+.no-margin-xs{@include breakpoint(xs){margin: 0!important;}}
+.no-margin-sm{@include breakpoint(sm){margin: 0!important;}}
+.no-margin-md{@include breakpoint(md){margin: 0!important;}}
+
+.white-1{color: $white-1!important;}
+.black-1{color: $black-1!important;}
+.orange{color: $orange!important;}
+
+.medium{font-weight: $medium!important;}
+.bold {font-weight: $bold!important;}
+
+.size-10{font-size: $size-10!important;}
+.size-12{font-size: $size-12!important;}
+.size-14{font-size: $size-14!important;}
+.size-16{font-size: $size-16!important;}
+.size-18{font-size: $size-18!important;}
+.size-20{font-size: $size-20!important;}
+.size-22{font-size: $size-22!important;}
+.size-24{font-size: $size-24!important;}
+.size-28{font-size: $size-28!important;}
+
+.pt-0{padding-top: 0!important;}
+.pt-5{padding-top: 5px!important;}
+.pt-10{padding-top: 10px!important;}
+.pt-15{padding-top: 15px!important;}
+.pt-20{padding-top: 20px!important;}
+.pt-25{padding-top: 25px!important;}
+.pt-30{padding-top: 30px!important;}
+
+.pb-0{padding-bottom: 0!important;}
+.pb-5{padding-bottom: 5px!important;}
+.pb-10{padding-bottom: 10px!important;}
+.pb-15{padding-bottom: 15px!important;}
+.pb-20{padding-bottom: 20px!important;}
+.pb-25{padding-bottom: 25px!important;}
+.pb-30{padding-bottom: 30px!important;}
+
+.pl-0{padding-left: 0!important;}
+.pl-5{padding-left: 5px!important;}
+.pl-10{padding-left: 10px!important;}
+.pl-15{padding-left: 15px!important;}
+.pl-20{padding-left: 20px!important;}
+.pl-25{padding-left: 25px!important;}
+.pl-30{padding-left: 30px!important;}
+
+.pr-0{padding-right: 0!important;}
+.pr-5{padding-right: 5px!important;}
+.pr-10{padding-right: 10px!important;}
+.pr-15{padding-right: 15px!important;}
+.pr-20{padding-right: 20px!important;}
+.pr-25{padding-right: 25px!important;}
+.pr-30{padding-right: 30px!important;}
+
+.mt-0{margin-top: 0!important;}
+.mt-5{margin-top: 5px!important;}
+.mt-10{margin-top: 10px!important;}
+.mt-15{margin-top: 15px!important;}
+.mt-20{margin-top: 20px!important;}
+.mt-25{margin-top: 25px!important;}
+.mt-30{margin-top: 30px!important;}
+
+.mb-0{margin-bottom: 0!important;}
+.mb-5{margin-bottom: 5px!important;}
+.mb-10{margin-bottom: 10px!important;}
+.mb-15{margin-bottom: 15px!important;}
+.mb-20{margin-bottom: 20px!important;}
+.mb-25{margin-bottom: 25px!important;}
+.mb-30{margin-bottom: 30px!important;}
+
+.ml-0{margin-left: 0!important;}
+.ml-5{margin-left: 5px!important;}
+.ml-10{margin-left: 10px!important;}
+.ml-15{margin-left: 15px!important;}
+.ml-20{margin-left: 20px!important;}
+.ml-25{margin-left: 25px!important;}
+.ml-30{margin-left: 30px!important;}
+
+.mr-0{margin-right: 0!important;}
+.mr-5{margin-right: 5px!important;}
+.mr-10{margin-right: 10px!important;}
+.mr-15{margin-right: 15px!important;}
+.mr-20{margin-right: 20px!important;}
+.mr-25{margin-right: 25px!important;}
+.mr-30{margin-right: 30px!important;}
+
+.w-25{width: 25%!important;}
+.w-50{width: 50%!important;}
+.w-75{width: 75%!important;}
+.w-100{width: 100%!important;}
+
+.h-25{height: 25%!important;}
+.h-50{height: 50%!important;}
+.h-75{height: 75%!important;}
+.h-100{height: 100%!important;}
+
+.o-hidden{
+  overflow: hidden!important;
 }
-.black-1{
-  color: $black-1!important;
-}
-.orange{
-  color: $orange!important;
-}
-.medium{
-  font-weight: $medium!important;
-}
-.semibold {font-weight: 600!important;}
-.bold {font-weight: 700!important;}
 
 .text{
   font-size: 18px;

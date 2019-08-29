@@ -1,0 +1,81 @@
+.table{
+  width: 100%;
+  max-width: 100%;
+  margin-bottom:15px;
+  tr{
+    th{
+      vertical-align: bottom;
+      text-align: left;
+    }
+  }
+  tr{
+    td{
+      @include add-border(1px,$gray-1,bottom);
+      vertical-align: top;
+    }
+  }
+  th, td{
+    padding: 15px;
+  }
+}
+.table-responsive{
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.table-hover{
+  tbody{
+    tr{
+      &:hover{
+        background-color: rgba(0,0,0,.075);
+      }
+    }
+  }
+}
+.table-fixed{
+  table-layout: fixed;
+  thead{
+    tr{
+      display: flex;
+    }
+    th{
+      width: 10%;
+    }
+  }
+  tbody{
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      width:6px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: #f2f2f2;
+      border-radius: 16px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background:#bcbcbc;
+      border-radius: 16px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #bcbcbc;
+    }
+    tr{
+      display: flex;
+      margin-right: -6px;
+      td{
+        width: 10%;
+      }
+    }
+  }
+}

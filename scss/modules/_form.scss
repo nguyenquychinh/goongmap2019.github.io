@@ -2,6 +2,7 @@ select.form-control:not([size]):not([multiple]){
   height: auto;
 }
 .form-group{
+  margin-bottom: 15px;
   > label{
     margin-bottom: 5px;
     font-size: 14px;
@@ -47,53 +48,7 @@ select.form-control:not([size]):not([multiple]){
 
 }
 
-.breadcrumb{
-  background: none;
-  padding:0;
-  .breadcrumb-item{
-    font-size: 16px;
-    color: $text-color;
-    a{
-      color: $text-color;
-    }
-  }
-}
-.counter-input{
-  display: flex;
-  align-items: center;
-  width: 120px;
-  border: 1px solid #ddd;
-  &__btn{
-    width: 40px;
-    background: none;
-    border: none;
-    padding: 2px 0;
-    font-size: 18px;
-    font-weight: $semibold;
-    cursor: pointer;
-    &:focus{
-      outline: none;
-    }
-    &:hover{
-      background-color: #f1f1f1;
-    }
-    &.minus{
-      border-right: 1px solid #ddd;
-      color: #f34646;
-    }
-    &.plus{
-      border-left: 1px solid #ddd;
-      color: #00a651;
-    }
-  }
-  p{
-    width: 40px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: $semibold;
-    color: $text-color;
-  }
-}
+
 [data-tip]{
   position: relative;
   &:before{

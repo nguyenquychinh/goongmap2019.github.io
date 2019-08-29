@@ -1,0 +1,43 @@
+@include responsive-invisibility('.visible-xs');
+@include responsive-invisibility('.visible-sm');
+@include responsive-invisibility('.visible-md');
+@include responsive-invisibility('.visible-lg');
+
+@media (max-width: $screen-xs) {
+  @include responsive-visibility('.visible-xs');
+}
+
+
+@media (min-width: $screen-sm) and (max-width: $screen-md - 1) {
+  @include responsive-visibility('.visible-sm');
+}
+
+
+@media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+  @include responsive-visibility('.visible-md');
+}
+
+
+@media (min-width: $screen-lg) {
+  @include responsive-visibility('.visible-lg');
+}
+
+
+@media (max-width: $screen-xs) {
+  @include responsive-invisibility('.hidden-xs');
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-md - 1) {
+  @include responsive-invisibility('.hidden-sm');
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+  @include responsive-invisibility('.hidden-md');
+}
+
+@media (min-width: $screen-lg) {
+  @include responsive-invisibility('.hidden-lg');
+}
+
+
+

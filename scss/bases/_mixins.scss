@@ -1,4 +1,4 @@
-
+//responsive
 @mixin breakpoint($point){
   @if $point == xs{
     @media (max-width: $screen-xs){ @content ;}
@@ -17,6 +17,51 @@
   } @else if $point == only-md {
     @media (min-width: $screen-md) and (max-width: $screen-lg - 1){ @content ;}
   }
+}
+
+//container
+@mixin container() {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include breakpoint(sm){width:750px;}
+  @include breakpoint(md){width:970px;}
+  @include breakpoint(lg){width:1170px;}
+}
+
+//row
+@mixin row() {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//col
+@mixin col() {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 2);
+}
+
+//responsive utilities
+@mixin responsive-visibility($parent) {
+  #{$parent} {
+    display: block !important;
+  }
+}
+
+@mixin responsive-invisibility($parent) {
+  #{$parent} {
+    display: none !important;
+  }
+}
+
+//border-radius
+@mixin border-radius($radius){
+  border-radius: $radius;
 }
 
 //border
@@ -53,4 +98,48 @@
 //height
 @mixin add-height($height){
   height: $height;
+}
+
+//clearfix
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin hidden-1(){
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(.9);
+  transition: .3s;
+}
+@mixin show-1(){
+  opacity: 1;
+  visibility:visible;
+  transform: scale(1);
+}
+@mixin flex-1(){
+  display: flex;
+  justify-content: space-between;
+}
+@mixin flex-2(){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin slideUp(){
+  transition: all .3s;
+  transform-origin: top;
+  transform: rotateX(90deg);
+  visibility: hidden;
+}
+@mixin slideDown(){
+  visibility: visible;
+  transform: none;
 }

@@ -1,4 +1,4 @@
-- var page = "index";
+- var page = "error-404";
 doctype html
 html(lang="vi")
     head
@@ -55,9 +55,8 @@ html(lang="vi")
                     button(type="button").btn.btn-large Quay lại
 
         include jades/footer.jade
-        script(type='text/javascript' src="js/jquery-3.3.1.min.js")
-        script(type='text/javascript' src="js/popper.min.js")
-        script(type='text/javascript' src="js/bootstrap.min.js")
+        script(src="js/libs/jquery.min.js")
+        script(src="js/main.js")
         script.
             $(".form-sign__btn .btn").click(function () {
                 var tab_id = $(this).attr('data-id');

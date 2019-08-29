@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" type="image/x-icon" href="">
-    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body ontouchstart="">
@@ -18,7 +17,7 @@
             <div class="goong-navbar__logo">
               <h1><a href="index.html"><img src="images/goong-logo-2x.png"></a></h1>
             </div>
-            <button type="button" data-toggle="collapse" data-target="#collapsibleNavbar" class="goong-navbar__toggle">
+            <button type="button" class="goong-navbar__toggle">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 53 53" xml:space="preserve" width="30px" height="30px">
                 <g>
                   <path d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z" fill="#1F3349"></path>&#x9;&#x9;
@@ -27,7 +26,7 @@
                 </g>
               </svg>
             </button>
-            <ul id="collapsibleNavbar" class="goong-navbar__nav collapse navbar-collapse">
+            <ul class="goong-navbar__nav">
               <li class="goong-navbar__item active"><a href="#" class="goong-navbar__link">Services</a></li>
               <li class="goong-navbar__item"><a href="#" class="goong-navbar__link">Mobile Apps</a></li>
               <li class="goong-navbar__item"><a href="#" class="goong-navbar__link">Live Map</a></li>
@@ -242,9 +241,8 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
       $(".form-sign__btn .btn").click(function () {
           var tab_id = $(this).attr('data-id');

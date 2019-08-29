@@ -1,61 +1,127 @@
-html, body, div, span, applet, object, iframe,
+html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+fieldset, form, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, menu, nav, section {
-  display: block;
+html{
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   font-family: $base-font-family;
-  font-size:$base-font-size;
+  font-size: $size-14;
   font-weight: $base-font-weight;
   line-height: $base-line-height;
-  color:$base-font-color;
-  background-color:$base-background-color;
+  color: $text-color;
+  background-color: $base-background-color;
   -webkit-font-smoothing: antialiased;
 }
-ol, ul {
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+ul{
   list-style: none;
 }
 blockquote, q {
-  quotes: none;
+  quotes:none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: none;
+  content:'';
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  color: $blue-1;
+  text-decoration: none;
+  cursor: pointer;
+  &:focus{outline: 0;}
+}
+img{
+  vertical-align: middle;
+}
+p{
+  margin-bottom: 5px;
+}
+label{
+  margin-bottom: 5px;
+  display: inline-block;
+}
+h1,h2,h3,h4,h5{
+  font-weight: $bold;
+}
+button{
+  cursor: pointer;
+  &:focus{
+    outline:none;
+  }
+}
+textarea{
+  resize: none;
 }
 select{
-  -webkit-appearance: none;
+  cursor: pointer;
 }
-figure{
-  img{
-    width: 100%;
-  }
-  figcaption{
-    font-size: 14px;
-    font-weight: $semibold;
-    color: $text-color;
-    margin:5px 0;
-    text-align: center;
-  }
+input{
+  &::-webkit-input-placeholder {color:$gray-3;}
+  &::-moz-placeholder {color:$gray-3;}
+  &:-ms-input-placeholder {color:$gray-3;}
+  &:-moz-placeholder {color:$gray-3;}
 }
+
+strong{
+  font-weight: $bold;
+}
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+input, select, textarea, button {
+  vertical-align:middle;
+  font-family: $base-font-family;
+}
+*, :after, :before{box-sizing: border-box;}
