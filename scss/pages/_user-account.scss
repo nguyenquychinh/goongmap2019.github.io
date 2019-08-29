@@ -38,13 +38,12 @@
   &__header{
     padding: 0 0 15px;
     border-bottom: 1px solid #efefef;
-    @include breakpoint(xs){
-      text-align: center;
-    }
-    @include breakpoint(sm){
+    text-align: center;
+    @include breakpoint(md){
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      text-align: left;
     }
     h5{
       font-weight: 500;
@@ -54,15 +53,15 @@
     }
     p{
       display: inline-block;
-      margin: 10px 0 0;
+      margin: 15px 0;
       background: #ECF5FE;
       border-radius: 8px;
       font-size: 14px;
       line-height: 18px;
       color: #66AFFF;
       padding: 10px 15px;
-      @include breakpoint(xs){
-        margin: 15px 0;
+      @include breakpoint(md){
+        margin: 10px 0 0;
       }
       span{
         font-weight: 500;
@@ -145,14 +144,29 @@
     padding: 0 0 15px;
     border-bottom: 1px solid #efefef;
     .d-flex{
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
+      @include breakpoint(md){
+        justify-content: space-between;
+      }
+    }
+    .d-block{
+      width: 100%;
+      text-align: center;
+      @include breakpoint(md){
+        width: auto;
+      }
     }
     h5{
       font-weight: 500;
       font-size: 28px;
       line-height: 33px;
       color: #1F3349;
+      margin: 0 0 15px;
+      @include breakpoint(md){
+        margin: 0;
+      }
     }
     .btn{
       text-transform: initial;

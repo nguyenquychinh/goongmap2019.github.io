@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>GOONG</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body ontouchstart="">
+    <header class="goong-header">
+      <div class="container">
+        <div class="goong-header__navbar">
+          <div class="goong-navbar">
+            <div class="goong-navbar__logo">
+              <h1><a href="index.html"><img src="images/goong-logo-2x.png"></a></h1>
+            </div>
+            <button type="button" class="goong-navbar__toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 53 53" xml:space="preserve" width="30px" height="30px">
+                <g>
+                  <path d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z" fill="#1F3349"></path>&#x9;&#x9;
+                  <path d="M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z" fill="#1F3349"></path>&#x9;&#x9;
+                  <path d="M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z" fill="#1F3349"></path>
+                </g>
+              </svg>
+            </button>
+            <ul id="collapsibleNavbar" class="goong-navbar__nav collapse navbar-collapse">
+              <li class="goong-navbar__item active"><a href="user-dashboard.html" class="goong-navbar__link">Dashboard</a></li>
+              <li class="goong-navbar__item"><a href="user-keys.html" class="goong-navbar__link">Keys</a></li>
+              <li class="goong-navbar__item"><a href="user-statistics.html" class="goong-navbar__link">Statistics</a></li>
+              <li class="goong-navbar__item"><a href="user-billing.html" class="goong-navbar__link">Billing</a></li>
+              <li class="goong-navbar__item goong-navbar__account">
+                <button type="button" class="goong-navbar__link"><span>Maxx16t<img src="images/avatar.png" class="avatar"></span>
+                  <svg width="14" height="7" viewbox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.20711 0C0.761654 0 0.538571 0.538571 0.853553 0.853553L6.29289 6.29289C6.68342 6.68342 7.31658 6.68342 7.70711 6.29289L13.1464 0.853552C13.4614 0.53857 13.2383 0 12.7929 0H1.20711Z" fill="#566571"></path>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="goong-wrapper">
+      <section class="goong-account">
+        <div class="container">
+          <div class="goong-account__body">
+            <div class="goong-account__left">
+              <div class="account-box">
+                <div class="account-box__header">
+                  <div class="d-block">
+                    <h5>Current Billing Cycle Usage</h5>
+                    <p>Free remaining credit:<span>$ 200</span></p>
+                  </div>
+                  <div class="d-block"><a class="btn btn-blue">View Billing</a></div>
+                </div>
+                <div class="account-box__body">
+                  <div class="account-box__item">
+                    <div class="account-box__title">
+                      <svg width="64" height="78" viewbox="0 0 64 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="#ECF5FE"></path>
+                        <path d="M50.9636 49.6451C51.2092 49.5242 51.4577 49.4075 51.7086 49.2941L49.8837 42.191L33.5322 48.5554L35.5162 63.9999H38.5383C38.9169 62.7428 40.16 59.2605 43.1602 55.7222C45.3194 53.1756 47.9449 51.131 50.9636 49.6451Z" fill="#469AF7"></path>
+                        <path d="M52.9858 50.5961C49.6805 52.0086 46.8429 54.069 44.5173 56.8118C42.0559 59.7147 40.862 62.6005 40.3838 64H62.5258C63.288 64 63.9082 63.3966 63.9082 62.6548V48.4476C59.914 48.5239 54.9481 49.7576 52.9858 50.5961Z" fill="#469AF7"></path>
+                        <path d="M62.5261 31.1795H56.5889L60.2403 46.9844C61.4289 46.8421 62.6519 46.7582 63.9086 46.7352V32.5246C63.9086 31.7829 63.2884 31.1795 62.5261 31.1795Z" fill="#469AF7"></path>
+                        <path d="M28.0918 50.629V62.6549C28.0918 63.3965 28.7119 64 29.4742 64H33.7433L31.8436 49.2127L28.0918 50.629Z" fill="#469AF7"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M43.4182 33.7017C43.4182 38.525 39.0062 42.4074 37.527 43.5732C36.0413 42.5228 31.6992 38.9987 31.6992 33.7016C31.6992 30.5577 34.3277 28 37.5586 28C40.7895 28 43.4182 30.5577 43.4182 33.7017ZM37.5587 30.6596C35.835 30.6596 34.4326 32.0244 34.4326 33.7016C34.4326 35.3789 35.8349 36.7435 37.5586 36.7435C39.2824 36.7435 40.6849 35.3789 40.6849 33.7016C40.6849 32.0242 39.2825 30.6596 37.5587 30.6596Z" fill="#469AF7"></path>
+                        <path d="M38.9256 33.7016C38.9256 32.9684 38.3125 32.3718 37.559 32.3718C36.8055 32.3718 36.1924 32.9684 36.1924 33.7016C36.1924 34.4348 36.8054 35.0315 37.5589 35.0315C38.3125 35.0315 38.9256 34.4349 38.9256 33.7016Z" fill="#469AF7"></path>
+                        <path d="M45.1635 34.22L47.4361 33.437L47.1151 31.1795H44.7236C45.0175 31.9673 45.1783 32.8165 45.1783 33.7017C45.1783 33.8758 45.1726 34.0484 45.1635 34.22Z" fill="#469AF7"></path>
+                        <path d="M28.0918 41.8832V48.8292L37.0615 45.3379C36.6822 45.1061 34.0658 43.4415 32.1133 40.5327L28.0918 41.8832Z" fill="#469AF7"></path>
+                        <path d="M48.6988 34.8177L44.8763 36.1348C43.8896 40.1365 40.7231 43.1902 39.0752 44.5539L50.1659 40.2372C50.4016 40.1452 50.6669 40.1572 50.893 40.2698C51.1193 40.3823 51.2844 40.5845 51.346 40.8244L53.349 48.6207C54.9706 48.0165 56.6888 47.5556 58.4958 47.2404L54.7853 31.1795H48.8906L49.2765 33.8935C49.3338 34.296 49.0924 34.6821 48.6988 34.8177Z" fill="#469AF7"></path>
+                        <path d="M29.9401 33.7016C29.9401 32.8164 30.1009 31.9672 30.3948 31.1794H29.4742C28.712 31.1794 28.0918 31.7828 28.0918 32.5246V40.1023L31.2293 39.0212C30.4646 37.4988 29.9401 35.7198 29.9401 33.7016Z" fill="#469AF7"></path>
+                        <rect opacity="0.5" x="16" y="74" width="48" height="4" fill="#66AFFF"></rect>
+                      </svg>
+                      <p>Map</p>
+                    </div>
+                    <div class="account-box__progress">
+                      <div class="account-box__progress__item">
+                        <p class="p1">Embedded Map</p>
+                        <p class="p2"><span>7.849&nbsp</span>/ 25.000 free loads</p>
+                        <progress value="20" max="100"></progress>
+                      </div>
+                      <div class="account-box__progress__item">
+                        <p class="p1">Embedded Map Advanced</p>
+                        <p class="p2"><span>7.849&nbsp</span>/ 25.000 free loads</p>
+                        <progress value="70" max="100"></progress>
+                      </div>
+                      <div class="account-box__progress__item">
+                        <p class="p1">Static Map</p>
+                        <p class="p2"><span>7.849&nbsp</span>/ 25.000 free loads</p>
+                        <progress value="20" max="100"></progress>
+                      </div>
+                      <div class="account-box__progress__item">
+                        <p class="p1">Dynamic Map</p>
+                        <p class="p2"><span>7.849&nbsp</span>/ 25.000 free loads</p>
+                        <progress value="45" max="100"></progress>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="account-box__item">
+                    <div class="account-box__title">
+                      <svg width="64" height="78" viewbox="0 0 64 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="#ECF5FE"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M62.0181 42.453C62.3561 43.7391 62.5271 45.0663 62.5271 46.408C62.5271 47.7496 62.3561 49.0767 62.0182 50.363L63.9834 51.8087L60.1691 58.4152L57.9311 57.4347C56.0177 59.3345 53.6747 60.6883 51.0842 61.3909L50.8148 63.816H43.1861L42.9167 61.3909C40.3263 60.6883 37.9834 59.3345 36.0699 57.4347L33.8318 58.4152L30.0176 51.8087L31.9827 50.363C31.6448 49.0769 31.4738 47.7496 31.4738 46.408C31.4738 45.0664 31.6448 43.7391 31.9827 42.453L30.0176 41.0072L33.8318 34.4007L36.0699 35.3813C37.9833 33.4815 40.3262 32.1277 42.9167 31.425L43.1861 29H50.8147L51.084 31.4251C53.6746 32.1277 56.0175 33.4815 57.931 35.3813L60.169 34.4008L63.9833 41.0073L62.0181 42.453ZM52.5074 42.6456L51.0499 44.0729L53.3532 46.4248L51.0014 48.7281L52.4287 50.1855L56.238 46.4549L52.5074 42.6456ZM46.5479 53.5088L44.5516 53.0885L47.453 39.3072L49.4493 39.7275L46.5479 53.5088ZM41.5721 50.1855L42.9995 48.728L40.6476 46.4247L42.9509 44.0729L41.4934 42.6455L37.7628 46.4548L41.5721 50.1855Z" fill="#469AF7"></path>
+                        <rect opacity="0.5" x="16" y="74" width="48" height="4" fill="#66AFFF"></rect>
+                      </svg>
+                      <p>APIs</p>
+                    </div>
+                    <div class="account-box__progress">
+                      <div class="account-box__progress__item">
+                        <p class="p1">Autocomplete</p>
+                        <p class="p2"><span>7.849&nbsp</span>/ 25.000 free loads</p>
+                        <progress value="50" max="100"></progress>
+                      </div>
+                      <div class="account-box__progress__item">
+                        <p class="p1">Directions</p>
+                        <p class="p2"><span>7.849&nbsp</span>/ 25.000 free loads</p>
+                        <progress value="75" max="100"></progress>
+                      </div>
+                      <div class="account-box__progress__item">
+                        <p class="p1">PlaceDetail</p>
+                        <p class="p2"><span>7.849&nbsp</span>/ 25.000 free loads</p>
+                        <progress value="50" max="100"></progress>
+                      </div>
+                      <div class="account-box__progress__item">
+                        <p class="p1">Geocode</p>
+                        <p class="p2"><span>7.849&nbsp</span>/ 25.000 free loads</p>
+                        <progress value="35" max="100"></progress>
+                      </div>
+                      <div class="account-box__progress__item">
+                        <p class="p1">DistanceMatrix</p>
+                        <p class="p2"><span>7.849&nbsp</span>/ 25.000 free loads</p>
+                        <progress value="65" max="100"></progress>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="account-box__footer"><a>Learn more about our new product offerings and how you can get started for free</a></div>
+              </div>
+            </div>
+            <div class="goong-account__right">
+              <div class="account-sidebar">
+                <div class="account-sidebar__header">
+                  <div class="d-flex">
+                    <div class="d-block">
+                      <h5>API Keys</h5>
+                    </div>
+                    <div class="d-block">
+                      <button type="button" class="btn btn-blue">+ Create Key</button>
+                    </div>
+                  </div>
+                  <p>Read more about API access tokens in&nbsp;<a>here.</a></p>
+                </div>
+                <div class="account-sidebar__body">
+                  <div class="account-sidebar__item">
+                    <div class="d-block">
+                      <p class="p1">Style map for Naruto</p>
+                      <p class="p2"><span>Last modified:&nbsp;</span>about 3 years ago</p>
+                      <p class="p2"><span>URLs:&nbsp;</span>N/A</p>
+                    </div>
+                    <div class="d-block">
+                      <button type="button">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="24" height="24" rx="2" fill="#469AF7"></rect>
+                          <path d="M18.125 9.375H12C11.475 9.375 11.125 9.725 11.125 10.25V18.125C11.125 18.65 11.475 19 12 19H18.125C18.65 19 19 18.65 19 18.125V10.25C19 9.725 18.65 9.375 18.125 9.375Z" fill="white"></path>
+                          <path d="M9.375 8.5C9.375 7.975 9.725 7.625 10.25 7.625H15.5V5.875C15.5 5.35 15.15 5 14.625 5H5.875C5.35 5 5 5.35 5 5.875V16.375C5 16.9 5.35 17.25 5.875 17.25H9.375V8.5Z" fill="white"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="account-sidebar__item">
+                    <div class="d-block">
+                      <p class="p1">Map for game Pokemon</p>
+                      <p class="p2"><span>Last modified:&nbsp;</span>about 3 years ago</p>
+                      <p class="p2"><span>URLs:&nbsp;</span>N/A</p>
+                    </div>
+                    <div class="d-block">
+                      <button type="button">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="24" height="24" rx="2" fill="#469AF7"></rect>
+                          <path d="M18.125 9.375H12C11.475 9.375 11.125 9.725 11.125 10.25V18.125C11.125 18.65 11.475 19 12 19H18.125C18.65 19 19 18.65 19 18.125V10.25C19 9.725 18.65 9.375 18.125 9.375Z" fill="white"></path>
+                          <path d="M9.375 8.5C9.375 7.975 9.725 7.625 10.25 7.625H15.5V5.875C15.5 5.35 15.15 5 14.625 5H5.875C5.35 5 5 5.35 5 5.875V16.375C5 16.9 5.35 17.25 5.875 17.25H9.375V8.5Z" fill="white"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="goong-footer">
+      <div class="container">
+        <div class="goong-navbar">
+          <div class="goong-navbar__logo">
+            <h1><a href="#"><img src="images/goong-logo-2x.png"></a></h1>
+            <p>© 2019 Goong Inc, All right Reseverd</p>
+          </div>
+          <ul class="goong-navbar__nav">
+            <li class="goong-navbar__item active"><a href="index.html" class="goong-navbar__link">Home</a></li>
+            <li class="goong-navbar__item"><a href="#" class="goong-navbar__link">Mobile App</a></li>
+            <li class="goong-navbar__item"><a href="documents.html" class="goong-navbar__link">Documents</a></li>
+            <li class="goong-navbar__item"><a href="#" class="goong-navbar__link">Live Map</a></li>
+            <li class="goong-navbar__item"><a href="#" class="goong-navbar__link">Privacy And Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script></script>
+    
+    
+  </body>
+</html>
