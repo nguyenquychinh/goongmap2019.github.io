@@ -17,6 +17,7 @@
     transition:transform .3s ease-out;
   }
   &.in .modal-dialog { transform:translate(0, 0);}
+  &.show .modal-dialog { transform:translate(0, 0);}
 }
 .modal-dialog {
   width: calc(100% - 10px);
@@ -86,6 +87,7 @@
   background-color: #172637;
   &.fade {opacity: 0; }
   &.in { opacity:.9; }
+  &.show { opacity:.9; }
 }
 
 .modal-dialog.modal_lg{
