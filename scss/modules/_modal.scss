@@ -4,3 +4,9 @@
     max-width: 700px;
   }
 }
+.modal-backdrop{
+  background-color: #172637;
+}
+.modal-backdrop.show{
+  opacity: .9;
+}
