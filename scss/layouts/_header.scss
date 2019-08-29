@@ -54,9 +54,15 @@
     color: rgba(31, 51, 73, 0.5);
     transition: all .3s;
     padding: 10px 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
     &:hover{
       text-decoration: none;
       color: $text-color;
+    }
+    &:focus{
+      outline: none;
     }
   }
 }
