@@ -13,17 +13,17 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   border-radius:30px;
   background:$blue-2;
-  border: none;
+  border-color: $blue-2;
 }
 //Firefox
 progress::-moz-progress-bar {
   border-radius:30px;
   background:$blue-2;
-  border: none;
+  border-color: $blue-2;
 }
 //IE
 progress[value]::-ms-fill {
   border-radius:30px;
   background:$blue-2;
-  border: none;
+  border-color: $blue-2;
 }
