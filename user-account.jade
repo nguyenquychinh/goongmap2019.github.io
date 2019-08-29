@@ -4,6 +4,7 @@ html(lang="vi")
     head
         include jades/head
     body(ontouchstart='')
+        include jades/menu-mobile-login.jade
         include jades/header-login.jade
 
         main.goong-wrapper
@@ -152,6 +153,13 @@ html(lang="vi")
         script(src="js/libs/jquery.min.js")
         script(src="js/main.js")
         script.
+            $('.goong-navbar__toggle').click(function () {
+                $('body').addClass('open-menu-mobile');
+            });
+
+            $('.menu-mobile__backdrop').click(function () {
+                $('body').removeClass('open-menu-mobile');
+            });
 
 
 

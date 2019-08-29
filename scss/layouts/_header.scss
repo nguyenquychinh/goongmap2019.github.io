@@ -12,7 +12,7 @@
   &__logo{
     h1{
       a{
-        display: flex;
+        display: block;
       }
     }
     img{
@@ -35,7 +35,7 @@
   }
   &__nav{
     @include breakpoint(xs){
-      margin: 0 -15px;
+      display: none;
     }
     @include breakpoint(sm){
       display: flex;

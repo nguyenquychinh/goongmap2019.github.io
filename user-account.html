@@ -10,6 +10,28 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body ontouchstart="">
+    <div class="menu-mobile">
+      <div class="menu-mobile__main">
+        <div class="menu-mobile__header">
+          <button type="button" class="menu-mobile__login"><img src="images/avatar.png"><span>Nguyen Tuan</span></button>
+        </div>
+        <div class="menu-mobile__content">
+          <ul class="menu-mobile__list">
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Item 1</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Item 2</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Item 3</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Item 4</a></li>
+          </ul>
+          <ul class="menu-mobile__list">
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Services</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Mobile Apps</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Live Map</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Documents</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-mobile__backdrop"></div>
+    </div>
     <header class="goong-header">
       <div class="container">
         <div class="goong-header__navbar">
@@ -211,8 +233,14 @@
     </footer>
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script></script>
-    
-    
+    <script>
+      $('.goong-navbar__toggle').click(function () {
+          $('body').addClass('open-menu-mobile');
+      });
+      
+      $('.menu-mobile__backdrop').click(function () {
+          $('body').removeClass('open-menu-mobile');
+      });
+    </script>
   </body>
 </html>
