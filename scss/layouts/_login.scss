@@ -95,12 +95,14 @@
     }
   }
 }
-#formLogin{
-  .modal-dialog{
-    width: calc(100% - 10px);
-    @include breakpoint(sm){
-      width: 540px;
-    }
+.modal-dialog.modal-login{
+  width: calc(100% - 10px);
+  @include breakpoint(sm){
+    width: 540px;
+  }
+  .modal-content{
+    border: none;
+    border-radius: 10px;
   }
   .modal-body{
     padding: 0;
