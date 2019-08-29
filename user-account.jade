@@ -1,0 +1,41 @@
+- var page = "index";
+doctype html
+html(lang="vi")
+    head
+        include jades/head
+    body(ontouchstart='')
+        include jades/header-login.jade
+
+        main.goong-wrapper
+            section.goong-account
+                .container
+                    .goong-account__body
+                        .goong-account__left
+                            .account-box
+                                .account-box__header
+                                    .d-block
+                                        h5 Current Billing Cycle Usage
+                                        p
+                                            | Free remaining credit:
+                                            span $ 200
+                                    .d-block
+                                        a.btn.btn-blue View Billing
+                                .account-box__body
+                                    .account-box__item
+                                        .account-box__title
+                                        .account-box__progress
+                                            .account-box__progress__item
+                                                p.p1 Embedded Map
+                                                p.p2
+                                                    span 7.849&nbsp
+                                                    | / 25.000 free loads
+                                                progress(value='20' max='100')
+                        .goong-account__right
+        include jades/footer.jade
+        script(src="js/libs/jquery.min.js")
+        script(src="js/main.js")
+        script.
+
+
+
+

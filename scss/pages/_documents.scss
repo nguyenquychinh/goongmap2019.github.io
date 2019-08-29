@@ -1,9 +1,11 @@
 .goong-docs{
+  background-color: #fff;
+  padding-bottom: 80px;
+  min-height: 100vh;
   &__intro{
     position: relative;
   }
   &__guides{
-    margin-bottom: 80px;
     @include breakpoint(md){
       margin-top: -110px;
       position: relative;
@@ -80,21 +82,11 @@
     display: flex;
     align-items: flex-end;
     padding-bottom: 10px;
-    position: relative;
-    &:before{
-      content: '';
-      width: 48px;
-      height: 4px;
-      position: absolute;
-      bottom: 0;
-      left: 15px;
-      background-color: rgba(102, 175, 255, 0.6);
-    }
     h5{
       font-weight: 500;
       font-size: 18px;
       line-height: 21px;
-      padding-left: 10px;
+      padding: 0 0 15px 10px;
     }
   }
   &__btn{

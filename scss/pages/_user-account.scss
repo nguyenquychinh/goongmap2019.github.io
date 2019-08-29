@@ -1,0 +1,29 @@
+.goong-account{
+  &__body{
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(sm){
+      margin: 0 -15px;
+    }
+  }
+  &__left{
+    @include breakpoint(xs){
+      width: 100%;
+      order: 2;
+    }
+    @include breakpoint(sm){
+      width: 66.667%;
+      padding: 0 15px;
+    }
+  }
+  &__right{
+    @include breakpoint(xs){
+      width: 100%;
+      order: 1;
+    }
+    @include breakpoint(sm){
+      width: 33.333%;
+      padding: 0 15px;
+    }
+  }
+}
