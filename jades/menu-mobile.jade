@@ -1,11 +1,11 @@
 .menu-mobile
     .menu-mobile__main
         .menu-mobile__header
-            button.menu-mobile__login(type='button' data-toggle="modal" data-target="#formLogin")
-                img(src='images/user-avatar.png')
-                span Login
-                svg(width='9', height='5', viewbox='0 0 9 5', fill='none', xmlns='http://www.w3.org/2000/svg')
-                    path(fill-rule='evenodd', clip-rule='evenodd', d='M8.48532 0.242641L4.24268 4.12306L3.51667e-05 0.242641L8.48532 0.242641Z', fill='#1F3349')
+            button.menu-mobile__login(type='button')
+                //img(src='images/user-avatar.png')
+                span GOONG
+                //svg(width='9', height='5', viewbox='0 0 9 5', fill='none', xmlns='http://www.w3.org/2000/svg')
+                //    path(fill-rule='evenodd', clip-rule='evenodd', d='M8.48532 0.242641L4.24268 4.12306L3.51667e-05 0.242641L8.48532 0.242641Z', fill='#1F3349')
 
         .menu-mobile__content
             ul.menu-mobile__list
@@ -21,4 +21,7 @@
                 li.menu-mobile__item
                     a.menu-mobile__link
                         | Documents
+                li.menu-mobile__item
+                    button.menu-mobile__link(data-toggle="modal" data-target="#formLogin")
+                        | Login
     .menu-mobile__backdrop
