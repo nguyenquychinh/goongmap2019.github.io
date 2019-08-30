@@ -30,10 +30,14 @@ header.goong-header
                         a.goong-navbar__link(href='user-billing.html') Billing
 
                     li.goong-navbar__item.goong-navbar__account
-                        button.goong-navbar__link(type='button')
-                            span
-                                | Maxx16t
-                                img.avatar(src='images/avatar.png')
-                            svg(width='14', height='7', viewbox='0 0 14 7', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                path(d='M1.20711 0C0.761654 0 0.538571 0.538571 0.853553 0.853553L6.29289 6.29289C6.68342 6.68342 7.31658 6.68342 7.70711 6.29289L13.1464 0.853552C13.4614 0.53857 13.2383 0 12.7929 0H1.20711Z', fill='#566571')
+                        .dropdown
+                            button.goong-navbar__link.dropdown-toggle(type='button' data-toggle="dropdown")
+                                span
+                                    | Maxx16t
+                                    img.avatar(src='images/avatar.png')
+                                svg(width='14', height='7', viewbox='0 0 14 7', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M1.20711 0C0.761654 0 0.538571 0.538571 0.853553 0.853553L6.29289 6.29289C6.68342 6.68342 7.31658 6.68342 7.70711 6.29289L13.1464 0.853552C13.4614 0.53857 13.2383 0 12.7929 0H1.20711Z', fill='#566571')
+                            ul.dropdown-menu
+                                li.dropdown-item
+                                    button.dropdown-link(type='button') Log out
 
