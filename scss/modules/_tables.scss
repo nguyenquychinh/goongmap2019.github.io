@@ -10,12 +10,12 @@
   }
   tr{
     td{
-      @include add-border(1px,$gray-1,bottom);
       vertical-align: top;
     }
   }
   th, td{
     padding: 15px;
+    border-bottom: 1px solid #efefef;
   }
 }
 .table-responsive{

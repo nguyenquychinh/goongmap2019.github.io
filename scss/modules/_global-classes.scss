@@ -133,3 +133,36 @@
   line-height: 30px;
   color: $text-color;
 }
+
+.flex-box{
+  padding: 0 0 30px;
+  border-bottom: 1px solid #efefef;
+  text-align: center;
+  @include breakpoint(md){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 0 15px;
+  }
+  &__left{
+    margin: 0 0 15px;
+    @include breakpoint(md){
+      margin: 0;
+    }
+    p{
+      font-size: 14px;
+      line-height: 21px;
+      color: #566571;
+      margin: 0;
+      span{
+        color: #469AF7;
+      }
+    }
+  }
+  &__right{
+    .btn{
+      text-transform: initial;
+    }
+  }
+}
