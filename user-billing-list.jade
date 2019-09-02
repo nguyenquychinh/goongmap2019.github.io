@@ -1,0 +1,111 @@
+- var page = "user-billing-list";
+doctype html
+html(lang="vi")
+    head
+        include jades/head
+    body(ontouchstart='')
+        include jades/menu-mobile-login.jade
+        include jades/header-login.jade
+
+        main.goong-wrapper
+            section.goong-billing
+                .container
+                    .billing-list
+                        .billing-list__header
+                            .heading
+                                h5 Billing
+                            .billing-list__pagination
+                                ul.pagination
+                                    li.pagination-item.active
+                                        a.pagination-link 1
+                                    li.pagination-item
+                                        a.pagination-link 2
+                                    li.pagination-item
+                                        a.pagination-link 3
+                                    li.pagination-item
+                                        a.pagination-link 4
+                                    li.pagination-item
+                                        a.pagination-link 5
+                                    li.pagination-item.next
+                                        a.pagination-link Next
+                                .billing-list__viewall
+                                    a View all
+                        .billing-list__table
+                            .table-responsive
+                                table.table
+                                    thead
+                                        tr
+                                            th Status
+                                            th Date
+                                            th Amount
+                                            th &nbsp;
+                                    tbody
+                                        tr
+                                            td
+                                                p Upcoming
+                                            td
+                                                p September 07, 2019
+                                            td
+                                                p $41.71
+                                            td.text-right
+                                                a View details
+                                        tr
+                                            td
+                                                p
+                                                    svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(fill-rule='evenodd', clip-rule='evenodd', d='M0 8C0 3.58 3.58 0 8 0C12.416 0 16 3.58 16 8C16 12.416 12.416 16 8 16C3.58 16 0 12.416 0 8ZM2.4 8L6.4 12L13.6 4.8L12.468 3.668L6.4 9.736L3.532 6.868L2.4 8Z', fill='#469AF7')
+                                                    span Paid
+                                            td
+                                                p August 07, 2019
+                                            td
+                                                p $242.80
+                                            td.text-right
+                                                a View details
+                                        tr
+                                            td
+                                                p.p-close Close
+                                            td
+                                                p July 28, 2019
+                                            td
+                                                p $0.00
+                                            td.text-right
+                                                a View details
+                                        tr
+                                            td
+                                                p
+                                                    svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(fill-rule='evenodd', clip-rule='evenodd', d='M0 8C0 3.58 3.58 0 8 0C12.416 0 16 3.58 16 8C16 12.416 12.416 16 8 16C3.58 16 0 12.416 0 8ZM2.4 8L6.4 12L13.6 4.8L12.468 3.668L6.4 9.736L3.532 6.868L2.4 8Z', fill='#469AF7')
+                                                    span Paid
+                                            td
+                                                p May 28, 2019
+                                            td
+                                                p $356.3
+                                            td.text-right
+                                                a View details
+                                        tr
+                                            td
+                                                p
+                                                    svg(width='16', height='16', viewbox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(fill-rule='evenodd', clip-rule='evenodd', d='M0 8C0 3.58 3.58 0 8 0C12.416 0 16 3.58 16 8C16 12.416 12.416 16 8 16C3.58 16 0 12.416 0 8ZM2.4 8L6.4 12L13.6 4.8L12.468 3.668L6.4 9.736L3.532 6.868L2.4 8Z', fill='#469AF7')
+                                                    span Paid
+                                            td
+                                                p April 28, 2019
+                                            td
+                                                p $166.43
+                                            td.text-right
+                                                a View details
+        include jades/footer.jade
+        script(src="js/libs/jquery.min.js")
+        script(src="js/main.js")
+        script.
+            $('.goong-navbar__toggle').click(function () {
+                $('body').addClass('open-menu-mobile');
+            });
+
+            $('.menu-mobile__backdrop').click(function () {
+                $('body').removeClass('open-menu-mobile');
+            });
+
+
+
+

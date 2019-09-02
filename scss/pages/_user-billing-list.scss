@@ -1,0 +1,87 @@
+.goong-billing{
+  margin: 30px 0;
+}
+.billing-list{
+  background: #FFF;
+  border-radius: 8px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.02);
+  @include breakpoint(lg){
+    width: 920px;
+    margin: auto;
+  }
+  &__header{
+    border-bottom: 1px solid #efefef;
+    padding: 0 0 10px;
+    @include breakpoint(md){
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0 15px;
+    }
+    .heading{
+      text-align: center;
+      @include breakpoint(md){
+        text-align: left;
+        margin: 0;
+      }
+    }
+  }
+  &__pagination{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__viewall{
+    padding-left: 40px;
+    a{
+      font-size: 14px;
+      line-height: 16px;
+      color: #469AF7;
+    }
+  }
+  &__table{
+    margin: 0 -15px;
+    .table{
+      margin: 0;
+      th,td{
+        @include breakpoint(xs){
+          white-space: nowrap;
+        }
+      }
+      thead{
+        th{
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #566571;
+        }
+      }
+      tbody{
+        td{
+          p{
+            font-size: 16px;
+            line-height: 19px;
+            margin: 0;
+            color: #1F3349;
+            svg,span{
+              vertical-align: middle;
+            }
+            span{
+              padding-left: 10px;
+            }
+            &.p-close{
+              color: #566571;
+            }
+          }
+          a{
+            font-size: 14px;
+            line-height: 16px;
+            color: #469AF7;
+          }
+        }
+      }
+
+    }
+  }
+}

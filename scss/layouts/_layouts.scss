@@ -5,3 +5,8 @@
 @import "login";
 @import "menu-mobile";
 
+.goong-wrapper{
+  @include breakpoint(md){
+    min-height: calc(100vh - 192px);
+  }
+}

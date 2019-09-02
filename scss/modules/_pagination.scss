@@ -1,0 +1,33 @@
+.pagination{
+  display: flex;
+  align-items: center;
+}
+.pagination-item{
+  padding: 0 2px;
+  &.active{
+    .pagination-link{
+      background-color: #469AF7;
+      color: #fff;
+    }
+  }
+  &.next{
+    .pagination-link{
+      font-size: 14px;
+      line-height: 16px;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+.pagination-link{
+  font-size: 12px;
+  line-height: 14px;
+  color: #469AF7;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
