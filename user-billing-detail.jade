@@ -1,0 +1,86 @@
+- var page = "user-billing-detail";
+doctype html
+html(lang="vi")
+    head
+        include jades/head
+    body(ontouchstart='')
+        include jades/menu-mobile-login.jade
+        include jades/header-login.jade
+
+        main.goong-wrapper
+            section.goong-billing
+                .container
+                    .billing-detail
+                        .billing-detail__header
+                            .flex-box
+                                .flex-box__left
+                                    .heading
+                                        h5 Billing
+                                .flex-box__right
+                                    .flex-box__btn
+                                        button.btn.btn-blue(type='button') Export Invoice
+
+                        .billing-detail__body
+                            .billing-detail__left
+                                .billing-detail__info
+                                    .billing-detail__line
+                                        p.p1 BILL ID
+                                        p.p2 in_9TYVOh4aAHU3z7
+                                    .billing-detail__line
+                                        p.p1 BILL DATE
+                                        p.p2 Oct 31, 2016
+                                    .billing-detail__line
+                                        p.p1 BILLED FROM
+                                        p.p2
+                                            span.medium GOONG Inc.
+                                            | 91 Trung Kính Street, 5th Floor
+                                            br
+                                            | Nhân Chính District, Hà Nội City.
+
+                                    .billing-detail__line
+                                        p.p1 BILLED TO
+                                        p.p2
+                                            span.medium Maxx16t
+                                            | maxx16t@gmail.com
+                                            button.btn-add(type='button') + Add additional info
+
+                                .billing-detail__charges
+                                    p.p-title Details of charges
+                                    .charges-comp
+                                        .charges-comp__line
+                                            p Premium plan for Oct 31 - Nov 30
+                                            p.medium $499.00
+                                        .charges-comp__line
+                                            p Total charges
+                                            p.medium $499.00
+                                        .charges-comp__line
+                                            p Amount due
+                                            p.medium $499.00
+                                    .billing-detail__contact
+                                        p
+                                            | Have questions about your invoice?&nbsp;
+                                            a Contact us.
+                            .billing-detail__right
+                                .billing-detail__status
+                                    svg(width='20', height='20', viewbox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(fill-rule='evenodd', clip-rule='evenodd', d='M0 10C0 4.475 4.475 0 10 0C15.52 0 20 4.475 20 10C20 15.52 15.52 20 10 20C4.475 20 0 15.52 0 10ZM3 10L8 15L17 6L15.585 4.585L8 12.17L4.415 8.585L3 10Z', fill='#469AF7')
+                                    span Paid
+                                .billing-detail__price
+                                    p.medium Amount due for
+                                    p Oct 31, 2016
+                                    p.p-price $499.00
+        include jades/footer.jade
+        script(src="js/libs/jquery.min.js")
+        script(src="js/main.js")
+        script.
+            $('.goong-navbar__toggle').click(function () {
+                $('body').addClass('open-menu-mobile');
+            });
+
+            $('.menu-mobile__backdrop').click(function () {
+                $('body').removeClass('open-menu-mobile');
+            });
+
+
+
+

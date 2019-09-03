@@ -1,0 +1,160 @@
+.billing-detail{
+  background: #FFF;
+  border-radius: 8px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.02);
+  @include breakpoint(md){
+    padding: 30px 20px 0;
+  }
+  @include breakpoint(lg){
+    width: 920px;
+    margin: auto;
+  }
+  &__header{}
+  &__body{
+    padding: 30px 0 0;
+    @include breakpoint(md){
+      display: flex;
+      justify-content: space-between;
+      margin: 0 -15px;
+    }
+  }
+  &__left{
+    @include breakpoint(md){
+      width: 70%;
+      padding: 0 15px;
+    }
+  }
+  &__info{
+    @include breakpoint(md){
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 -20px;
+    }
+  }
+  &__line{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 15px;
+    @include breakpoint(md){
+      width: 50%;
+      display: block;
+      padding: 0 20px 40px;
+    }
+    .p1{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #566571;
+      margin: 0;
+      white-space: nowrap;
+      @include breakpoint(md){
+        margin: 0 0 15px;
+      }
+    }
+    .p2{
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+      color: #1F3349;
+      text-align: right;
+      padding-left: 15px;
+      @include breakpoint(md){
+        text-align: left;
+        padding: 0;
+      }
+      span{
+        display: block;
+      }
+      .btn-add{
+        font-size: 14px;
+        line-height: 24px;
+        color: #469AF7;
+      }
+    }
+  }
+  &__charges{
+    @include breakpoint(md){
+      width: 80%;
+    }
+    .p-title{
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      margin: 0;
+      color: #1F3349;
+    }
+    .charges-comp{
+      &__line{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 15px 0;
+        border-bottom: 1px solid #efefef;
+        margin: 0 -10px;
+        p{
+          font-size: 16px;
+          line-height: 19px;
+          margin: 0;
+          color: #1F3349;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+  &__contact{
+    padding: 15px 0;
+    p{
+      font-size: 14px;
+      line-height: 24px;
+      color: #566571;
+      a{
+        color: #469AF7;
+      }
+    }
+  }
+  &__right{
+    @include breakpoint(md){
+      width: 30%;
+      padding: 0 15px;
+    }
+  }
+  &__status{
+    background: #E5F3FF;
+    border: 1px solid #D9EBFF;
+    border-radius: 10px;
+    padding: 12px 15px;
+    text-align: center;
+    margin-bottom: 40px;
+    svg,span{
+      vertical-align: middle;
+    }
+    span{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      color: #469AF7;
+      padding-left:10px;
+    }
+  }
+  &__price{
+    background: #F4F6FB;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    p{
+      margin: 0;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1F3349;
+      &.p-price{
+        font-size: 24px;
+        line-height: 24px;
+        margin: 15px 0 0;
+      }
+    }
+  }
+}
