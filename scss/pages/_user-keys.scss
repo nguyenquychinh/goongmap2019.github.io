@@ -107,12 +107,7 @@
             }
             .dropdown-link{
               span{
-                padding-left: 30px;
-              }
-              &.edit{
-                span{
-                  padding-left: 15px;
-                }
+                padding-left: 15px;
               }
             }
           }
@@ -215,7 +210,6 @@
     text-align: center;
     .btn{
       width: 250px;
-      text-transform: initial;
     }
   }
 }

@@ -141,7 +141,7 @@
     }
   }
   &__price{
-    background: #F4F6FB;
+    background:rgba(244, 246, 251, 0.8);
     border-radius: 10px;
     padding: 15px;
     text-align: center;
@@ -155,6 +155,13 @@
         line-height: 24px;
         margin: 15px 0 0;
       }
+    }
+    a{
+      font-size: 14px;
+      line-height: 16px;
+      color: #469AF7;
+      display: inline-block;
+      margin-top: 15px;
     }
   }
 }

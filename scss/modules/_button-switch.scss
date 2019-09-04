@@ -1,0 +1,71 @@
+.button-switch {
+  height: 1.875em;
+  position: relative;
+  width: 4.5em;
+  font-size: 1.3em;
+}
+.button-switch .lbl-off, .button-switch .lbl-on {
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1em;
+  position: absolute;
+  top: 0.5em;
+  transition: opacity 0.25s ease-out 0.1s;
+  text-transform: uppercase;
+  margin: 0;
+}
+.button-switch .lbl-off {
+  right: 0.4375em;
+}
+.button-switch .lbl-on {
+  color: #fefefe;
+  opacity: 0;
+  left: 0.4375em;
+}
+.button-switch .switch {
+  height: 0;
+  font-size: 1em;
+  left: 0;
+  line-height: 0;
+  outline: none;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+.button-switch .switch:before, .button-switch .switch:after {
+  content: '';
+  font-size: 1em;
+  position: absolute;
+}
+.button-switch .switch:before {
+  border: 1px solid #F0F2F8;
+  border-radius: 1.25em;
+  background:rgba(244,246,251,.8);
+  height: 1.875em;
+  left: -0.25em;
+  top: -0.1875em;
+  transition: background-color 0.25s ease-out 0.1s;
+  width: 4.5em;
+}
+.button-switch .switch:after {
+  border-radius: 50%;
+  background:#E5E8F0;
+  height: 1.5em;
+  transform: translate(0, 0);
+  transition: transform 0.25s ease-out 0.1s;
+  width: 1.5em;
+}
+.button-switch .switch:checked:after {
+  transform: translate(2.5em, 0);
+}
+.button-switch .switch:checked ~ .lbl-off {
+  opacity: 0;
+}
+.button-switch .switch:checked ~ .lbl-on {
+  opacity: 1;
+}
+.button-switch .switch#switch-blue:checked:before {
+  background: $main-color;
+}
