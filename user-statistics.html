@@ -94,76 +94,101 @@
       </div>
     </header>
     <main class="goong-wrapper">
-      <section class="goong-billing">
+      <section class="goong-statis">
         <div class="container">
-          <div class="billing-detail">
-            <div class="billing-detail__header">
-              <div class="flex-box">
-                <div class="flex-box__left">
-                  <div class="heading">
-                    <h5>Billing</h5>
-                  </div>
+          <div class="goong-statis__body">
+            <div class="heading">
+              <h5>Statistics</h5>
+            </div>
+            <div class="goong-statis__item">
+              <div class="goong-chart">
+                <div class="goong-chart__text">
+                  <h5 class="goong-chart__title">Map</h5>
+                  <p class="p1">Map Load Total</p>
+                  <p class="medium">89,216</p>
+                  <p class="p2">monthly load map</p>
                 </div>
-                <div class="flex-box__right">
-                  <div class="flex-box__btn">
-                    <button type="button" class="btn btn-blue">Export Invoice</button>
+                <div class="goong-chart__content">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+              <div class="goong-statis__line">
+                <button type="button" class="goong-statis__btn">
+                  <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.589844 11.34L5.16984 6.75L0.589844 2.16L1.99984 0.75L7.99984 6.75L1.99984 12.75L0.589844 11.34Z" fill="#469AF7"></path>
+                  </svg><span>Expand to view detailed</span>
+                </button>
+              </div>
+              <div class="goong-statis__list hidden">
+                <div class="goong-chart">
+                  <div class="goong-chart__text">
+                    <p class="p1">Embedded Map</p>
+                    <p class="medium">9,216</p>
+                    <p class="p2">monthly load map</p>
                   </div>
+                  <div class="goong-chart__content"><img src="images/chart.png"></div>
+                </div>
+                <div class="goong-chart">
+                  <div class="goong-chart__text">
+                    <p class="p1">Embedded Map Advanced</p>
+                    <p class="medium">834</p>
+                    <p class="p2">monthly load map</p>
+                  </div>
+                  <div class="goong-chart__content"><img src="images/chart.png"></div>
+                </div>
+                <div class="goong-chart">
+                  <div class="goong-chart__text">
+                    <p class="p1">Static Map</p>
+                    <p class="medium">7,582</p>
+                    <p class="p2">monthly load map</p>
+                  </div>
+                  <div class="goong-chart__content"><img src="images/chart.png"></div>
                 </div>
               </div>
             </div>
-            <div class="billing-detail__body">
-              <div class="billing-detail__left">
-                <div class="billing-detail__info">
-                  <div class="billing-detail__line">
-                    <p class="p1">BILL ID</p>
-                    <p class="p2">in_9TYVOh4aAHU3z7</p>
-                  </div>
-                  <div class="billing-detail__line">
-                    <p class="p1">BILL DATE</p>
-                    <p class="p2">Oct 31, 2016</p>
-                  </div>
-                  <div class="billing-detail__line">
-                    <p class="p1">BILLED FROM</p>
-                    <p class="p2"><span class="medium">GOONG Inc.</span>91 Trung Kính Street, 5th Floor<br>Nhân Chính District, Hà Nội City.</p>
-                  </div>
-                  <div class="billing-detail__line">
-                    <p class="p1">BILLED TO</p>
-                    <p class="p2"><span class="medium">Maxx16t</span>maxx16t@gmail.com
-                      <button type="button" class="btn-add">+ Add additional info</button>
-                    </p>
-                  </div>
+            <div class="goong-statis__item">
+              <div class="goong-chart">
+                <div class="goong-chart__text">
+                  <h5 class="goong-chart__title">APIs</h5>
+                  <p class="p1">API Request Total</p>
+                  <p class="medium">36,516</p>
+                  <p class="p2">monthly request api</p>
                 </div>
-                <div class="billing-detail__charges">
-                  <p class="p-title">Details of charges</p>
-                  <div class="charges-comp">
-                    <div class="charges-comp__line">
-                      <p>Premium plan for Oct 31 - Nov 30</p>
-                      <p class="medium">$499.00</p>
-                    </div>
-                    <div class="charges-comp__line">
-                      <p>Total charges</p>
-                      <p class="medium">$499.00</p>
-                    </div>
-                    <div class="charges-comp__line">
-                      <p>Amount due</p>
-                      <p class="medium">$499.00</p>
-                    </div>
-                  </div>
-                  <div class="billing-detail__contact">
-                    <p>Have questions about your invoice?&nbsp;<a>Contact us.</a></p>
-                  </div>
+                <div class="goong-chart__content">
+                  <!--canvas#myChart2--><img src="images/chart.png">
                 </div>
               </div>
-              <div class="billing-detail__right">
-                <div class="billing-detail__status">
-                  <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.475 4.475 0 10 0C15.52 0 20 4.475 20 10C20 15.52 15.52 20 10 20C4.475 20 0 15.52 0 10ZM3 10L8 15L17 6L15.585 4.585L8 12.17L4.415 8.585L3 10Z" fill="#469AF7"></path>
-                  </svg><span>Paid</span>
+              <div class="goong-statis__line">
+                <button type="button" class="goong-statis__btn">
+                  <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.589844 11.34L5.16984 6.75L0.589844 2.16L1.99984 0.75L7.99984 6.75L1.99984 12.75L0.589844 11.34Z" fill="#469AF7"></path>
+                  </svg><span>Expand to view detailed</span>
+                </button>
+              </div>
+              <div class="goong-statis__list hidden">
+                <div class="goong-chart">
+                  <div class="goong-chart__text">
+                    <p class="p1">Embedded Map</p>
+                    <p class="medium">9,216</p>
+                    <p class="p2">monthly load map</p>
+                  </div>
+                  <div class="goong-chart__content"><img src="images/chart.png"></div>
                 </div>
-                <div class="billing-detail__price">
-                  <p class="medium">Amount due for</p>
-                  <p>Oct 31, 2016</p>
-                  <p class="p-price">$499.00</p>
+                <div class="goong-chart">
+                  <div class="goong-chart__text">
+                    <p class="p1">Embedded Map Advanced</p>
+                    <p class="medium">834</p>
+                    <p class="p2">monthly load map</p>
+                  </div>
+                  <div class="goong-chart__content"><img src="images/chart.png"></div>
+                </div>
+                <div class="goong-chart">
+                  <div class="goong-chart__text">
+                    <p class="p1">Static Map</p>
+                    <p class="medium">7,582</p>
+                    <p class="p2">monthly load map</p>
+                  </div>
+                  <div class="goong-chart__content"><img src="images/chart.png"></div>
                 </div>
               </div>
             </div>
@@ -189,6 +214,7 @@
       </div>
     </footer>
     <script src="js/libs/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
     <script src="js/main.js"></script>
     <script>
       $('.goong-navbar__toggle').click(function () {
@@ -197,6 +223,78 @@
       
       $('.menu-mobile__backdrop').click(function () {
           $('body').removeClass('open-menu-mobile');
+      });
+    </script>
+    <script>
+      $('.navbar-settings__toggle').click(function () {
+          $('.navbar-settings').toggleClass('open');
+      });
+    </script>
+    <script>
+      $('.goong-statis__btn').click(function () {
+          var goongStatisList = $(this).parents('.goong-statis__item').find('.goong-statis__list');
+          if($(this).hasClass('expand')) {
+              goongStatisList.addClass('hidden');
+              $(this).removeClass('expand');
+              $(this).find('span').text('Expand to view detailed');
+      
+          } else {
+              goongStatisList.removeClass('hidden');
+              $(this).addClass('expand');
+              $(this).find('span').text('Collapse infomations');
+          }
+      
+      });
+    </script>
+    <script>
+      var ctx = document.getElementById('myChart');
+      var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: ['19/7', '22/7', '25/7', '28/7', '31/7', '3/8', '6/8', '9/8', '12/8', '15/8', '18/8', '21/8'],
+              datasets: [{
+                  label: '',
+                  data: [1, 4, 3, 5, 2, 3, 5, 7, 6, 6, 3, 4],
+                  backgroundColor: [
+                      'rgba(70, 154, 247, 0.3)',
+                      'rgba(70, 154, 247, 0.3)',
+                      'rgba(70, 154, 247, 0.3)',
+                      'rgba(70, 154, 247, 0.3)',
+                      'rgba(70, 154, 247, 0.3)',
+                      'rgba(70, 154, 247, 0.3)',
+                      'rgba(70, 154, 247, 0.3)',
+                      'rgba(70, 154, 247, 0.3)',
+                      'rgba(70, 154, 247, 0.3)',
+                      'rgba(70, 154, 247, 0.3)',
+                      'rgba(70, 154, 247, 0.3)',
+                      'rgba(70, 154, 247, 0.3)'
+                  ],
+                  borderColor: [
+                      'rgb(70, 154, 247)',
+                      'rgb(70, 154, 247)',
+                      'rgb(70, 154, 247)',
+                      'rgb(70, 154, 247)',
+                      'rgb(70, 154, 247)',
+                      'rgb(70, 154, 247)',
+                      'rgb(70, 154, 247)',
+                      'rgb(70, 154, 247)',
+                      'rgb(70, 154, 247)',
+                      'rgb(70, 154, 247)',
+                      'rgb(70, 154, 247)',
+                      'rgb(70, 154, 247)'
+                  ],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero: true
+                      }
+                  }]
+              }
+          }
       });
     </script>
   </body>

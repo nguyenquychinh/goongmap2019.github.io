@@ -1,0 +1,171 @@
+- var page = "user-statistics";
+doctype html
+html(lang="vi")
+    head
+        include jades/head
+    body(ontouchstart='')
+        include jades/menu-mobile-login.jade
+        include jades/header-login.jade
+
+        main.goong-wrapper
+            section.goong-statis
+                .container
+                    .goong-statis__body
+                        .heading
+                            h5 Statistics
+                        .goong-statis__item
+                            .goong-chart
+                                .goong-chart__text
+                                    h5.goong-chart__title Map
+                                    p.p1 Map Load Total
+                                    p.medium 89,216
+                                    p.p2 monthly load map
+                                .goong-chart__content
+                                    canvas#myChart
+                            .goong-statis__line
+                                button.goong-statis__btn(type='button')
+                                    svg(width='8', height='13', viewbox='0 0 8 13', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M0.589844 11.34L5.16984 6.75L0.589844 2.16L1.99984 0.75L7.99984 6.75L1.99984 12.75L0.589844 11.34Z', fill='#469AF7')
+                                    span Expand to view detailed
+                            .goong-statis__list.hidden
+                                .goong-chart
+                                    .goong-chart__text
+                                        p.p1 Embedded Map
+                                        p.medium 9,216
+                                        p.p2 monthly load map
+                                    .goong-chart__content
+                                        img(src='images/chart.png')
+                                .goong-chart
+                                    .goong-chart__text
+                                        p.p1 Embedded Map Advanced
+                                        p.medium 834
+                                        p.p2 monthly load map
+                                    .goong-chart__content
+                                        img(src='images/chart.png')
+                                .goong-chart
+                                    .goong-chart__text
+                                        p.p1 Static Map
+                                        p.medium 7,582
+                                        p.p2 monthly load map
+                                    .goong-chart__content
+                                        img(src='images/chart.png')
+                        .goong-statis__item
+                            .goong-chart
+                                .goong-chart__text
+                                    h5.goong-chart__title APIs
+                                    p.p1 API Request Total
+                                    p.medium 36,516
+                                    p.p2 monthly request api
+                                .goong-chart__content
+                                    //canvas#myChart2
+                                    img(src='images/chart.png')
+                            .goong-statis__line
+                                button.goong-statis__btn(type='button')
+                                    svg(width='8', height='13', viewbox='0 0 8 13', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M0.589844 11.34L5.16984 6.75L0.589844 2.16L1.99984 0.75L7.99984 6.75L1.99984 12.75L0.589844 11.34Z', fill='#469AF7')
+                                    span Expand to view detailed
+                            .goong-statis__list.hidden
+                                .goong-chart
+                                    .goong-chart__text
+                                        p.p1 Embedded Map
+                                        p.medium 9,216
+                                        p.p2 monthly load map
+                                    .goong-chart__content
+                                        img(src='images/chart.png')
+                                .goong-chart
+                                    .goong-chart__text
+                                        p.p1 Embedded Map Advanced
+                                        p.medium 834
+                                        p.p2 monthly load map
+                                    .goong-chart__content
+                                        img(src='images/chart.png')
+                                .goong-chart
+                                    .goong-chart__text
+                                        p.p1 Static Map
+                                        p.medium 7,582
+                                        p.p2 monthly load map
+                                    .goong-chart__content
+                                        img(src='images/chart.png')
+        include jades/footer.jade
+        script(src="js/libs/jquery.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js")
+        script(src="js/main.js")
+        script.
+            $('.goong-navbar__toggle').click(function () {
+                $('body').addClass('open-menu-mobile');
+            });
+
+            $('.menu-mobile__backdrop').click(function () {
+                $('body').removeClass('open-menu-mobile');
+            });
+        script.
+            $('.navbar-settings__toggle').click(function () {
+                $('.navbar-settings').toggleClass('open');
+            });
+        script.
+            $('.goong-statis__btn').click(function () {
+                var goongStatisList = $(this).parents('.goong-statis__item').find('.goong-statis__list');
+                if($(this).hasClass('expand')) {
+                    goongStatisList.addClass('hidden');
+                    $(this).removeClass('expand');
+                    $(this).find('span').text('Expand to view detailed');
+
+                } else {
+                    goongStatisList.removeClass('hidden');
+                    $(this).addClass('expand');
+                    $(this).find('span').text('Collapse infomations');
+                }
+
+            });
+        script.
+            var ctx = document.getElementById('myChart');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['19/7', '22/7', '25/7', '28/7', '31/7', '3/8', '6/8', '9/8', '12/8', '15/8', '18/8', '21/8'],
+                    datasets: [{
+                        label: '',
+                        data: [1, 4, 3, 5, 2, 3, 5, 7, 6, 6, 3, 4],
+                        backgroundColor: [
+                            'rgba(70, 154, 247, 0.3)',
+                            'rgba(70, 154, 247, 0.3)',
+                            'rgba(70, 154, 247, 0.3)',
+                            'rgba(70, 154, 247, 0.3)',
+                            'rgba(70, 154, 247, 0.3)',
+                            'rgba(70, 154, 247, 0.3)',
+                            'rgba(70, 154, 247, 0.3)',
+                            'rgba(70, 154, 247, 0.3)',
+                            'rgba(70, 154, 247, 0.3)',
+                            'rgba(70, 154, 247, 0.3)',
+                            'rgba(70, 154, 247, 0.3)',
+                            'rgba(70, 154, 247, 0.3)'
+                        ],
+                        borderColor: [
+                            'rgb(70, 154, 247)',
+                            'rgb(70, 154, 247)',
+                            'rgb(70, 154, 247)',
+                            'rgb(70, 154, 247)',
+                            'rgb(70, 154, 247)',
+                            'rgb(70, 154, 247)',
+                            'rgb(70, 154, 247)',
+                            'rgb(70, 154, 247)',
+                            'rgb(70, 154, 247)',
+                            'rgb(70, 154, 247)',
+                            'rgb(70, 154, 247)',
+                            'rgb(70, 154, 247)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+
+
