@@ -1,0 +1,59 @@
+.goong-app{
+  &__intro{
+    position: relative;
+    background-color: #fff;
+    .intro-box{
+      &__title{
+        &:before{
+          display: none;
+        }
+        .p4{
+          font-weight: 500;
+          font-size: 38px;
+          line-height: 44px;
+          color: #1F3349;
+        }
+      }
+      &__content{
+        @include breakpoint(sm){
+          width: 50%;
+        }
+      }
+      &__map{
+        @include breakpoint(sm){
+          width: 50%;
+        }
+      }
+      &__btn{
+
+        width: auto;
+        @include breakpoint(md){
+          display: flex;
+          justify-content: space-between;
+          margin: 0 -15px;
+        }
+        .d-block{
+          padding: 10px 0;
+          @include breakpoint(md){
+            width: 50%;
+            padding: 0 15px;
+          }
+        }
+        .btn{
+          width: 100%;
+          font-size: initial;
+          line-height: initial;
+          svg,span,img{
+            vertical-align: middle;
+          }
+          img{
+            width: 30px;
+          }
+          span{
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
