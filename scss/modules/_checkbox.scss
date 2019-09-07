@@ -26,9 +26,7 @@
     text-align: center;
   }
   input[type="checkbox"]:checked + label:before {
-    font-family:'Font Awesome\ 5 Free';
-    content: '\f00c';
-    font-weight:$black;
-    color:#469AF7;
+    content: '';
+    background: url(../images/i-check.svg) no-repeat center center;
   }
 }

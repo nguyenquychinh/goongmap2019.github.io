@@ -1,38 +1,5 @@
 @font-face {
   font-family: "Roboto";
-  src: url(../webfonts/Roboto/Thin/Roboto-Thin.woff2?v=2.137) format("woff2"),
-  url(../webfonts/Roboto/Thin/Roboto-Thin.woff?v=2.137) format("woff"),
-  url(../webfonts/Roboto/Thin/Roboto-Thin.ttf?v=2.137) format("ttf");
-  font-weight: $thin;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(../webfonts/Roboto/ThinItalic/Roboto-ThinItalic.woff2?v=2.137) format("woff2"),
-  url(../webfonts/Roboto/ThinItalic/Roboto-ThinItalic.woff?v=2.137) format("woff"),
-  url(../webfonts/Roboto/ThinItalic/Roboto-ThinItalic.ttf?v=2.137) format("ttf");
-  font-weight: $thin;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url(../webfonts/Roboto/Light/Roboto-Light.woff2?v=2.137) format("woff2"),
-  url(../webfonts/Roboto/Light/Roboto-Light.woff?v=2.137) format("woff"),
-  url(../webfonts/Roboto/Light/Roboto-Light.ttf?v=2.137) format("ttf");
-  font-weight: $light;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(../webfonts/Roboto/LightItalic/Roboto-LightItalic.woff2?v=2.137) format("woff2"),
-  url(../webfonts/Roboto/LightItalic/Roboto-LightItalic.woff?v=2.137) format("woff"),
-  url(../webfonts/Roboto/LightItalic/Roboto-LightItalic.ttf?v=2.137) format("ttf");
-  font-weight: $light;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Roboto";
   src: url(../webfonts/Roboto/Regular/Roboto-Regular.woff2?v=2.137) format("woff2"),
   url(../webfonts/Roboto/Regular/Roboto-Regular.woff?v=2.137) format("woff"),
   url(../webfonts/Roboto/Regular/Roboto-Regular.ttf?v=2.137) format("ttf");
@@ -87,25 +54,5 @@
   url(../webfonts/Roboto/BoldItalic/Roboto-BoldItalic.woff?v=2.137) format("woff"),
   url(../webfonts/Roboto/BoldItalic/Roboto-BoldItalic.ttf?v=2.137) format("ttf");
   font-weight: $bold;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: "Roboto";
-  src: url(../webfonts/Roboto/Black/Roboto-Black.woff2?v=2.137) format("woff2"),
-  url(../webfonts/Roboto/Black/Roboto-Black.woff?v=2.137) format("woff"),
-  url(../webfonts/Roboto/Black/Roboto-Black.ttf?v=2.137) format("ttf");
-  font-weight: $black;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: "Roboto";
-  src: url(../webfonts/Roboto/BlackItalic/Roboto-BlackItalic.woff2?v=2.137) format("woff2"),
-  url(../webfonts/Roboto/BlackItalic/Roboto-BlackItalic.woff?v=2.137) format("woff"),
-  url(../webfonts/Roboto/BlackItalic/Roboto-BlackItalic.ttf?v=2.137) format("ttf");
-  font-weight: $black;
   font-style: italic;
 }
