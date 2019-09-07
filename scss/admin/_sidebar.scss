@@ -1,0 +1,87 @@
+.sidebar{
+  width: 280px;
+  height: 100vh;
+  background-color: #fff;
+  &__body{
+    height: calc(100% - 91px);
+  }
+  &__logo{
+    padding: 25px 40px;
+    border-bottom: 1px solid #efefef;
+    h1{
+      a{
+        display: block;
+        img{
+          width: 127px;
+        }
+      }
+    }
+  }
+  &__navbar{
+    height: calc(100% - 70px);
+  }
+  &__account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 15px 40px;
+    border-top: 1px solid #efefef;
+    p{
+      margin: 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1F3349;
+      display: flex;
+      align-items: center;
+      padding-right: 10px;
+      img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      span{
+        padding-left: 10px;
+        width: calc(100% - 40px);
+      }
+    }
+  }
+}
+.admin-navbar{
+  &__item{
+    &.active{
+      .admin-navbar__link{
+        background-color: #F2F8FF;
+        border-left: 4px solid #8CC8FF;
+      }
+    }
+  }
+  &__link{
+    font-size: 16px;
+    line-height: 19px;
+    color:rgba(86, 101, 113, 0.5);
+    display: flex;
+    padding: 15px 20px 15px 40px;
+    transition: all .2s;
+    &:hover{
+      color: $main-color;
+    }
+    .span-svg{
+      width: 25px;
+    }
+    span{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .span-svg{
+      svg{
+        display: block;
+      }
+    }
+    .span-text{
+      padding-left: 10px;
+      width: calc(100% - 25px);
+    }
+  }
+}
