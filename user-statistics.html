@@ -108,9 +108,7 @@
                   <p class="medium">89,216</p>
                   <p class="p2">monthly load map</p>
                 </div>
-                <div class="goong-chart__content">
-                  <canvas id="myChart"></canvas>
-                </div>
+                <div class="goong-chart__content"><img src="images/chart.png"></div>
               </div>
               <div class="goong-statis__line">
                 <button type="button" class="goong-statis__btn">
@@ -214,7 +212,7 @@
       </div>
     </footer>
     <script src="js/libs/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <!--script(src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js")-->
     <script src="js/main.js"></script>
     <script>
       $('.goong-navbar__toggle').click(function () {
@@ -244,57 +242,6 @@
               $(this).find('span').text('Collapse infomations');
           }
       
-      });
-    </script>
-    <script>
-      var ctx = document.getElementById('myChart');
-      var myChart = new Chart(ctx, {
-          type: 'line',
-          data: {
-              labels: ['19/7', '22/7', '25/7', '28/7', '31/7', '3/8', '6/8', '9/8', '12/8', '15/8', '18/8', '21/8'],
-              datasets: [{
-                  label: '',
-                  data: [1, 4, 3, 5, 2, 3, 5, 7, 6, 6, 3, 4],
-                  backgroundColor: [
-                      'rgba(70, 154, 247, 0.3)',
-                      'rgba(70, 154, 247, 0.3)',
-                      'rgba(70, 154, 247, 0.3)',
-                      'rgba(70, 154, 247, 0.3)',
-                      'rgba(70, 154, 247, 0.3)',
-                      'rgba(70, 154, 247, 0.3)',
-                      'rgba(70, 154, 247, 0.3)',
-                      'rgba(70, 154, 247, 0.3)',
-                      'rgba(70, 154, 247, 0.3)',
-                      'rgba(70, 154, 247, 0.3)',
-                      'rgba(70, 154, 247, 0.3)',
-                      'rgba(70, 154, 247, 0.3)'
-                  ],
-                  borderColor: [
-                      'rgb(70, 154, 247)',
-                      'rgb(70, 154, 247)',
-                      'rgb(70, 154, 247)',
-                      'rgb(70, 154, 247)',
-                      'rgb(70, 154, 247)',
-                      'rgb(70, 154, 247)',
-                      'rgb(70, 154, 247)',
-                      'rgb(70, 154, 247)',
-                      'rgb(70, 154, 247)',
-                      'rgb(70, 154, 247)',
-                      'rgb(70, 154, 247)',
-                      'rgb(70, 154, 247)'
-                  ],
-                  borderWidth: 1
-              }]
-          },
-          options: {
-              scales: {
-                  yAxes: [{
-                      ticks: {
-                          beginAtZero: true
-                      }
-                  }]
-              }
-          }
       });
     </script>
   </body>
