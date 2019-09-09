@@ -105,14 +105,16 @@
       padding: 0 0 0 15px;
     }
     @include breakpoint(md){
-      width: calc((100% - 960px)/2 + 639.99px);
+      width: calc((100% - 960px)/2 + 640px);
     }
     @include breakpoint(lg){
-      width: calc((100% - 1140px)/2 + 759.99px);
+      width: calc((100% - 1140px)/2 + 760px);
     }
     img{
       width: 100%;
       height: 100%;
+      object-fit: cover;
+      border-radius: 0 0 0 80px;
     }
   }
 }
@@ -170,14 +172,16 @@
       padding: 0 15px 0 0;
     }
     @include breakpoint(md){
-      width: calc((100% - 960px)/2 + 319.99px);
+      width: calc((100% - 960px)/2 + 320px);
     }
     @include breakpoint(lg){
-      width: calc((100% - 1140px)/2 + 379.99px);
+      width: calc((100% - 1140px)/2 + 380px);
     }
     img{
       width: 100%;
       height: 100%;
+      object-fit: cover;
+      border-radius: 0 80px 80px 0;
     }
   }
   &__content{
@@ -355,6 +359,8 @@
     img{
       width: 100%;
       height: 100%;
+      object-fit: cover;
+      border-radius: 0 80px 80px 0;
     }
   }
   &__content{

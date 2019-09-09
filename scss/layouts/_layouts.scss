@@ -7,6 +7,6 @@
 
 .goong-wrapper{
   @include breakpoint(md){
-    min-height: calc(100vh - 192px);
+    min-height: 100vh;
   }
 }

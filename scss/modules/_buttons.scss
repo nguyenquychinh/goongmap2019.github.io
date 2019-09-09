@@ -14,27 +14,6 @@
   touch-action: manipulation;
   cursor: pointer;
   user-select: none;
-  overflow: hidden;
-  &:before{
-    @include breakpoint(md){
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255,255,255,0.35);
-      transition: transform 0.3s ease;
-      transform: translateY(-100%);
-    }
-  }
-  &:hover{
-    @include breakpoint(md){
-      &:before{
-        transform: translateY(100%);
-      }
-    }
-  }
   &.btn-lg{
     @include breakpoint(md){
       font-size: 24px;
@@ -47,16 +26,34 @@
   background: linear-gradient(348.64deg, #3197F8 1.17%, #51C5FE 99.21%);
   box-shadow: 0 22px 34px rgba(47, 130, 218, 0.197225);
   color: $white-1;
+  transition: all .3s ease-in-out;
+  &:hover{
+    @include breakpoint(md){
+      background-size: 300% 100%;
+    }
+  }
 }
 .btn-blue{
   background: $blue-2;
   box-shadow: 0 8px 12px rgba(47, 130, 218, 0.102245);
   color: $white-1;
+  transition: all .3s ease-in-out;
+  &:hover{
+    @include breakpoint(md){
+      background: #2e6be6;
+    }
+  }
 }
 .btn-blue2{
   background: $blue-2;
   box-shadow: 0 8px 12px rgba(47, 130, 218, 0.102245);
   color: $white-1;
+  transition: all .3s ease-in-out;
+  &:hover{
+    @include breakpoint(md){
+      background: #2e6be6;
+    }
+  }
 }
 .btn-red{
   background: $red-1;
