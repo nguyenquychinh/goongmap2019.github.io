@@ -159,8 +159,17 @@
     }
   }
   &__form{
+    @include breakpoint(sm){
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
     .form-group{
       margin-bottom: 30px;
+      @include breakpoint(sm){
+        width: 50%;
+        padding: 0 15px;
+      }
       > label{
         font-weight: 500;
         font-size: 16px;
@@ -186,6 +195,8 @@
   &__btn{
     @include breakpoint(sm){
       text-align: right;
+      width: 100%;
+      padding: 0 15px;
     }
     .btn{
       width: 100%;
