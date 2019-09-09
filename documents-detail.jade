@@ -1,0 +1,35 @@
+- var page = "documents-detail";
+doctype html
+html(lang="vi")
+    head
+        include jades/head
+    body(ontouchstart='')
+        include jades/menu-mobile.jade
+        include jades/header.jade
+
+        main.goong-wrapper
+            section.goong-docs
+                .container
+                    .manual-docs
+                        .manual-docs__left
+
+                        .manual-docs__right
+        include jades/footer.jade
+        script(src="js/libs/jquery.min.js")
+        script(src="js/main.js")
+        script.
+            $(".form-sign__btn .btn").click(function () {
+                var tab_id = $(this).attr('data-id');
+                $('.form-sign').addClass('d-none');
+                $("#" + tab_id).removeClass('d-none');
+            });
+            $('.goong-navbar__toggle').click(function () {
+                $('body').addClass('open-menu-mobile');
+            });
+
+            $('.menu-mobile__backdrop').click(function () {
+                $('body').removeClass('open-menu-mobile');
+            });
+
+
+
