@@ -1,0 +1,78 @@
+.goong-faq{
+  background-color: #fff;
+  min-height: 100vh;
+  padding-bottom: 30px;
+  &__top{
+    position: relative;
+    margin-bottom: 40px;
+  }
+  &__content{}
+  &__result{
+    li{
+      padding-bottom: 50px;
+      p{
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0;
+        color: #566571;
+        &.medium{
+          font-size: 18px;
+          line-height: 21px;
+          margin: 0 0 20px;
+          color: #1F3349;
+        }
+      }
+    }
+  }
+}
+.faq-box{
+  &__title{
+    margin-bottom: 20px;
+    @include breakpoint(xs){
+      text-align: center;
+    }
+    h5{
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 45px;
+      color: #1F3349;
+    }
+  }
+  &__list{
+    li{
+      button{
+        font-size: 16px;
+        line-height: 30px;
+        color: #48A0F8;
+        text-align: left;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__content{
+    padding:40px 0;
+    @include breakpoint(sm){
+      width: 50%;
+      padding: 80px 15px 20px 0;
+    }
+  }
+  &__bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    padding: 0 0 0 15px;
+    @include breakpoint(xs){
+      display: none;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0 0 0 80px;
+    }
+  }
+}

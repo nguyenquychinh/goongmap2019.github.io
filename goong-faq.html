@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>GOONG</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body ontouchstart="">
+    <div class="menu-mobile">
+      <div class="menu-mobile__main">
+        <div class="menu-mobile__header">
+          <button type="button" class="menu-mobile__login"><img src="images/avatar.png"><span>Nguyen Tuan</span></button>
+        </div>
+        <div class="menu-mobile__content">
+          <ul class="menu-mobile__list">
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Item 1</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Item 2</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Item 3</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Item 4</a></li>
+          </ul>
+          <ul class="menu-mobile__list">
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Services</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Mobile Apps</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Live Map</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Documents</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-mobile__backdrop"></div>
+    </div>
+    <header class="goong-header">
+      <div class="container">
+        <div class="goong-header__navbar">
+          <div class="goong-navbar">
+            <div class="goong-navbar__logo">
+              <h1><a href="index.html"><img src="images/goong-logo-2x.png"></a></h1>
+            </div>
+            <button type="button" class="goong-navbar__toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 53 53" xml:space="preserve" width="30px" height="30px">
+                <g>
+                  <path d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z" fill="#1F3349"></path>&#x9;&#x9;
+                  <path d="M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z" fill="#1F3349"></path>&#x9;&#x9;
+                  <path d="M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z" fill="#1F3349"></path>
+                </g>
+              </svg>
+            </button>
+            <ul class="goong-navbar__nav">
+              <li class="goong-navbar__item active"><a href="index.html" class="goong-navbar__link">Services</a></li>
+              <li class="goong-navbar__item"><a href="goong-app.html" class="goong-navbar__link">Mobile Apps</a></li>
+              <li class="goong-navbar__item"><a href="https://maps.goong.io/" class="goong-navbar__link">Live Map</a></li>
+              <li class="goong-navbar__item"><a href="documents.html" class="goong-navbar__link">Documents</a></li>
+              <li class="goong-navbar__item">
+                <button type="button" data-toggle="modal" data-target="#formLogin" class="goong-navbar__link">Sign In</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="formLogin" class="modal fade">
+      <div class="modal-dialog modal-login">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id="box-1" class="form-sign">
+              <div class="form-sign__img"><img src="images/map-login.png"></div>
+              <div class="form-sign__content">
+                <h2 class="form-sign__title">Sign In</h2>
+                <div class="form-sign__form">
+                  <div data-tip="Yêu cầu nhập địa chỉ email." class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <div class="form-sign__line">
+                      <div class="checkbox">
+                        <input type="checkbox" id="star1">
+                        <label for="star1">Remember Sign In</label>
+                      </div>
+                      <button type="button" class="form-sign__pass">Forget Password?</button>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-sign__btn">
+                      <div class="d-block">
+                        <button type="button" data-id="box-2" class="btn btn-outline">Sign Up</button>
+                      </div>
+                      <div class="d-block">
+                        <button type="button" data-id="box-1" class="btn btn-gradient">Sign In</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-sign__border"><span>Or</span></div>
+                <div class="form-sign__social">
+                  <button type="button" class="btn btn-blue2">Sign In with Facebook</button>
+                  <button type="button" class="btn btn-red">Sign In with Google</button>
+                </div>
+              </div>
+            </div>
+            <div id="box-2" class="form-sign d-none">
+              <div class="form-sign__img"><img src="images/map-login.png"></div>
+              <div class="form-sign__content">
+                <h2 class="form-sign__title">Sign Up</h2>
+                <div class="form-sign__form">
+                  <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Cofirm Password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="First Name" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Last Name" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <div class="form-sign__line">
+                      <p>The password is displayed to help you check more accurately</p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-sign__btn">
+                      <div class="d-block">
+                        <button type="button" data-id="box-2" class="btn btn-outline">Sign Up</button>
+                      </div>
+                      <div class="d-block">
+                        <button type="button" data-id="box-1" class="btn btn-gradient">Sign In</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-sign__border"><span>Or</span></div>
+                <div class="form-sign__social">
+                  <button type="button" class="btn btn-blue2">Sign In with Facebook</button>
+                  <button type="button" class="btn btn-red">Sign In with Google</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="goong-wrapper">
+      <section class="goong-faq">
+        <div class="goong-faq__top">
+          <div class="container">
+            <div class="faq-box">
+              <div class="faq-box__content">
+                <div class="faq-box__title">
+                  <h5>FAQs</h5>
+                </div>
+                <ul class="faq-box__list">
+                  <li>
+                    <button type="button">1. Pellentesque eget ipsum fringilla neque viverra dapibus.</button>
+                  </li>
+                  <li>
+                    <button type="button">2. Pellentesque ac nulla et leo mattis vestibulum posuere ac metus.</button>
+                  </li>
+                  <li>
+                    <button type="button">3. Nulla id sem eu massa consectetur euismod in et nibh.</button>
+                  </li>
+                  <li>
+                    <button type="button">4. In malesuada ligula in dolor ullamcorper sagittis.</button>
+                  </li>
+                  <li>
+                    <button type="button">5. Phasellus ac dolor quis magna lacinia pulvinar vel nec nisi.</button>
+                  </li>
+                  <li>
+                    <button type="button">6. Maecenas condimentum magna vel erat egestas ultrices.</button>
+                  </li>
+                  <li>
+                    <button type="button">7. Curabitur et nibh tristique, finibus dolor vitae, consectetur ante.</button>
+                  </li>
+                  <li>
+                    <button type="button">8. Nam eget lorem blandit, tincidunt dui quis, pharetra massa.</button>
+                  </li>
+                  <li>
+                    <button type="button">9. Nulla at mi fermentum sem egestas tempus.</button>
+                  </li>
+                  <li>
+                    <button type="button">10. Nullam quis nunc sit amet enim dapibus aliquet non sed augue.</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="faq-box__bg"><img src="images/bg-faqs.png"></div>
+            </div>
+          </div>
+        </div>
+        <div class="goong-faq__content">
+          <div class="container">
+            <ul class="goong-faq__result">
+              <li>
+                <p class="medium">01. Pellentesque eget ipsum fringilla neque viverra dapibus.</p>
+                <p>Chính sách về Quyền riêng tư này mô tả chi tiết chính sách và các nguyên tắc của chúng tôi liên quan đến việc thu thập, sử dụng và tiết lộ thông tin về bạn</p>
+                <p>Chúng tôi hiểu rằng việc cung cấp thông tin trực tuyến cần rất nhiều sự tin tưởng từ phía bạn. Chúng tôi rất coi trọng niềm tin này và dành ưu tiên cao cho việc đảm bảo an toàn và tính bảo mật cho thông tin cá nhân mà bạn cung cấp cho chúng tôi khi bạn truy cập Trang thông tin điện tử hoặc sử dụng ứng dụng của chúng tôi.</p>
+              </li>
+              <li>
+                <p class="medium">02. Pellentesque ac nulla et leo mattis vestibulum posuere ac metus.</p>
+                <p>Khi đăng ký sử dụng dịch vụ, bạn cần cung cấp cho chúng tôi một số thông tin cá nhân như: họ và tên, ngày tháng năm sinh, địa chỉ email và một số thông tin khác. Chúng tôi có thể kết hợp thông tin cá nhân do bạn cung cấp với các thông tin khác ngoài dịch vụ hoặc từ các bên thứ ba để phân tích các nội dung mà bạn quan tâm. Mỗi khi bạn đăng nhập hệ thống, Goong sẽ tự động ghi lại hoạt động của bạn</p>
+              </li>
+              <li>
+                <p class="medium">03. Nulla id sem eu massa consectetur euismod in et nibh.</p>
+                <p>Chúng tôi sử dụng thông tin cá nhân của người sử dụng để nâng cao chất lượng dịch vụ và cung cấp cho bạn những thông tin mới nhất được cập nhật. Chúng tôi có thể sử dụng thông tin cá nhân của bạn trong việc điều tra, nghiên cứu hoặc phân tích để vận hành và nâng cấp kỹ thuật của ứng dụng. Về nguyên tắc, chúng tôi không cung cấp thông tin cá nhân của bạn cho bên thứ ba, trừ các trường hợp sau: Bạn đồng ý để chúng tôi cung cấp thông tin cá nhân của bạn cho bên thứ ba.Chúng tôi cho rằng việc cung cấp thông tin cá nhân của bạn cho bên thứ ba là cần thiết. VD: Khi tuân theo các yêu cầu pháp lý, ngăn chặn tội phạm hoặc bảo vệ an ninh quốc gia, hay bảo vệ an toàn cá nhân của những người sử dụng hoặc công chúng, .v.v. Bên thứ ba là đối tượng mua lại toàn bộ hay phần lớn pháp nhân sở hữu của chúng tôi. Thông tin cá nhân là thông tin vô danh về khách ghé thăm ứng dụng hoặc goong.com. Chúng tôi có thể chia sẻ loại thông tin này cho bên thứ ba để họ có thể tìm hiểu về các loại khách truy cập website và cách họ sử dụng dịch vụ.</p>
+              </li>
+              <li>
+                <p class="medium">04. In malesuada ligula in dolor ullamcorper sagittis.</p>
+                <p>Bạn có thể sửa hoặc xóa thông tin cá nhân sau khi đăng nhập. Tuy nhiên, quá trình này có thể bị gián đoạn ở một số thời điểm do sự bất ổn của hệ thống. Chúng tôi sẽ cố gắng để bạn có thể tiếp tục sửa chữa hoặc xóa thông tin trong thời gian nhanh nhất nhưng không chịu trách nhiệm về bất kỳ vấn đề, thiệt hại nào do sự chậm trễ gây ra.</p>
+              </li>
+              <li>
+                <p class="medium">05. Phasellus ac dolor quis magna lacinia pulvinar vel nec nisi.</p>
+                <p>GOONG bảo vệ mật khẩu truy cập tài khoản của tất cả các thành viên. Tuy nhiên, chúng tôi không chịu trách nhiệm về những thiệt hại có thể xảy ra.</p>
+              </li>
+              <li>
+                <p class="medium">06. Maecenas condimentum magna vel erat egestas ultrices.</p>
+                <p>Chính sách về Quyền riêng tư này mô tả chi tiết chính sách và các nguyên tắc của chúng tôi liên quan đến việc thu thập, sử dụng và tiết lộ thông tin về bạn</p>
+                <p>Chúng tôi hiểu rằng việc cung cấp thông tin trực tuyến cần rất nhiều sự tin tưởng từ phía bạn. Chúng tôi rất coi trọng niềm tin này và dành ưu tiên cao cho việc đảm bảo an toàn và tính bảo mật cho thông tin cá nhân mà bạn cung cấp cho chúng tôi khi bạn truy cập Trang thông tin điện tử hoặc sử dụng ứng dụng của chúng tôi.</p>
+              </li>
+              <li>
+                <p class="medium">07. Curabitur et nibh tristique, finibus dolor vitae, consectetur ante.</p>
+                <p>Khi đăng ký sử dụng dịch vụ, bạn cần cung cấp cho chúng tôi một số thông tin cá nhân như: họ và tên, ngày tháng năm sinh, địa chỉ email và một số thông tin khác. Chúng tôi có thể kết hợp thông tin cá nhân do bạn cung cấp với các thông tin khác ngoài dịch vụ hoặc từ các bên thứ ba để phân tích các nội dung mà bạn quan tâm. Mỗi khi bạn đăng nhập hệ thống, Goong sẽ tự động ghi lại hoạt động của bạn</p>
+              </li>
+              <li>
+                <p class="medium">08. Nam eget lorem blandit, tincidunt dui quis, pharetra massa.</p>
+                <p>Chúng tôi sử dụng thông tin cá nhân của người sử dụng để nâng cao chất lượng dịch vụ và cung cấp cho bạn những thông tin mới nhất được cập nhật. Chúng tôi có thể sử dụng thông tin cá nhân của bạn trong việc điều tra, nghiên cứu hoặc phân tích để vận hành và nâng cấp kỹ thuật của ứng dụng. Về nguyên tắc, chúng tôi không cung cấp thông tin cá nhân của bạn cho bên thứ ba, trừ các trường hợp sau: Bạn đồng ý để chúng tôi cung cấp thông tin cá nhân của bạn cho bên thứ ba.Chúng tôi cho rằng việc cung cấp thông tin cá nhân của bạn cho bên thứ ba là cần thiết. VD: Khi tuân theo các yêu cầu pháp lý, ngăn chặn tội phạm hoặc bảo vệ an ninh quốc gia, hay bảo vệ an toàn cá nhân của những người sử dụng hoặc công chúng, .v.v. Bên thứ ba là đối tượng mua lại toàn bộ hay phần lớn pháp nhân sở hữu của chúng tôi. Thông tin cá nhân là thông tin vô danh về khách ghé thăm ứng dụng hoặc goong.com. Chúng tôi có thể chia sẻ loại thông tin này cho bên thứ ba để họ có thể tìm hiểu về các loại khách truy cập website và cách họ sử dụng dịch vụ.</p>
+              </li>
+              <li>
+                <p class="medium">09. Nulla at mi fermentum sem egestas tempus.</p>
+                <p>Bạn có thể sửa hoặc xóa thông tin cá nhân sau khi đăng nhập. Tuy nhiên, quá trình này có thể bị gián đoạn ở một số thời điểm do sự bất ổn của hệ thống. Chúng tôi sẽ cố gắng để bạn có thể tiếp tục sửa chữa hoặc xóa thông tin trong thời gian nhanh nhất nhưng không chịu trách nhiệm về bất kỳ vấn đề, thiệt hại nào do sự chậm trễ gây ra.</p>
+              </li>
+              <li>
+                <p class="medium">10. Nullam quis nunc sit amet enim dapibus aliquet non sed augue.</p>
+                <p>GOONG bảo vệ mật khẩu truy cập tài khoản của tất cả các thành viên. Tuy nhiên, chúng tôi không chịu trách nhiệm về những thiệt hại có thể xảy ra.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="goong-footer">
+      <div class="container">
+        <div class="goong-navbar">
+          <div class="goong-navbar__logo">
+            <h1><a href="index.html"><img src="images/goong-logo-2x.png"></a></h1>
+            <p>© 2019 Goong Inc, All right Reseverd</p>
+          </div>
+          <ul class="goong-navbar__nav">
+            <li class="goong-navbar__item active"><a href="index.html" class="goong-navbar__link">Home</a></li>
+            <li class="goong-navbar__item"><a href="goong-app.html" class="goong-navbar__link">Mobile App</a></li>
+            <li class="goong-navbar__item"><a href="documents.html" class="goong-navbar__link">Documents</a></li>
+            <li class="goong-navbar__item"><a href="https://maps.goong.io/" class="goong-navbar__link">Live Map</a></li>
+            <li class="goong-navbar__item"><a href="terms.html" class="goong-navbar__link">Privacy And Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $('.goong-navbar__toggle').click(function () {
+          $('body').addClass('open-menu-mobile');
+      });
+      
+      $('.menu-mobile__backdrop').click(function () {
+          $('body').removeClass('open-menu-mobile');
+      });
+    </script>
+  </body>
+</html>
