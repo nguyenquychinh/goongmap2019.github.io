@@ -12,8 +12,407 @@ html(lang="vi")
                 .container
                     .manual-docs
                         .manual-docs__left
-
+                            .manual-docs__sidebar
+                                a.a-back Back all platforms
+                                .manual-docs__icon
+                                    svg(width='255', height='78', viewBox='0 0 255 78', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(fill-rule='evenodd', clip-rule='evenodd', d='M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z', fill='#ECF5FE')
+                                        path(d='M31.861 38.0717C28.3682 44.0866 30.5887 53.2146 34.4511 58.7492C36.3791 61.5162 38.3311 64 41.0046 64C41.055 64 41.1055 63.999 41.1573 63.997C42.4134 63.9473 43.3211 63.5635 44.1987 63.1926C45.184 62.7759 46.2031 62.3451 47.8015 62.3451C49.3221 62.3451 50.2926 62.7619 51.231 63.1649C52.1559 63.562 53.1086 63.9728 54.5163 63.9466C57.5278 63.891 59.3768 61.2108 61.0081 58.8463C62.7104 56.3776 63.5643 53.9807 63.8525 53.0647L63.8641 53.0282C63.919 52.8654 63.8415 52.6877 63.6842 52.6161C63.6799 52.6141 63.6639 52.6075 63.6594 52.6056C63.1291 52.3904 58.4772 50.3424 58.4283 44.7605C58.3829 40.2255 61.9181 37.824 62.6271 37.3887L62.6602 37.3683C62.737 37.3192 62.7905 37.2414 62.8086 37.1524C62.8268 37.0635 62.8078 36.971 62.7563 36.8963C60.3162 33.3525 56.5762 32.8185 55.0704 32.7542C54.8519 32.7326 54.6264 32.7217 54.3999 32.7217C52.6314 32.7217 50.9372 33.3845 49.5761 33.9171C48.6366 34.2848 47.8251 34.6023 47.2653 34.6023C46.6364 34.6023 45.8203 34.2809 44.8752 33.9088C43.6114 33.411 42.1789 32.847 40.6624 32.847C40.6263 32.847 40.5906 32.8474 40.5556 32.848C37.0296 32.8995 33.6978 34.9014 31.861 38.0717Z', fill='#469AF7')
+                                        path(d='M55.0733 23.0003C52.9381 23.0866 50.3767 24.3909 48.8457 26.1704C47.5447 27.6662 46.2737 30.1601 46.6085 32.6738C46.6295 32.8311 46.7585 32.9525 46.9179 32.9647C47.062 32.9759 47.2091 32.9815 47.3557 32.9817C49.4435 32.9817 51.6958 31.8354 53.2339 29.9897C54.8528 28.0408 55.6713 25.5397 55.4237 23.2994C55.4042 23.1238 55.2486 22.9934 55.0733 23.0003Z', fill='#469AF7')
+                                        rect(opacity='0.5', x='16', y='74', width='239', height='4', fill='#66AFFF')
+                                        path(d='M79.9844 58H76.1875V41.0938H79.9844V58ZM75.9531 36.7031C75.9531 36.1198 76.1354 35.6354 76.5 35.25C76.875 34.8646 77.4062 34.6719 78.0938 34.6719C78.7812 34.6719 79.3125 34.8646 79.6875 35.25C80.0625 35.6354 80.25 36.1198 80.25 36.7031C80.25 37.276 80.0625 37.7552 79.6875 38.1406C79.3125 38.5156 78.7812 38.7031 78.0938 38.7031C77.4062 38.7031 76.875 38.5156 76.5 38.1406C76.1354 37.7552 75.9531 37.276 75.9531 36.7031ZM102.656 47.2188C102.656 49.4479 102.271 51.4062 101.5 53.0938C100.729 54.7708 99.625 56.0625 98.1875 56.9688C96.7604 57.8646 95.1146 58.3125 93.25 58.3125C91.4062 58.3125 89.7604 57.8646 88.3125 56.9688C86.875 56.0625 85.7604 54.776 84.9688 53.1094C84.1875 51.4427 83.7917 49.5208 83.7812 47.3438V46.0625C83.7812 43.8438 84.1719 41.8854 84.9531 40.1875C85.7448 38.4896 86.8542 37.1927 88.2812 36.2969C89.7188 35.3906 91.3646 34.9375 93.2188 34.9375C95.0729 34.9375 96.7135 35.3854 98.1406 36.2812C99.5781 37.1667 100.688 38.4479 101.469 40.125C102.25 41.7917 102.646 43.7344 102.656 45.9531V47.2188ZM98.7031 46.0312C98.7031 43.5104 98.224 41.5781 97.2656 40.2344C96.3177 38.8906 94.9688 38.2188 93.2188 38.2188C91.5104 38.2188 90.1719 38.8906 89.2031 40.2344C88.2448 41.5677 87.7552 43.4583 87.7344 45.9062V47.2188C87.7344 49.7188 88.2188 51.651 89.1875 53.0156C90.1667 54.3802 91.5208 55.0625 93.25 55.0625C95 55.0625 96.3438 54.3958 97.2812 53.0625C98.2292 51.7292 98.7031 49.7812 98.7031 47.2188V46.0312ZM118.484 52.1406C118.484 51.1406 118.13 50.3698 117.422 49.8281C116.724 49.2865 115.458 48.7396 113.625 48.1875C111.792 47.6354 110.333 47.0208 109.25 46.3438C107.177 45.0417 106.141 43.3438 106.141 41.25C106.141 39.4167 106.885 37.9062 108.375 36.7188C109.875 35.5312 111.818 34.9375 114.203 34.9375C115.786 34.9375 117.198 35.2292 118.438 35.8125C119.677 36.3958 120.651 37.2292 121.359 38.3125C122.068 39.3854 122.422 40.5781 122.422 41.8906H118.484C118.484 40.7031 118.109 39.776 117.359 39.1094C116.62 38.4323 115.557 38.0938 114.172 38.0938C112.88 38.0938 111.875 38.3698 111.156 38.9219C110.448 39.474 110.094 40.2448 110.094 41.2344C110.094 42.0677 110.479 42.7656 111.25 43.3281C112.021 43.8802 113.292 44.4219 115.062 44.9531C116.833 45.474 118.255 46.0729 119.328 46.75C120.401 47.4167 121.188 48.1875 121.688 49.0625C122.188 49.9271 122.438 50.9427 122.438 52.1094C122.438 54.0052 121.708 55.5156 120.25 56.6406C118.802 57.7552 116.833 58.3125 114.344 58.3125C112.698 58.3125 111.182 58.0104 109.797 57.4062C108.422 56.7917 107.349 55.9479 106.578 54.875C105.818 53.8021 105.438 52.5521 105.438 51.125H109.391C109.391 52.4167 109.818 53.4167 110.672 54.125C111.526 54.8333 112.75 55.1875 114.344 55.1875C115.719 55.1875 116.75 54.9115 117.438 54.3594C118.135 53.7969 118.484 53.0573 118.484 52.1406Z', fill='#1F3349')
+                                ul.docs-nav
+                                    li.docs-nav__item
+                                        button.docs-nav__link(type='button') Getting Started
+                                        ul.docs-nav__sub
+                                            li.docs-nav__sub__item
+                                                button.docs-nav__sub__link(type='button') Install The SDK
+                                            li.docs-nav__sub__item
+                                                button.docs-nav__sub__link(type='button') Access Token
+                                    li.docs-nav__item
+                                        button.docs-nav__link(type='button') Simple MapView
+                                    li.docs-nav__item
+                                        button.docs-nav__link(type='button') Camera Animation
+                                    li.docs-nav__item
+                                        button.docs-nav__link(type='button') Add Marker
+                                    li.docs-nav__item
+                                        button.docs-nav__link(type='button') Point Conversion
+                                    li.docs-nav__item
+                                        button.docs-nav__link(type='button') Display 3D Buildings
+                                    li.docs-nav__item
+                                        button.docs-nav__link(type='button') Add A Polyline
+                                    li.docs-nav__item
+                                        button.docs-nav__link(type='button') Decode Geometry String
                         .manual-docs__right
+                            .manual-docs__img
+                                img(src='images/bg-docs-detail.png')
+                            .manual-docs__main
+                                .manual-docs__item
+                                    .manual-docs__title
+                                        h5 Getting Started
+                                    .manual-docs__content
+                                        .manual-docs__sdk
+                                            p.medium Install the SDK
+                                            .manual-docs__box
+                                                p.p1 Copy this line to your Podfile then run pod update
+                                                .manual-docs__code
+                                                    p pod 'GoongSDK'
+
+
+
+                                            p.p2 Open Yourworkspace.xcworkspace then import the SDK to your ViewController
+                                            .manual-docs__box
+                                                p.p1 Swift
+                                                .manual-docs__code
+                                                    p.blue-3.medium import GoongSDK
+                                            .manual-docs__box
+                                                p.p1 Objective C
+                                                .manual-docs__code
+                                                    p @import GoongSDK;
+                                        .manual-docs__token
+                                            p.medium Access Token
+                                            p
+                                                | Add a&nbsp;
+                                                span GoongAccessToken
+                                                | &nbsp;key to the Info.plist file with the value of your Goong access token
+                                .manual-docs__item
+                                    .manual-docs__title
+                                        h5 Simple MapView
+                                    .manual-docs__content
+                                        .manual-docs__box
+                                            p.p1 Swift
+                                            .manual-docs__code
+                                                p.mb-15
+                                                    | let mapView = MGLMapView(frame: view.bounds)
+                                                    br
+                                                    | mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                                                    br
+                                                    | mapView.delegate = self
+                                                    br
+                                                    | // View more style at MGLStyle.h
+                                                    br
+                                                    | mapView.styleURL = MGLStyle.dayStyleURL
+                                                p.mb-15
+                                                    | // Hanoi
+                                                    br
+                                                    | let center = CLLocationCoordinate2D(latitude: 19.820689, longitude: -155.468038)
+                                                p.mb-15
+                                                    | // Optionally set a starting point.
+                                                    br
+                                                    | mapView.setCenter(CLLocationCoordinate2DMake(21.028511, 105.804817), zoomLevel: 12, animated: false)
+                                                p
+                                                    | view.addSubview(mapView)
+
+                                        .manual-docs__box
+                                            p.p1 Objective C
+                                            .manual-docs__code
+                                                p.mb-15
+                                                    | MGLMapView *mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds];
+                                                    br
+                                                    | mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+                                                    br
+                                                    | mapView.delegate = self;
+                                                p.mb-15
+                                                    | // View more style at MGLStyle.h
+                                                    br
+                                                    | mapView.styleURL = [MGLStyle dayStyleURL];
+                                                p.mb-15
+                                                    | // Hanoi
+                                                    br
+                                                    | CLLocationCoordinate2D center = CLLocationCoordinate2DMake(21.028511, 105.804817);
+                                                p.mb-15
+                                                    | // Optionally set a starting point.
+                                                    br
+                                                    | [mapView setCenterCoordinate:center zoomLevel:12 direction:0 animated:NO];
+                                                p
+                                                    | [self.view addSubview:mapView];
+
+                                .manual-docs__item
+                                    .manual-docs__title
+                                        h5 Camera animation
+                                    .manual-docs__content
+                                        .manual-docs__box
+                                            p.p1 Swift
+                                            .manual-docs__code
+                                                p
+                                                   | func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
+                                                   span.mb-15 // Wait for the map to load before initiating the first camera movement.
+                                                   span // Create a camera that rotates around the same center point, rotating 180°.
+                                                   span // `altitude:` is meters above mean sea level that an eye would have to be in order to see what the map view is showing.
+                                                   span.mb-15 let camera = MGLMapCamera(lookingAtCenter: mapView.centerCoordinate, altitude: 4500, viewingAngle: 15, bearing: 180)
+                                                   span // Animate the camera movement over 5 seconds.
+                                                   span mapView.setCamera(camera, withDuration: 5, animationTimingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut))
+                                                   | }
+
+                                        .manual-docs__box
+                                            p.p1 Objective C
+                                            .manual-docs__code
+                                                p
+                                                    | -(void)mapViewDidFinishLoadingMap:(MGLMapView *)mapView {
+                                                    span.mb-15 // Wait for the map to load before initiating the first camera movement.
+                                                    span // Create a camera that rotates around the same center point, rotating 180°.
+                                                    span // `altitude:` is meters above mean sea level that an eye would have to be in order to see what the map view is showing.
+                                                    span.mb-15 [MGLMapCamera cameraLookingAtCenterCoordinate:mapView.centerCoordinate altitude:4500 viewingAngle:15 bearing:180]
+                                                    span // Animate the camera movement over 5 seconds.
+                                                    span [mapView setCamera:camera withDuration:5 animationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+                                                    | }
+
+                                .manual-docs__item
+                                    .manual-docs__title
+                                        h5 Add marker
+                                    .manual-docs__content
+                                        .manual-docs__box
+                                            p.p1 Swift
+                                            .manual-docs__code
+                                                p.mb-15
+                                                    | // Declare the marker and set its coordinates, title, and subtitle.
+                                                    br
+                                                    | let marker = MGLMarker()
+                                                    br
+                                                    | marker.coordinate = CLLocationCoordinate2D(latitude: 21, longitude: 105)
+                                                    br
+                                                    | marker.title = "Hello world!"
+                                                    br
+                                                    | marker.subtitle = "Welcome to my marker"
+                                                    br
+                                                    | marker.reuseIdentifier = "markerIdentifier"
+                                                    br
+                                                    | //Customize marker
+                                                    br
+                                                    | marker.icon = UIImage(named: "marker")
+                                                    br
+                                                    | // or
+                                                    br
+                                                    | marker.iconView = YourCustomView()
+                                                p.mb-15
+                                                    | marker.rotation = 90 // degrees
+                                                    br
+                                                    | marker.opacity = 0.5
+                                                p.mb-15
+                                                    | // Add marker `hello` to the map.
+                                                    br
+                                                    | marker.map = self.mapView
+                                                p.mb-15
+                                                    | // animate marker position
+                                                p
+                                                    | UIView.animate(withDuration: 0.25) {
+                                                    span marker.coordinate = newCoordinate
+                                                    | }
+
+                                        .manual-docs__box
+                                            p.p1 Objective C
+                                            .manual-docs__code
+                                                p.mb-15
+                                                    | // Declare the marker  and set its coordinates, title, and subtitle.
+                                                    br
+                                                    | MGLMarker *marker = [[MGLMarker alloc] init];
+                                                    br
+                                                    | marker.coordinate = CLLocationCoordinate2DMake(21, 105);
+                                                    br
+                                                    | marker.title = @"Hello world!";
+                                                    br
+                                                    | marker.subtitle = @"Welcome to my marker";
+                                                p.mb-15
+                                                    | marker.reuseIdentifier = @"markerIdentifier";
+                                                    br
+                                                    | //Customize marker
+                                                    br
+                                                    | marker.icon = [UIImage imageNamed:@"marker"];
+                                                    br
+                                                    | // or
+                                                    br
+                                                    | marker.iconView = [YourCustomView new];
+                                                p.mb-15
+                                                    | marker.rotation = 90; // degrees
+                                                    br
+                                                    | marker.opacity = 0.5;
+                                                p.mb-15
+                                                    | // Add marker `hello` to the map.
+                                                    br
+                                                    | marker.map = self.mapView
+                                                p.mb-15
+                                                    | // animate marker position
+                                                p
+                                                    | [UIView animateWithDuration:0.25 animations:^{
+                                                    span marker.coordinate = newCoordinate;
+                                                    | }];
+
+                                .manual-docs__item
+                                    .manual-docs__title
+                                        h5 Point conversion
+                                    .manual-docs__content
+                                        .manual-docs__box
+                                            p.p1 Swift
+                                            .manual-docs__code
+                                                p.mb-15 import GoongSDK
+                                                p
+                                                    | class ViewController: UIViewController, MGLMapViewDelegate {
+                                                    span.mb-15
+                                                        | var mapView: MGLMapView!
+                                                    span
+                                                        | override func viewDidLoad() {
+                                                        span.span2.mb-15 super.viewDidLoad()
+                                                        span.span2 mapView = MGLMapView(frame: view.bounds)
+                                                        span.span2 mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                                                        span.span2.mb-15 view.addSubview(mapView)
+                                                        span.span2 // Add a single tap gesture recognizer. This gesture requires the built-in MGLMapView tap gestures (such as those for zoom and annotation selection) to fail.
+                                                        span.span2 let singleTap = UITapGestureRecognizer(target: self, action: #selector(handleMapTap(sender:)))
+                                                        span.span2
+                                                            | for recognizer in mapView.gestureRecognizers! where recognizer is UITapGestureRecognizer {
+                                                            span.span3 singleTap.require(toFail: recognizer)
+                                                        span.span2 }
+                                                        span.span2.mb-15 mapView.addGestureRecognizer(singleTap)
+                                                        span.span2 // Convert `mapView.centerCoordinate` (CLLocationCoordinate2D) to screen location (CGPoint).
+                                                        span.span2 let centerScreenPoint: CGPoint = mapView.convert(mapView.centerCoordinate, toPointTo: nil)
+                                                        span.span2 print("Screen center: \(centerScreenPoint) = \(mapView.center)")
+                                                        | }
+                                                    span
+                                                        | @objc @IBAction func handleMapTap(sender: UITapGestureRecognizer) {
+                                                        span.span2 // Convert tap location (CGPoint) to geographic coordinate (CLLocationCoordinate2D).
+                                                        span.span2 let tapPoint: CGPoint = sender.location(in: mapView)
+                                                        span.span2 let tapCoordinate: CLLocationCoordinate2D = mapView.convert(tapPoint, toCoordinateFrom: nil)
+                                                        span.span2.mb-15 print("You tapped at: \(tapCoordinate.latitude), \(tapCoordinate.longitude)")
+                                                        span.span2 // Create an array of coordinates for our polyline, starting at the center of the map and ending at the tap coordinate.
+                                                        span.span2.mb-15 var coordinates: [CLLocationCoordinate2D] = [mapView.centerCoordinate, tapCoordinate]
+                                                        span.span2 // Remove any existing polyline(s) from the map.
+                                                        span.span2.mb-15
+                                                            | if mapView.annotations?.count != nil, let existingAnnotations = mapView.annotations {
+                                                            span.span3 mapView.removeAnnotations(existingAnnotations)
+                                                            | }
+                                                        span.span2 // Add a polyline with the new coordinates.
+                                                        span.span2 let polyline = GoongPolyline(coordinates: &coordinates, count: UInt(coordinates.count))
+                                                        span.span2 mapView.addAnnotation(polyline)
+                                                        | }
+
+
+
+
+                                                    | }
+                                        .manual-docs__box
+                                            p.p1 Objective C
+                                            .manual-docs__code
+                                                p.mb-15
+                                                    | #import "ViewController.h"
+                                                    br
+                                                    | @import GoongSDK;
+                                                    br
+                                                    | @interface ViewController ()
+                                                    br
+                                                    | @property (nonatomic) MGLMapView *mapView;
+                                                    br
+                                                    | @end
+                                                p.mb-15 @implementation ViewController
+                                                p.mb-15
+                                                    | - (void)viewDidLoad {
+                                                    span.mb-15 [super viewDidLoad];
+                                                    span self.mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds];
+                                                    span self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+                                                    span.mb-15 [self.view addSubview:self.mapView];
+                                                    span // Add a single tap gesture recognizer. This gesture requires the built-in MGLMapView tap gestures (such as those for zoom and annotation selection) to fail.
+                                                    span UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleMapTap:)];
+                                                    span
+                                                        | for (UIGestureRecognizer *recognizer in self.mapView.gestureRecognizers) {
+                                                        span.span2
+                                                            | if ([recognizer isKindOfClass:[UITapGestureRecognizer class]]) {
+                                                            span.span3
+                                                                | [singleTap requireGestureRecognizerToFail:recognizer];
+                                                            | }
+                                                        | }
+                                                    span.mb-15 [self.mapView addGestureRecognizer:singleTap];
+                                                    span // Convert `mapView.centerCoordinate` (CLLocationCoordinate2D) to screen location (CGPoint).
+                                                    span CGPoint centerScreenPoint = [self.mapView convertCoordinate:self.mapView.centerCoordinate toPointToView:nil];
+                                                    span NSLog(@"Screen center: %@ = %@", NSStringFromCGPoint(centerScreenPoint), NSStringFromCGPoint(self.mapView.center));
+                                                    | }
+                                                p
+                                                    | - (IBAction)handleMapTap:(UITapGestureRecognizer *)tap {
+                                                    span // Convert tap location (CGPoint) to geographic coordinate (CLLocationCoordinate2D).
+                                                    span CGPoint tapPoint = [tap locationInView:self.mapView];
+                                                    span CLLocationCoordinate2D tapCoordinate = [self.mapView convertPoint:tapPoint toCoordinateFromView:nil];
+                                                    span.mb-15 NSLog(@"You tapped at: %.5f, %.5f", tapCoordinate.latitude, tapCoordinate.longitude);
+                                                    span // Create an array of coordinates for our polyline, starting at the center of the map and ending at the tap coordinate.
+                                                    span CLLocationCoordinate2D coordinates[] = { self.mapView.centerCoordinate, tapCoordinate };
+                                                    span.mb-15 NSUInteger numberOfCoordinates = sizeof(coordinates) / sizeof(CLLocationCoordinate2D);
+                                                    span // Remove any existing polyline(s) from the map.
+                                                    span.mb-15
+                                                        | if (self.mapView.annotations.count) {
+                                                        span.span2 [self.mapView removeAnnotations:self.mapView.annotations];
+                                                        | }
+                                                    span // Add a polyline with the new coordinates.
+                                                    span GoongPolyline *polyline = [GoongPolyline polylineWithCoordinates:coordinates count:numberOfCoordinates];
+                                                    span [self.mapView addAnnotation:polyline];
+                                                    | }
+                                                    br
+                                                    | @end
+                                .manual-docs__item.display-3d
+                                    .manual-docs__title
+                                        h5 Display 3D buildings
+                                    .manual-docs__content
+                                        .manual-docs__box
+                                            p.p1 Swift
+                                            .manual-docs__code
+                                                p
+                                                    | mapView.isBuildingsEnabled
+                                                    span.blue-3.medium = true
+                                        .manual-docs__box
+                                            p.p1 Objective C
+                                            .manual-docs__code
+                                                p
+                                                    | [mapView setBuildingsEnabled:YES];
+
+                                .manual-docs__item
+                                    .manual-docs__title
+                                        h5 Add a polyline
+                                    .manual-docs__content
+                                        .manual-docs__box
+                                            p.p1 Swift
+                                            .manual-docs__code
+                                                p
+                                                    | let polyline = GoongPolyline(path: "ylj_Ce|ydSfoCuqG")
+                                                    br
+                                                    | polyline.map = self.mapView
+                                                    br
+                                                    | polyline.strokeColor = .green
+                                                    br
+                                                    | polyline.strokeWidth = 5
+                                                    br
+                                                    | polyline.opacity = 1
+                                        .manual-docs__box
+                                            p.p1 Objective C
+                                            .manual-docs__code
+                                                p
+                                                    | GoongPolyline *polyline = [GoongPolyline polylineWithPath:@"mot_CgshdS~HsyDb_AasChWid@rjBt|EcuB`iG"];
+                                                    br
+                                                    | polyline.map = self.mapView;
+                                                    br
+                                                    | polyline.strokeColor = [UIColor greenColor];
+                                                    br
+                                                    | polyline.strokeWidth = 5;
+                                                    br
+                                                    | polyline.opacity = 1;
+
+                                .manual-docs__item
+                                    .manual-docs__title
+                                        h5 Decode geometry string
+                                    .manual-docs__content
+                                        .manual-docs__box
+                                            p.p1 Swift
+                                            .manual-docs__code
+                                                p
+                                                    | let geometryString = "abcxyz#$%^&*"
+                                                    br
+                                                    | let locations = MGLUtility.decodeGeometry(geometryString) // default precision is 5
+                                                    br
+                                                    | let locationsWithPrecision = MGLUtility.decodeGeometry(geometryString, precision: 5)
+                                        .manual-docs__box
+                                            p.p1 Objective C
+                                            .manual-docs__code
+                                                p
+                                                    | NSString *geometryString = @"abcxyz$%^&*";
+                                                    br
+                                                    | NSArray *locations = [MGLUtility decodeGeometry:geometryString]; // Default precision is 5
+                                                    br
+                                                    | NSArray *locationsWithPrecision = [MGLUtility decodeGeometry:geometryString precision:5];
+
         include jades/footer.jade
         script(src="js/libs/jquery.min.js")
         script(src="js/main.js")

@@ -105,3 +105,153 @@
     color: #404041;
   }
 }
+.docs-nav{
+  &__item{
+    padding-bottom: 5px;
+  }
+  &__link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #48A0F8;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__sub{
+    &__item{}
+    &__link{
+      font-size: 16px;
+      line-height: 26px;
+      color: #48A0F8;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.manual-docs{
+  padding: 30px 0;
+  @include breakpoint(sm){
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+  &__left{
+    @include breakpoint(xs){
+      margin-bottom: 30px;
+    }
+    @include breakpoint(sm){
+      width: 40%;
+      padding: 0 15px;
+    }
+    @include breakpoint(md){
+      width: 33.333%;
+    }
+  }
+  &__sidebar{
+    .a-back{
+      font-size: 16px;
+      line-height: 19px;
+      color: #566571;
+    }
+  }
+  &__icon{
+    padding: 35px 0 30px 0;
+  }
+  &__right{
+    @include breakpoint(sm){
+      width: 60%;
+      padding: 0 15px;
+    }
+    @include breakpoint(md){
+      width: 66.667%;
+    }
+  }
+  &__img{
+    margin-bottom: 25px;
+    img{
+      width: 100%;
+    }
+  }
+  &__main{}
+  &__item{
+    margin-bottom: 50px;
+    &.display-3d{
+      .manual-docs__code{
+        p{
+          span{
+            display: inline-block;
+            padding-left: 3px;
+          }
+        }
+      }
+    }
+  }
+  &__content{
+    p{
+      font-size: 16px;
+      line-height: 26px;
+      color: #566571;
+    }
+  }
+  &__box{
+    margin-bottom: 15px;
+    .p1{
+      margin: 0 0 10px;
+    }
+  }
+  &__code{
+    background: rgba(244, 246, 251, 0.8);
+    border: 1px solid #F0F2F8;
+    border-radius: 8px;
+    padding: 5px 15px;
+    p{
+      margin: 0;
+      word-break: break-all;
+      span{
+        display: block;
+        padding-left: 15px;
+        &.span2{
+
+        }
+      }
+    }
+  }
+  &__title{
+    margin-bottom: 25px;
+    h5{
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 37px;
+      color: #48A0F8;
+    }
+  }
+  &__sdk{
+    margin-bottom: 30px;
+    p{
+      &.medium{
+        color: $text-color;
+      }
+      &.p2{
+        margin: 25px 0;
+      }
+    }
+  }
+  &__token{
+    margin-bottom: 30px;
+    p{
+      &.medium{
+        color: $text-color;
+      }
+      span{
+        background: rgba(244, 246, 251, 0.8);
+        border: 1px solid #F0F2F8;
+        border-radius: 8px;
+        padding:5px;
+        color: $text-color;
+        margin: 0 5px;
+      }
+    }
+  }
+}
