@@ -1,0 +1,51 @@
+.admin-sale{
+  .admin-header{
+    &__btn{
+      width: 150px;
+      .btn{
+        width: 100%;
+      }
+    }
+  }
+  .admin-table{
+    .table{
+      tbody{
+        td{
+          &:last-child{
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+.list-btn{
+  display: flex;
+  margin: 0 -5px;
+  li{
+    width: 33.333%;
+    padding: 0 5px;
+    .btn{
+      width: 100%;
+      padding: 8px 15px;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      &.btn-delete{
+        background: rgba(247, 70, 70, 0.08);
+        border: 1px solid #FF7171;
+        color: #FF2F2F;
+      }
+      &.btn-edit{
+        background: rgba(70, 154, 247, 0.08);
+        border: 1px solid #469AF7;
+        color: #469AF7;
+      }
+      &.btn-suspend{
+        background: rgba(193, 211, 224, 0.198372);
+        border: 1px solid #C1D3E0;
+        color: #74838F;
+      }
+    }
+  }
+}

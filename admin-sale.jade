@@ -1,4 +1,4 @@
-- var page = "admin-billing";
+- var page = "admin-sale";
 doctype html
 html(lang="vi")
     head
@@ -23,7 +23,7 @@ html(lang="vi")
                                                 path(d='M9.984 0.600006V-0.799994H8.584V0.600006H9.984ZM18 0.600006H19.4V-0.799994H18V0.600006ZM18 6.60001V8.00001H19.4V6.60001H18ZM9.984 6.60001H8.584V8.00001H9.984V6.60001ZM9.984 18.6H8.584V20H9.984V18.6ZM9.984 8.61601V7.21601H8.584V8.61601H9.984ZM18 8.61601H19.4V7.21601H18V8.61601ZM18 18.6V20H19.4V18.6H18ZM0 18.6H-1.4V20H0V18.6ZM0 12.6V11.2H-1.4V12.6H0ZM8.016 12.6H9.416V11.2H8.016V12.6ZM8.016 18.6V20H9.416V18.6H8.016ZM0 10.584H-1.4V11.984H0V10.584ZM0 0.600006V-0.799994H-1.4V0.600006H0ZM8.016 0.600006H9.416V-0.799994H8.016V0.600006ZM8.016 10.584V11.984H9.416V10.584H8.016ZM9.984 2.00001H18V-0.799994H9.984V2.00001ZM16.6 0.600006V6.60001H19.4V0.600006H16.6ZM18 5.20001H9.984V8.00001H18V5.20001ZM11.384 6.60001V0.600006H8.584V6.60001H11.384ZM11.384 18.6V8.61601H8.584V18.6H11.384ZM9.984 10.016H18V7.21601H9.984V10.016ZM16.6 8.61601V18.6H19.4V8.61601H16.6ZM18 17.2H9.984V20H18V17.2ZM1.4 18.6V12.6H-1.4V18.6H1.4ZM0 14H8.016V11.2H0V14ZM6.616 12.6V18.6H9.416V12.6H6.616ZM8.016 17.2H0V20H8.016V17.2ZM1.4 10.584V0.600006H-1.4V10.584H1.4ZM0 2.00001H8.016V-0.799994H0V2.00001ZM6.616 0.600006V10.584H9.416V0.600006H6.616ZM8.016 9.18401H0V11.984H8.016V9.18401Z', fill='#566571', mask='url(#path-1-inside-1)')
                                     span.span-text Over View
 
-                            li.admin-navbar__item
+                            li.admin-navbar__item.active
                                 a.admin-navbar__link(href='admin-sale.html')
                                     span.span-svg
                                         svg(width='22', height='22', viewBox='0 0 22 22', fill='none', xmlns='http://www.w3.org/2000/svg')
@@ -53,7 +53,7 @@ html(lang="vi")
 
                                     span.span-text Management
 
-                            li.admin-navbar__item.active
+                            li.admin-navbar__item
                                 a.admin-navbar__link(href='admin-billing.html')
                                     span.span-svg
                                         svg(width='18', height='20', viewBox='0 0 18 20', fill='none', xmlns='http://www.w3.org/2000/svg')
@@ -108,10 +108,10 @@ html(lang="vi")
             section.admin-wrapper__body
                 section.admin-wrapper__content
                     section.admin-wrapper__page
-                        section.admin-billing
+                        section.admin-sale
                             .admin-header
                                 .admin-header__title
-                                    h2 Billing Manager
+                                    h2 Sales Acc Management
                                 .admin-header__search
                                     .search-group
                                         .search-group__input
@@ -123,185 +123,148 @@ html(lang="vi")
                                         button.search-group__btn(type='button')
                                             svg(width='18', height='19', viewBox='0 0 18 19', fill='none', xmlns='http://www.w3.org/2000/svg')
                                                 path(fill-rule='evenodd', clip-rule='evenodd', d='M17 3.28571L10.6 9.38095V15.4762L7.4 17V9.38095L1 3.28571V1H17V3.28571V3.28571Z', stroke='#469AF7', stroke-width='1.4', stroke-linecap='square')
+                                .admin-header__btn
+                                    button.btn.btn-blue(type='button')
+                                        svg(width='16', height='17', viewBox='0 0 16 17', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M9.79688 6.48438H15.7344V9.95312H9.79688V16.7188H6.10938V9.95312H0.140625V6.48438H6.10938V0.15625H9.79688V6.48438Z', fill='white')
+                                        span Add
+
                             .admin-table
                                 table.table
                                     thead
                                         tr
                                             th &nbsp;
                                             th Name
-                                            th Amount
                                             th Email
-                                            th Phone
-                                            th &nbsp;
+                                            th Type
+                                            th Action
                                     tbody
                                         tr
                                             td
                                                 .admin-table__avatar
                                                     img(src='images-admin/admin-avatar.png')
                                             td
-                                                p.medium Abbie Dean
+                                                p.medium Abbie Garza
                                             td
-                                                p 140.000.000
+                                                p mac.bins@letitia.net
                                             td
-                                                p asia.crist@yahoo.com
+                                                p Lead Team Sale
                                             td
-                                                p 0932315568
-                                            td.text-right
-                                                .dropdown
-                                                    button.dropdown-toggle(type='button' data-toggle="dropdown")
-                                                        svg(width='15', height='3', viewbox='0 0 15 3', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                            path(d='M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z', fill='#469AF7')
-                                                            path(d='M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z', fill='#469AF7')
-                                                            path(d='M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z', fill='#469AF7')
-                                                    ul.dropdown-menu
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Detail
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Suspend Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Send Email
+                                                ul.list-btn
+                                                    li
+                                                        button.btn.btn-delete Delete
+                                                    li
+                                                        button.btn.btn-edit Edit
+                                                    li
+                                                        button.btn.btn-suspend Suspend
                                         tr
                                             td
                                                 .admin-table__avatar
                                                     img(src='images-admin/admin-avatar.png')
                                             td
-                                                p.medium Claudia Page
+                                                p.medium Sara Andrews
                                             td
-                                                p 34.000.000
+                                                p owhuw@rujilu.org
                                             td
-                                                p dih@duwomag.edu
+                                                p Sale
                                             td
-                                                p 0979437365
-                                            td.text-right
-                                                .dropdown
-                                                    button.dropdown-toggle(type='button' data-toggle="dropdown")
-                                                        svg(width='15', height='3', viewbox='0 0 15 3', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                            path(d='M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z', fill='#469AF7')
-                                                            path(d='M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z', fill='#469AF7')
-                                                            path(d='M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z', fill='#469AF7')
-                                                    ul.dropdown-menu
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Detail
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Suspend Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Send Email
+                                                ul.list-btn
+                                                    li
+                                                        button.btn.btn-delete Delete
+                                                    li
+                                                        button.btn.btn-edit Edit
+                                                    li
+                                                        button.btn.btn-suspend Suspend
                                         tr
                                             td
                                                 .admin-table__avatar
                                                     img(src='images-admin/admin-avatar.png')
                                             td
-                                                p.medium Alma Harrington
+                                                p.medium Allie Anderson
                                             td
-                                                p 22.000.000
+                                                p rirar@zonsikeg.io
                                             td
-                                                p pasap@fenomdak.net
+                                                p Sale
                                             td
-                                                p 0909094091
-                                            td.text-right
-                                                .dropdown
-                                                    button.dropdown-toggle(type='button' data-toggle="dropdown")
-                                                        svg(width='15', height='3', viewbox='0 0 15 3', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                            path(d='M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z', fill='#469AF7')
-                                                            path(d='M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z', fill='#469AF7')
-                                                            path(d='M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z', fill='#469AF7')
-                                                    ul.dropdown-menu
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Detail
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Suspend Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Send Email
+                                                ul.list-btn
+                                                    li
+                                                        button.btn.btn-delete Delete
+                                                    li
+                                                        button.btn.btn-edit Edit
+                                                    li
+                                                        button.btn.btn-suspend Suspend
                                         tr
                                             td
                                                 .admin-table__avatar
                                                     img(src='images-admin/admin-avatar.png')
                                             td
-                                                p.medium Sara Olson
+                                                p.medium Rosetta Mann
                                             td
-                                                p 34.000.000
+                                                p tetisudu@vavisja.edu
                                             td
-                                                p jevridvu@uvif.edu
+                                                p Lead Team Sale
                                             td
-                                                p 0984560317
-                                            td.text-right
-                                                .dropdown
-                                                    button.dropdown-toggle(type='button' data-toggle="dropdown")
-                                                        svg(width='15', height='3', viewbox='0 0 15 3', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                            path(d='M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z', fill='#469AF7')
-                                                            path(d='M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z', fill='#469AF7')
-                                                            path(d='M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z', fill='#469AF7')
-                                                    ul.dropdown-menu
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Detail
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Suspend Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Send Email
+                                                ul.list-btn
+                                                    li
+                                                        button.btn.btn-delete Delete
+                                                    li
+                                                        button.btn.btn-edit Edit
+                                                    li
+                                                        button.btn.btn-suspend Suspend
                                         tr
                                             td
                                                 .admin-table__avatar
                                                     img(src='images-admin/admin-avatar.png')
                                             td
-                                                p.medium Lola Garza
+                                                p.medium Callie Walker
                                             td
-                                                p 34.000.000
+                                                p zesgamcav@ki.co.uk
                                             td
-                                                p nef@ek.com
+                                                p Lead Team Sale
                                             td
-                                                p 0909094091
-                                            td.text-right
-                                                .dropdown
-                                                    button.dropdown-toggle(type='button' data-toggle="dropdown")
-                                                        svg(width='15', height='3', viewbox='0 0 15 3', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                            path(d='M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z', fill='#469AF7')
-                                                            path(d='M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z', fill='#469AF7')
-                                                            path(d='M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z', fill='#469AF7')
-                                                    ul.dropdown-menu
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Detail
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Suspend Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Send Email
+                                                ul.list-btn
+                                                    li
+                                                        button.btn.btn-delete Delete
+                                                    li
+                                                        button.btn.btn-edit Edit
+                                                    li
+                                                        button.btn.btn-suspend Suspend
                                         tr
                                             td
                                                 .admin-table__avatar
                                                     img(src='images-admin/admin-avatar.png')
                                             td
-                                                p.medium Marguerite Snyder
+                                                p.medium Laura Nash
                                             td
-                                                p 140.000.000
+                                                p du@tip.org
                                             td
-                                                p silfapa@nit.co.uk
+                                                p Sale
                                             td
-                                                p 01203475696
-                                            td.text-right
-                                                .dropdown
-                                                    button.dropdown-toggle(type='button' data-toggle="dropdown")
-                                                        svg(width='15', height='3', viewbox='0 0 15 3', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                            path(d='M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z', fill='#469AF7')
-                                                            path(d='M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z', fill='#469AF7')
-                                                            path(d='M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z', fill='#469AF7')
-                                                    ul.dropdown-menu
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Detail
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') View Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Suspend Customer
-                                                        li.dropdown-item
-                                                            button.dropdown-link(type='button') Send Email
+                                                ul.list-btn
+                                                    li
+                                                        button.btn.btn-delete Delete
+                                                    li
+                                                        button.btn.btn-edit Edit
+                                                    li
+                                                        button.btn.btn-suspend Suspend
+                                        tr
+                                            td
+                                                .admin-table__avatar
+                                                    img(src='images-admin/admin-avatar.png')
+                                            td
+                                                p.medium Mathilda Hodges
+                                            td
+                                                p gawab@cewhe.org
+                                            td
+                                                p Lead Team Sale
+                                            td
+                                                ul.list-btn
+                                                    li
+                                                        button.btn.btn-delete Delete
+                                                    li
+                                                        button.btn.btn-edit Edit
+                                                    li
+                                                        button.btn.btn-suspend Suspend
                     .admin-pagination
                         ul.pagination
                             li.pagination-item.active
