@@ -1,0 +1,10 @@
+.admin-billing{
+  .admin-header{
+    &__title{
+      width: 200px;
+    }
+    &__search{
+      width: calc(100% - 200px);
+    }
+  }
+}
