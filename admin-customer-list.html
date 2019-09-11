@@ -18,7 +18,7 @@
         <div class="sidebar__body">
           <div class="sidebar__navbar">
             <ul class="admin-navbar">
-              <li class="admin-navbar__item active"><a class="admin-navbar__link"><span class="span-svg">
+              <li class="admin-navbar__item"><a class="admin-navbar__link"><span class="span-svg">
                     <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.5">
                         <mask id="path-1-inside-1" fill="white">
@@ -43,7 +43,7 @@
                         <path d="M16.7273 20.7C18.9214 20.7 20.7 18.9213 20.7 16.7273C20.7 14.5332 18.9214 12.7545 16.7273 12.7545C14.5332 12.7545 12.7546 14.5332 12.7546 16.7273C12.7546 18.9213 14.5332 20.7 16.7273 20.7Z" stroke="#566571" stroke-width="1.4"></path>
                       </g>
                     </svg></span><span class="span-text">Sales Acc Management</span></a></li>
-              <li class="admin-navbar__item"><a class="admin-navbar__link"><span class="span-svg">
+              <li class="admin-navbar__item active"><a class="admin-navbar__link"><span class="span-svg">
                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.5">
                         <path d="M8.71429 11.8C6.29371 11.8 4.14657 12.3742 2.73571 12.8737C1.69429 13.2436 1 14.2741 1 15.4288V19C1 19 9.53543 19 9.57143 19" stroke="#566571" stroke-width="1.4"></path>
@@ -98,368 +98,370 @@
       </aside>
       <section class="admin-wrapper__body">
         <section class="admin-wrapper__content">
-          <section class="admin-wrapper__page customer-list">
-            <div class="admin-header">
-              <div class="admin-header__title">
-                <h2>Management</h2>
-              </div>
-              <div class="admin-header__search">
-                <div class="search-group">
-                  <div class="search-group__input">
-                    <input type="text" placeholder="Search customer account…">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g opacity="0.5"></g>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7C0 10.86 3.14 14 7 14C10.86 14 14 10.86 14 7C14 3.14 10.86 0 7 0C3.14 0 0 3.14 0 7ZM2 7C2 4.243 4.243 2 7 2C9.757 2 12 4.243 12 7C12 9.757 9.757 12 7 12C4.243 12 2 9.757 2 7Z" fill="#566571"></path>
-                      <path d="M15.7069 14.293L13.3139 11.9C12.9029 12.429 12.4289 12.903 11.8999 13.314L14.2929 15.707C14.4879 15.902 14.7439 16 14.9999 16C15.2559 16 15.5119 15.902 15.7069 15.707C16.0979 15.316 16.0979 14.684 15.7069 14.293Z" fill="#566571"></path>
-                    </svg>
+          <section class="admin-wrapper__page">
+            <section class="customer-list">
+              <div class="admin-header">
+                <div class="admin-header__title">
+                  <h2>Management</h2>
+                </div>
+                <div class="admin-header__search">
+                  <div class="search-group">
+                    <div class="search-group__input">
+                      <input type="text" placeholder="Search customer account…">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5"></g>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7C0 10.86 3.14 14 7 14C10.86 14 14 10.86 14 7C14 3.14 10.86 0 7 0C3.14 0 0 3.14 0 7ZM2 7C2 4.243 4.243 2 7 2C9.757 2 12 4.243 12 7C12 9.757 9.757 12 7 12C4.243 12 2 9.757 2 7Z" fill="#566571"></path>
+                        <path d="M15.7069 14.293L13.3139 11.9C12.9029 12.429 12.4289 12.903 11.8999 13.314L14.2929 15.707C14.4879 15.902 14.7439 16 14.9999 16C15.2559 16 15.5119 15.902 15.7069 15.707C16.0979 15.316 16.0979 14.684 15.7069 14.293Z" fill="#566571"></path>
+                      </svg>
+                    </div>
+                    <button type="button" class="search-group__btn">
+                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3.28571L10.6 9.38095V15.4762L7.4 17V9.38095L1 3.28571V1H17V3.28571V3.28571Z" stroke="#469AF7" stroke-width="1.4" stroke-linecap="square"></path>
+                      </svg>
+                    </button>
                   </div>
-                  <button type="button" class="search-group__btn">
-                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3.28571L10.6 9.38095V15.4762L7.4 17V9.38095L1 3.28571V1H17V3.28571V3.28571Z" stroke="#469AF7" stroke-width="1.4" stroke-linecap="square"></path>
-                    </svg>
+                </div>
+                <div class="admin-header__btn">
+                  <button type="button" class="btn btn-blue">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.79688 6.48438H15.7344V9.95312H9.79688V16.7188H6.10938V9.95312H0.140625V6.48438H6.10938V0.15625H9.79688V6.48438Z" fill="white"></path>
+                    </svg><span>Add Customer</span>
                   </button>
                 </div>
               </div>
-              <div class="admin-header__btn">
-                <button type="button" class="btn btn-blue">
-                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.79688 6.48438H15.7344V9.95312H9.79688V16.7188H6.10938V9.95312H0.140625V6.48438H6.10938V0.15625H9.79688V6.48438Z" fill="white"></path>
-                  </svg><span>Add Customer</span>
-                </button>
+              <div class="admin-table">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>&nbsp;</th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Phone</th>
+                      <th>Organization</th>
+                      <th>Job Titles</th>
+                      <th>&nbsp;</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
+                      </td>
+                      <td>
+                        <p class="medium">Abbie Dean</p>
+                      </td>
+                      <td>
+                        <p>asia.crist@yahoo.com</p>
+                      </td>
+                      <td>
+                        <p>0932315568</p>
+                      </td>
+                      <td>
+                        <p>Arthur J. Gallagher</p>
+                      </td>
+                      <td>
+                        <p>Insurance Agent</p>
+                      </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <button type="button" data-toggle="dropdown" class="dropdown-toggle">
+                            <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
+                              <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
+                              <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
+                            </svg>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Suspend Customer</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Keys</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Send Email</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Info</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
+                      </td>
+                      <td>
+                        <p class="medium">Florence Gibbs</p>
+                      </td>
+                      <td>
+                        <p>oknovat@tak.net</p>
+                      </td>
+                      <td>
+                        <p>01678028262</p>
+                      </td>
+                      <td>
+                        <p>HD Supply Holdings</p>
+                      </td>
+                      <td>
+                        <p>Physicist</p>
+                      </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <button type="button" data-toggle="dropdown" class="dropdown-toggle">
+                            <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
+                              <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
+                              <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
+                            </svg>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Suspend Customer</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Keys</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Send Email</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Info</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
+                      </td>
+                      <td>
+                        <p class="medium">Mattie Gardner</p>
+                      </td>
+                      <td>
+                        <p>gato@cobkefka.edu</p>
+                      </td>
+                      <td>
+                        <p>0985201828</p>
+                      </td>
+                      <td>
+                        <p>New York Life Insurance</p>
+                      </td>
+                      <td>
+                        <p>Art Director</p>
+                      </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <button type="button" data-toggle="dropdown" class="dropdown-toggle">
+                            <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
+                              <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
+                              <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
+                            </svg>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Suspend Customer</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Keys</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Send Email</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Info</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
+                      </td>
+                      <td>
+                        <p class="medium">Mae Jensen</p>
+                      </td>
+                      <td>
+                        <p>lijrul@di.net</p>
+                      </td>
+                      <td>
+                        <p>0984560317</p>
+                      </td>
+                      <td>
+                        <p>Group 1 Automotive</p>
+                      </td>
+                      <td>
+                        <p>Art Director</p>
+                      </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <button type="button" data-toggle="dropdown" class="dropdown-toggle">
+                            <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
+                              <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
+                              <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
+                            </svg>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Suspend Customer</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Keys</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Send Email</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Info</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
+                      </td>
+                      <td>
+                        <p class="medium">Jennie Cooper</p>
+                      </td>
+                      <td>
+                        <p>vutop@vigub.co.uk</p>
+                      </td>
+                      <td>
+                        <p>0988800594</p>
+                      </td>
+                      <td>
+                        <p>Avnet</p>
+                      </td>
+                      <td>
+                        <p>Designer</p>
+                      </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <button type="button" data-toggle="dropdown" class="dropdown-toggle">
+                            <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
+                              <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
+                              <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
+                            </svg>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Suspend Customer</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Keys</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Send Email</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Info</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
+                      </td>
+                      <td>
+                        <p class="medium">Lucile Brewer</p>
+                      </td>
+                      <td>
+                        <p>vor@taut.com</p>
+                      </td>
+                      <td>
+                        <p>0915909155</p>
+                      </td>
+                      <td>
+                        <p>Cost Estimator</p>
+                      </td>
+                      <td>
+                        <p>Designer</p>
+                      </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <button type="button" data-toggle="dropdown" class="dropdown-toggle">
+                            <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
+                              <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
+                              <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
+                            </svg>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Suspend Customer</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Keys</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Send Email</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Info</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
+                      </td>
+                      <td>
+                        <p class="medium">Estelle Guerrero</p>
+                      </td>
+                      <td>
+                        <p>uca@uneena.io</p>
+                      </td>
+                      <td>
+                        <p>0913684988</p>
+                      </td>
+                      <td>
+                        <p>Auto-Owners Insurance</p>
+                      </td>
+                      <td>
+                        <p>Veterinarian</p>
+                      </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <button type="button" data-toggle="dropdown" class="dropdown-toggle">
+                            <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
+                              <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
+                              <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
+                            </svg>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Suspend Customer</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Keys</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Send Email</button>
+                            </li>
+                            <li class="dropdown-item">
+                              <button type="button" class="dropdown-link">Edit Info</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </div>
-            <div class="admin-table">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>&nbsp;</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Organization</th>
-                    <th>Job Titles</th>
-                    <th>&nbsp;</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                    </td>
-                    <td>
-                      <p class="medium">Abbie Dean</p>
-                    </td>
-                    <td>
-                      <p>asia.crist@yahoo.com</p>
-                    </td>
-                    <td>
-                      <p>0932315568</p>
-                    </td>
-                    <td>
-                      <p>Arthur J. Gallagher</p>
-                    </td>
-                    <td>
-                      <p>Insurance Agent</p>
-                    </td>
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <button type="button" data-toggle="dropdown" class="dropdown-toggle">
-                          <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
-                            <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
-                            <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
-                          </svg>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Suspend Customer</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Keys</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Send Email</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Info</button>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                    </td>
-                    <td>
-                      <p class="medium">Florence Gibbs</p>
-                    </td>
-                    <td>
-                      <p>oknovat@tak.net</p>
-                    </td>
-                    <td>
-                      <p>01678028262</p>
-                    </td>
-                    <td>
-                      <p>HD Supply Holdings</p>
-                    </td>
-                    <td>
-                      <p>Physicist</p>
-                    </td>
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <button type="button" data-toggle="dropdown" class="dropdown-toggle">
-                          <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
-                            <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
-                            <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
-                          </svg>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Suspend Customer</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Keys</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Send Email</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Info</button>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                    </td>
-                    <td>
-                      <p class="medium">Mattie Gardner</p>
-                    </td>
-                    <td>
-                      <p>gato@cobkefka.edu</p>
-                    </td>
-                    <td>
-                      <p>0985201828</p>
-                    </td>
-                    <td>
-                      <p>New York Life Insurance</p>
-                    </td>
-                    <td>
-                      <p>Art Director</p>
-                    </td>
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <button type="button" data-toggle="dropdown" class="dropdown-toggle">
-                          <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
-                            <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
-                            <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
-                          </svg>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Suspend Customer</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Keys</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Send Email</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Info</button>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                    </td>
-                    <td>
-                      <p class="medium">Mae Jensen</p>
-                    </td>
-                    <td>
-                      <p>lijrul@di.net</p>
-                    </td>
-                    <td>
-                      <p>0984560317</p>
-                    </td>
-                    <td>
-                      <p>Group 1 Automotive</p>
-                    </td>
-                    <td>
-                      <p>Art Director</p>
-                    </td>
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <button type="button" data-toggle="dropdown" class="dropdown-toggle">
-                          <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
-                            <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
-                            <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
-                          </svg>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Suspend Customer</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Keys</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Send Email</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Info</button>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                    </td>
-                    <td>
-                      <p class="medium">Jennie Cooper</p>
-                    </td>
-                    <td>
-                      <p>vutop@vigub.co.uk</p>
-                    </td>
-                    <td>
-                      <p>0988800594</p>
-                    </td>
-                    <td>
-                      <p>Avnet</p>
-                    </td>
-                    <td>
-                      <p>Designer</p>
-                    </td>
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <button type="button" data-toggle="dropdown" class="dropdown-toggle">
-                          <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
-                            <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
-                            <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
-                          </svg>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Suspend Customer</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Keys</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Send Email</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Info</button>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                    </td>
-                    <td>
-                      <p class="medium">Lucile Brewer</p>
-                    </td>
-                    <td>
-                      <p>vor@taut.com</p>
-                    </td>
-                    <td>
-                      <p>0915909155</p>
-                    </td>
-                    <td>
-                      <p>Cost Estimator</p>
-                    </td>
-                    <td>
-                      <p>Designer</p>
-                    </td>
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <button type="button" data-toggle="dropdown" class="dropdown-toggle">
-                          <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
-                            <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
-                            <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
-                          </svg>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Suspend Customer</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Keys</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Send Email</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Info</button>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                    </td>
-                    <td>
-                      <p class="medium">Estelle Guerrero</p>
-                    </td>
-                    <td>
-                      <p>uca@uneena.io</p>
-                    </td>
-                    <td>
-                      <p>0913684988</p>
-                    </td>
-                    <td>
-                      <p>Auto-Owners Insurance</p>
-                    </td>
-                    <td>
-                      <p>Veterinarian</p>
-                    </td>
-                    <td class="text-right">
-                      <div class="dropdown">
-                        <button type="button" data-toggle="dropdown" class="dropdown-toggle">
-                          <svg width="15" height="3" viewbox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 3C8.32843 3 9 2.32843 9 1.5C9 0.671573 8.32843 0 7.5 0C6.67157 0 6 0.671573 6 1.5C6 2.32843 6.67157 3 7.5 3Z" fill="#469AF7"></path>
-                            <path d="M1.5 3C2.32843 3 3 2.32843 3 1.5C3 0.671573 2.32843 0 1.5 0C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3Z" fill="#469AF7"></path>
-                            <path d="M13.5 3C14.3284 3 15 2.32843 15 1.5C15 0.671573 14.3284 0 13.5 0C12.6716 0 12 0.671573 12 1.5C12 2.32843 12.6716 3 13.5 3Z" fill="#469AF7"></path>
-                          </svg>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Suspend Customer</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Keys</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Send Email</button>
-                          </li>
-                          <li class="dropdown-item">
-                            <button type="button" class="dropdown-link">Edit Info</button>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            </section>
           </section>
           <div class="admin-pagination">
             <ul class="pagination">
