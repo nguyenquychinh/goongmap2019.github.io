@@ -18,7 +18,7 @@
         <div class="sidebar__body">
           <div class="sidebar__navbar">
             <ul class="admin-navbar">
-              <li class="admin-navbar__item"><a href="admin-overview.html" class="admin-navbar__link"><span class="span-svg">
+              <li class="admin-navbar__item active"><a href="admin-overview.html" class="admin-navbar__link"><span class="span-svg">
                     <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.5">
                         <mask id="path-1-inside-1" fill="white">
@@ -27,7 +27,7 @@
                         <path d="M9.984 0.600006V-0.799994H8.584V0.600006H9.984ZM18 0.600006H19.4V-0.799994H18V0.600006ZM18 6.60001V8.00001H19.4V6.60001H18ZM9.984 6.60001H8.584V8.00001H9.984V6.60001ZM9.984 18.6H8.584V20H9.984V18.6ZM9.984 8.61601V7.21601H8.584V8.61601H9.984ZM18 8.61601H19.4V7.21601H18V8.61601ZM18 18.6V20H19.4V18.6H18ZM0 18.6H-1.4V20H0V18.6ZM0 12.6V11.2H-1.4V12.6H0ZM8.016 12.6H9.416V11.2H8.016V12.6ZM8.016 18.6V20H9.416V18.6H8.016ZM0 10.584H-1.4V11.984H0V10.584ZM0 0.600006V-0.799994H-1.4V0.600006H0ZM8.016 0.600006H9.416V-0.799994H8.016V0.600006ZM8.016 10.584V11.984H9.416V10.584H8.016ZM9.984 2.00001H18V-0.799994H9.984V2.00001ZM16.6 0.600006V6.60001H19.4V0.600006H16.6ZM18 5.20001H9.984V8.00001H18V5.20001ZM11.384 6.60001V0.600006H8.584V6.60001H11.384ZM11.384 18.6V8.61601H8.584V18.6H11.384ZM9.984 10.016H18V7.21601H9.984V10.016ZM16.6 8.61601V18.6H19.4V8.61601H16.6ZM18 17.2H9.984V20H18V17.2ZM1.4 18.6V12.6H-1.4V18.6H1.4ZM0 14H8.016V11.2H0V14ZM6.616 12.6V18.6H9.416V12.6H6.616ZM8.016 17.2H0V20H8.016V17.2ZM1.4 10.584V0.600006H-1.4V10.584H1.4ZM0 2.00001H8.016V-0.799994H0V2.00001ZM6.616 0.600006V10.584H9.416V0.600006H6.616ZM8.016 9.18401H0V11.984H8.016V9.18401Z" fill="#566571" mask="url(#path-1-inside-1)"></path>
                       </g>
                     </svg></span><span class="span-text">Over View</span></a></li>
-              <li class="admin-navbar__item active"><a href="admin-sale.html" class="admin-navbar__link"><span class="span-svg">
+              <li class="admin-navbar__item"><a href="admin-sale.html" class="admin-navbar__link"><span class="span-svg">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.5">
                         <mask id="path-1-inside-1" fill="white">
@@ -99,252 +99,69 @@
       <section class="admin-wrapper__body">
         <section class="admin-wrapper__content">
           <section class="admin-wrapper__page">
-            <section class="admin-sale">
-              <div class="admin-header">
-                <div class="admin-header__title">
-                  <h2>Sales Acc Management</h2>
-                </div>
-                <div class="admin-header__search">
-                  <div class="search-group">
-                    <div class="search-group__input">
-                      <input type="text" placeholder="Search customer account…">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.5"></g>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7C0 10.86 3.14 14 7 14C10.86 14 14 10.86 14 7C14 3.14 10.86 0 7 0C3.14 0 0 3.14 0 7ZM2 7C2 4.243 4.243 2 7 2C9.757 2 12 4.243 12 7C12 9.757 9.757 12 7 12C4.243 12 2 9.757 2 7Z" fill="#566571"></path>
-                        <path d="M15.7069 14.293L13.3139 11.9C12.9029 12.429 12.4289 12.903 11.8999 13.314L14.2929 15.707C14.4879 15.902 14.7439 16 14.9999 16C15.2559 16 15.5119 15.902 15.7069 15.707C16.0979 15.316 16.0979 14.684 15.7069 14.293Z" fill="#566571"></path>
-                      </svg>
+            <section class="admin-overview">
+              <div class="admin-overview__statis">
+                <div class="statis-col">
+                  <div class="statis-item">
+                    <div class="admin-overview__title">
+                      <h2>Total Requests</h2>
                     </div>
-                    <button type="button" class="search-group__btn">
-                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3.28571L10.6 9.38095V15.4762L7.4 17V9.38095L1 3.28571V1H17V3.28571V3.28571Z" stroke="#469AF7" stroke-width="1.4" stroke-linecap="square"></path>
-                      </svg>
-                    </button>
+                    <div class="statis-item__content">
+                      <div class="statis-item__line">
+                        <p class="p1">Map Loads</p>
+                        <p class="p2 blue-2">386,000,000</p>
+                      </div>
+                      <div class="statis-item__line">
+                        <p class="p1">API Requests</p>
+                        <p class="p2 orange">386,000,000</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="admin-header__btn">
-                  <button type="button" class="btn btn-blue">
-                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.79688 6.48438H15.7344V9.95312H9.79688V16.7188H6.10938V9.95312H0.140625V6.48438H6.10938V0.15625H9.79688V6.48438Z" fill="white"></path>
-                    </svg><span>Add</span>
-                  </button>
+                <div class="statis-col">
+                  <div class="statis-item">
+                    <div class="admin-overview__title">
+                      <h2>Map</h2>
+                    </div>
+                    <div class="statis-item__content"><img src="images-admin/chart-map.png"></div>
+                  </div>
+                </div>
+                <div class="statis-col">
+                  <div class="statis-item">
+                    <div class="admin-overview__title">
+                      <h2>APIs</h2>
+                    </div>
+                    <div class="statis-item__content"><img src="images-admin/chart-apis.png"></div>
+                  </div>
                 </div>
               </div>
-              <div class="admin-table">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>&nbsp;</th>
-                      <th>Name</th>
-                      <th>Email</th>
-                      <th>Type</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                      </td>
-                      <td>
-                        <p class="medium">Abbie Garza</p>
-                      </td>
-                      <td>
-                        <p>mac.bins@letitia.net</p>
-                      </td>
-                      <td>
-                        <p>Lead Team Sale</p>
-                      </td>
-                      <td>
-                        <ul class="list-btn">
-                          <li>
-                            <button class="btn btn-delete">Delete</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-edit">Edit</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-suspend">Suspend</button>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                      </td>
-                      <td>
-                        <p class="medium">Sara Andrews</p>
-                      </td>
-                      <td>
-                        <p>owhuw@rujilu.org</p>
-                      </td>
-                      <td>
-                        <p>Sale</p>
-                      </td>
-                      <td>
-                        <ul class="list-btn">
-                          <li>
-                            <button class="btn btn-delete">Delete</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-edit">Edit</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-suspend">Suspend</button>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                      </td>
-                      <td>
-                        <p class="medium">Allie Anderson</p>
-                      </td>
-                      <td>
-                        <p>rirar@zonsikeg.io</p>
-                      </td>
-                      <td>
-                        <p>Sale</p>
-                      </td>
-                      <td>
-                        <ul class="list-btn">
-                          <li>
-                            <button class="btn btn-delete">Delete</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-edit">Edit</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-suspend">Suspend</button>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                      </td>
-                      <td>
-                        <p class="medium">Rosetta Mann</p>
-                      </td>
-                      <td>
-                        <p>tetisudu@vavisja.edu</p>
-                      </td>
-                      <td>
-                        <p>Lead Team Sale</p>
-                      </td>
-                      <td>
-                        <ul class="list-btn">
-                          <li>
-                            <button class="btn btn-delete">Delete</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-edit">Edit</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-suspend">Suspend</button>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                      </td>
-                      <td>
-                        <p class="medium">Callie Walker</p>
-                      </td>
-                      <td>
-                        <p>zesgamcav@ki.co.uk</p>
-                      </td>
-                      <td>
-                        <p>Lead Team Sale</p>
-                      </td>
-                      <td>
-                        <ul class="list-btn">
-                          <li>
-                            <button class="btn btn-delete">Delete</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-edit">Edit</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-suspend">Suspend</button>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                      </td>
-                      <td>
-                        <p class="medium">Laura Nash</p>
-                      </td>
-                      <td>
-                        <p>du@tip.org</p>
-                      </td>
-                      <td>
-                        <p>Sale</p>
-                      </td>
-                      <td>
-                        <ul class="list-btn">
-                          <li>
-                            <button class="btn btn-delete">Delete</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-edit">Edit</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-suspend">Suspend</button>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="admin-table__avatar"><img src="images-admin/admin-avatar.png"></div>
-                      </td>
-                      <td>
-                        <p class="medium">Mathilda Hodges</p>
-                      </td>
-                      <td>
-                        <p>gawab@cewhe.org</p>
-                      </td>
-                      <td>
-                        <p>Lead Team Sale</p>
-                      </td>
-                      <td>
-                        <ul class="list-btn">
-                          <li>
-                            <button class="btn btn-delete">Delete</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-edit">Edit</button>
-                          </li>
-                          <li>
-                            <button class="btn btn-suspend">Suspend</button>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="admin-overview__chart">
+                <div class="admin-overview__title">
+                  <h2>Last Payment 30 Days</h2>
+                  <div class="admin-datepicker">
+                    <div class="admin-datepicker__date">
+                      <div class="admin-datepicker__in">
+                        <input type="text" placeholder="Feb 27, 2019" readonly="">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M11.375 1.75H13.125C13.608 1.75 14 2.142 14 2.625V13.125C14 13.608 13.608 14 13.125 14H0.875C0.392 14 0 13.608 0 13.125V2.625C0 2.142 0.392 1.75 0.875 1.75H2.625V0H5.25V1.75H8.75V0H11.375V1.75ZM1.75 12.25H12.25V6.125H1.75V12.25Z" fill="#566571"></path>
+                        </svg>
+                      </div>
+                      <div class="admin-datepicker__out">
+                        <input type="text" placeholder="Mar 20, 2019" readonly="">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M11.375 1.75H13.125C13.608 1.75 14 2.142 14 2.625V13.125C14 13.608 13.608 14 13.125 14H0.875C0.392 14 0 13.608 0 13.125V2.625C0 2.142 0.392 1.75 0.875 1.75H2.625V0H5.25V1.75H8.75V0H11.375V1.75ZM1.75 12.25H12.25V6.125H1.75V12.25Z" fill="#566571"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="admin-datepicker__btn">
+                      <button type="button" class="btn btn-blue">Apply</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="admin-overview__chart__img"><img src="images-admin/overview-chart.png"></div>
               </div>
             </section>
           </section>
-          <div class="admin-pagination">
-            <ul class="pagination">
-              <li class="pagination-item active"><a class="pagination-link">1</a></li>
-              <li class="pagination-item"><a class="pagination-link">2</a></li>
-              <li class="pagination-item"><a class="pagination-link">3</a></li>
-              <li class="pagination-item"><a class="pagination-link">4</a></li>
-              <li class="pagination-item"><a class="pagination-link">5</a></li>
-              <li class="pagination-item next"><a class="pagination-link">Next</a></li>
-            </ul>
-          </div>
         </section>
       </section>
     </main>

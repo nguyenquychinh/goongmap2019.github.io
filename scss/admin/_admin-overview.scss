@@ -1,0 +1,69 @@
+.admin-overview{
+  background-color: #f4f6fb;
+  margin: -20px;
+  &__title{
+    margin-bottom: 30px;
+    h2{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: #1F3349;
+    }
+  }
+  &__statis{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+  &__chart{
+    padding:40px 20px;
+    background: #FFFFFF;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    margin-top: 30px;
+    .admin-overview__title{
+      display: flex;
+      align-items: center;
+      .admin-datepicker{
+        padding-left: 30px;
+      }
+    }
+    &__img{
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .statis-col{
+    width: 33.333%;
+    padding: 0 15px;
+  }
+  .statis-item{
+    background: #FFFFFF;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    padding: 40px 20px;
+    &__content{}
+    &__line{
+      padding-bottom: 30px;
+      &:last-child{
+        padding: 0;
+      }
+      p{
+        margin: 0;
+        &.p1{
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: #1F3349;
+        }
+        &.p2{
+          font-size: 40px;
+          line-height: 47px;
+        }
+      }
+
+    }
+  }
+
+}
