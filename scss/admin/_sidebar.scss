@@ -1,6 +1,9 @@
 .sidebar{
   width: 280px;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
   background-color: #fff;
   &__body{
     height: calc(100% - 91px);
