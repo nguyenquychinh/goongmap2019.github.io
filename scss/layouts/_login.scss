@@ -1,4 +1,5 @@
 .form-sign{
+  background-color: #fff;
   @include breakpoint(sm){
     display: flex;
     justify-content: space-between;
@@ -107,5 +108,16 @@
   }
   .modal-body{
     padding: 0;
+  }
+}
+.goong-login{
+  margin: 50px 0;
+  .form-sign{
+    box-shadow: 0 8px 16px rgba(0,0,0,.02);
+    border-radius: 8px;
+    @include breakpoint(sm){
+      width: 600px;
+      margin: auto;
+    }
   }
 }

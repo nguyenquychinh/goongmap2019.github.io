@@ -1,0 +1,56 @@
+- var page = "register";
+doctype html
+html(lang="vi")
+    head
+        include jades/head
+    body(ontouchstart='')
+        include jades/menu-mobile.jade
+        include jades/header.jade
+
+        main.goong-wrapper
+            section.goong-login
+                .container
+                    .form-sign
+                        .form-sign__img
+                            img(src='images/map-login.png')
+                        .form-sign__content
+                            h2.form-sign__title Sign Up
+                            .form-sign__form
+                                .form-group
+                                    input.form-control(type='text' placeholder='Email')
+                                .form-group
+                                    input.form-control(type='text' placeholder='Password')
+                                .form-group
+                                    input.form-control(type='text' placeholder='Cofirm Password')
+                                .form-group
+                                    input.form-control(type='text' placeholder='First Name')
+                                .form-group
+                                    input.form-control(type='text' placeholder='Last Name')
+                                .form-group
+                                    .form-sign__line
+                                        p The password is displayed to help you check more accurately
+                                .form-group
+                                    .form-sign__btn
+                                        .d-block
+                                            button.btn.btn-outline(type='button' data-id='box-2') Sign Up
+                                        .d-block
+                                            button.btn.btn-gradient(type='button' data-id='box-1') Sign In
+                            .form-sign__border
+                                span Or
+                            .form-sign__social
+                                button.btn.btn-blue2(type='button') Sign In with Facebook
+                                button.btn.btn-red(type='button') Sign In with Google
+        include jades/footer.jade
+        script(src="js/libs/jquery.min.js")
+        script(src="js/main.js")
+        script.
+            $('.goong-navbar__toggle').click(function () {
+                $('body').addClass('open-menu-mobile');
+            });
+
+            $('.menu-mobile__backdrop').click(function () {
+                $('body').removeClass('open-menu-mobile');
+            });
+
+
+

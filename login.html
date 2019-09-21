@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>GOONG</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body ontouchstart="">
+    <div class="menu-mobile">
+      <div class="menu-mobile__main">
+        <div class="menu-mobile__header">
+          <button type="button" class="menu-mobile__login">
+            <!--img(src='images/user-avatar.png')--><span>GOONG</span>
+            <!--svg(width='9', height='5', viewbox='0 0 9 5', fill='none', xmlns='http://www.w3.org/2000/svg')-->
+            <!--    path(fill-rule='evenodd', clip-rule='evenodd', d='M8.48532 0.242641L4.24268 4.12306L3.51667e-05 0.242641L8.48532 0.242641Z', fill='#1F3349')-->
+          </button>
+        </div>
+        <div class="menu-mobile__content">
+          <ul class="menu-mobile__list">
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Services</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Mobile Apps</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Live Map</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link">Documents</a></li>
+            <li class="menu-mobile__item">
+              <button data-toggle="modal" data-target="#formLogin" class="menu-mobile__link">Login</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-mobile__backdrop"></div>
+    </div>
+    <header class="goong-header">
+      <div class="container">
+        <div class="goong-header__navbar">
+          <div class="goong-navbar">
+            <div class="goong-navbar__logo">
+              <h1><a href="index.html"><img src="images/goong-logo-2x.png"></a></h1>
+            </div>
+            <button type="button" class="goong-navbar__toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 53 53" xml:space="preserve" width="30px" height="30px">
+                <g>
+                  <path d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z" fill="#1F3349"></path>&#x9;&#x9;
+                  <path d="M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z" fill="#1F3349"></path>&#x9;&#x9;
+                  <path d="M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z" fill="#1F3349"></path>
+                </g>
+              </svg>
+            </button>
+            <ul class="goong-navbar__nav">
+              <li class="goong-navbar__item active"><a href="index.html" class="goong-navbar__link">Services</a></li>
+              <li class="goong-navbar__item"><a href="goong-app.html" class="goong-navbar__link">Mobile Apps</a></li>
+              <li class="goong-navbar__item"><a href="https://maps.goong.io/" class="goong-navbar__link">Live Map</a></li>
+              <li class="goong-navbar__item"><a href="documents.html" class="goong-navbar__link">Documents</a></li>
+              <li class="goong-navbar__item">
+                <button type="button" data-toggle="modal" data-target="#formLogin" class="goong-navbar__link">Sign In</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="formLogin" class="modal fade">
+      <div class="modal-dialog modal-login">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id="box-1" class="form-sign">
+              <div class="form-sign__img"><img src="images/map-login.png"></div>
+              <div class="form-sign__content">
+                <h2 class="form-sign__title">Sign In</h2>
+                <div class="form-sign__form">
+                  <div data-tip="Yêu cầu nhập địa chỉ email." class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <div class="form-sign__line">
+                      <div class="checkbox">
+                        <input type="checkbox" id="star1">
+                        <label for="star1">Remember Sign In</label>
+                      </div>
+                      <button type="button" class="form-sign__pass">Forget Password?</button>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-sign__btn">
+                      <div class="d-block">
+                        <button type="button" data-id="box-2" class="btn btn-outline">Sign Up</button>
+                      </div>
+                      <div class="d-block">
+                        <button type="button" data-id="box-1" class="btn btn-gradient">Sign In</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-sign__border"><span>Or</span></div>
+                <div class="form-sign__social">
+                  <button type="button" class="btn btn-blue2">Sign In with Facebook</button>
+                  <button type="button" class="btn btn-red">Sign In with Google</button>
+                </div>
+              </div>
+            </div>
+            <div id="box-2" class="form-sign d-none">
+              <div class="form-sign__img"><img src="images/map-login.png"></div>
+              <div class="form-sign__content">
+                <h2 class="form-sign__title">Sign Up</h2>
+                <div class="form-sign__form">
+                  <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Cofirm Password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="First Name" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Last Name" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <div class="form-sign__line">
+                      <p>The password is displayed to help you check more accurately</p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-sign__btn">
+                      <div class="d-block">
+                        <button type="button" data-id="box-2" class="btn btn-outline">Sign Up</button>
+                      </div>
+                      <div class="d-block">
+                        <button type="button" data-id="box-1" class="btn btn-gradient">Sign In</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-sign__border"><span>Or</span></div>
+                <div class="form-sign__social">
+                  <button type="button" class="btn btn-blue2">Sign In with Facebook</button>
+                  <button type="button" class="btn btn-red">Sign In with Google</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="goong-wrapper">
+      <section class="goong-login">
+        <div class="container">
+          <div class="form-sign">
+            <div class="form-sign__img"><img src="images/map-login.png"></div>
+            <div class="form-sign__content">
+              <h2 class="form-sign__title">Sign In</h2>
+              <div class="form-sign__form">
+                <div data-tip="Yêu cầu nhập địa chỉ email." class="form-group">
+                  <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="text" placeholder="Password" class="form-control">
+                </div>
+                <div class="form-group">
+                  <div class="form-sign__line">
+                    <div class="checkbox">
+                      <input type="checkbox" id="star1">
+                      <label for="star1">Remember Sign In</label>
+                    </div>
+                    <button type="button" class="form-sign__pass">Forget Password?</button>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-sign__btn">
+                    <div class="d-block">
+                      <button type="button" data-id="box-2" class="btn btn-outline">Sign Up</button>
+                    </div>
+                    <div class="d-block">
+                      <button type="button" data-id="box-1" class="btn btn-gradient">Sign In</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-sign__border"><span>Or</span></div>
+              <div class="form-sign__social">
+                <button type="button" class="btn btn-blue2">Sign In with Facebook</button>
+                <button type="button" class="btn btn-red">Sign In with Google</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="goong-footer">
+      <div class="container">
+        <div class="goong-navbar">
+          <div class="goong-navbar__logo">
+            <h1><a href="index.html"><img src="images/goong-logo-2x.png"></a></h1>
+            <p>© 2019 Goong Inc, All right Reseverd</p>
+          </div>
+          <ul class="goong-navbar__nav">
+            <li class="goong-navbar__item active"><a href="index.html" class="goong-navbar__link">Home</a></li>
+            <li class="goong-navbar__item"><a href="goong-app.html" class="goong-navbar__link">Mobile App</a></li>
+            <li class="goong-navbar__item"><a href="documents.html" class="goong-navbar__link">Documents</a></li>
+            <li class="goong-navbar__item"><a href="https://maps.goong.io/" class="goong-navbar__link">Live Map</a></li>
+            <li class="goong-navbar__item"><a href="terms.html" class="goong-navbar__link">Privacy And Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $('.goong-navbar__toggle').click(function () {
+          $('body').addClass('open-menu-mobile');
+      });
+      
+      $('.menu-mobile__backdrop').click(function () {
+          $('body').removeClass('open-menu-mobile');
+      });
+    </script>
+  </body>
+</html>
