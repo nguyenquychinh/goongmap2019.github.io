@@ -36,23 +36,3 @@
   font-weight: $medium;
   font-style: italic;
 }
-
-
-@font-face {
-  font-family: "Roboto";
-  src: url(../webfonts/Roboto/Bold/Roboto-Bold.woff2?v=2.137) format("woff2"),
-  url(../webfonts/Roboto/Bold/Roboto-Bold.woff?v=2.137) format("woff"),
-  url(../webfonts/Roboto/Bold/Roboto-Bold.woff?v=2.137) format("ttf");
-  font-weight: $bold;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: "Roboto";
-  src: url(../webfonts/Roboto/BoldItalic/Roboto-BoldItalic.woff2?v=2.137) format("woff2"),
-  url(../webfonts/Roboto/BoldItalic/Roboto-BoldItalic.woff?v=2.137) format("woff"),
-  url(../webfonts/Roboto/BoldItalic/Roboto-BoldItalic.ttf?v=2.137) format("ttf");
-  font-weight: $bold;
-  font-style: italic;
-}

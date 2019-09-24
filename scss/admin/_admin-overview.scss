@@ -43,7 +43,11 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.02);
     border-radius: 8px;
     padding: 40px 20px;
-    &__content{}
+    &__content{
+      img{
+        width: 100%;
+      }
+    }
     &__line{
       padding-bottom: 30px;
       &:last-child{
