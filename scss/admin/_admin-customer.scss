@@ -301,6 +301,14 @@
           display: block;
         }
       }
+      .form-group[data-tip]{
+        &:before{
+          left: 25px;
+        }
+        &:after{
+          left: 15px;
+        }
+      }
     }
   }
 }
