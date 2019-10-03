@@ -127,4 +127,8 @@ input, select, textarea, button {
   vertical-align:middle;
   font-family: $base-font-family;
 }
+input:disabled{
+  pointer-events: none;
+  background: #eee;
+}
 *, :after, :before{box-sizing: border-box;}

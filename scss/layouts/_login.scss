@@ -96,6 +96,15 @@
       }
     }
   }
+  &_forget{
+    .form-sign{
+      &__btn{
+        .d-block{
+          margin: auto;
+        }
+      }
+    }
+  }
 }
 .modal-dialog.modal-login{
   width: calc(100% - 10px);
