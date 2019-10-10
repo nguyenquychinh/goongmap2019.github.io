@@ -210,52 +210,10 @@
     @include breakpoint(md){
       padding: 30px 30px 15px;
     }
-    .table{
-      margin: 0;
-      thead{
-        th{
-          vertical-align: top;
-          border: none;
-          &:nth-child(2n){
-            text-align: right;
-          }
-          p{
-            font-size: 18px;
-            line-height: 21px;
-            font-weight: $medium;
-          }
-          .p2{
-            color: #469AF7;
-            text-transform: uppercase;
-          }
-          .p3{
-            font-size: 14px;
-            line-height: 16px;
-            font-weight: $regular;
-            color: rgba(86, 101, 113, 0.5);
-          }
-        }
-      }
-      td{
-        border: none;
-        &:nth-child(2n){
-          text-align: right;
-        }
-        p{
-          font-size: 15px;
-        }
-        .p2{
-          color: #469AF7;
-          font-weight: $medium;
-          text-transform: uppercase;
-        }
-      }
-    }
     .a1{
       display: block;
       text-align: center;
       padding: 15px 0 0 0;
-      border-top: 1px solid #eee;
     }
   }
 }

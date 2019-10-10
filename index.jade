@@ -70,81 +70,128 @@ html(lang="vi")
                                     h2 Pricing Comparison Table
                                 p Have you been hit by Google's price hike, which can raise your monthly bill up to 1400%? Take a look at below table to see how using Goong's API can help your company save operation cost with no technical drawbacks.
                                 .pricing-box__table
-                                    .table-responsive
-                                        table.table
-                                            thead
-                                                tr
-                                                    th
-                                                        p.p1 Services
-                                                    th
-                                                        p.p2 GOONG
-                                                        p.p3 (100k/day)
-                                                    th
-                                                        p.p1 Google
-                                                        p.p3 (100k/day)
-                                                    th
-                                                        p.p2 GOONG
-                                                        p.p3 (100k/day)
-                                                    th
-                                                        p.p1 Google
-                                                        p.p3 (100k/day)
-                                            tbody
-                                                tr
-                                                    td
-                                                        p.p1 Mapview
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 FREE
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 FREE
-                                                tr
-                                                    td
-                                                        p.p1 Autocomplete
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 $125
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 $125
-                                                tr
-                                                    td
-                                                        p.p1 Routing
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 $445
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 $445
-                                                tr
-                                                    td
-                                                        p.p1 Distance matrix
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 Yes
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 Yes
-                                                tr
-                                                    td
-                                                        p.p1 Place detail
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 Limited
-                                                    td
-                                                        p.p2 FREE
-                                                    td
-                                                        p.p1 Limited
-                                    a.a1(href='#') View Full Pricing Table
+                                    .goong-price__table
+                                        .table-responsive
+                                            table.table.table-bordered
+                                                thead
+                                                    tr
+                                                        th Services
+                                                        th
+                                                            .d-flex
+                                                                p.p1 GOONG
+                                                                P.P2 Google
+                                                        th
+                                                            .d-flex
+                                                                p.p1 GOONG
+                                                                P.p2 Google
+                                                tbody
+                                                    tr
+                                                        td Map loads
+                                                        td
+                                                            p.text-center 100k - 200k
+                                                        td
+                                                            p.text-center 200k - 500k
+                                                    tr
+                                                        td Native
+                                                        td
+                                                            .d-flex
+                                                                p.p1 &nbsp;
+                                                                P.p2 &nbsp;
+                                                        td
+                                                            .d-flex
+                                                                p.p1 &nbsp;
+                                                                P.p2 &nbsp;
+                                                    tr
+                                                        td Javascript
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.75/k
+                                                                P.p2 $5.60/k
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.50/k
+                                                                P.p2 $5.60/k
+                                                    tr
+                                                        td APIs
+                                                        td
+                                                            .d-flex
+                                                                p.p1 &nbsp;
+                                                                P.p2 &nbsp;
+                                                        td
+                                                            .d-flex
+                                                                p.p1 &nbsp;
+                                                                P.p2 &nbsp;
+                                                    tr
+                                                        td Directions
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.20/k
+                                                                P.p2 $4.00/k
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.00/k
+                                                                P.p2 $4.00/k
+                                                    tr
+                                                        td Autocomplete
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $1.10/k
+                                                                P.p2 $2.27/k
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $1.00/k
+                                                                P.p2 $2.27/k
+                                                    tr
+                                                        td SingleSearch + PlaceDetail
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.75/k
+                                                                P.p2 $13.60/k
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.50/k
+                                                                P.p2 $13.60/k
+                                                    tr
+                                                        td ACSession + PlaceDetail
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $5.50/k
+                                                                P.p2 $13.60/k
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $5.00/k
+                                                                P.p2 $13.60/k
+                                                    tr
+                                                        td PlaceDetail
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.75/k
+                                                                P.p2 $13.60/k
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.50/k
+                                                                P.p2 $13.60/k
+                                                    tr
+                                                        td Geocoding
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.15/k
+                                                                P.p2 $4.00/k
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.00/k
+                                                                P.p2 $4.00/k
+                                                    tr
+                                                        td Distance Matrix
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.15/k
+                                                                P.p2 $4.00/k
+                                                        td
+                                                            .d-flex
+                                                                p.p1 $2.00/k
+                                                                P.p2 $4.00/k
+                                        a.a1(href='#') View Full Pricing Table
                 .goong-home__functions(style='background-image: url(images/bg-functions.png);')
                     .container
                         .functions-box
