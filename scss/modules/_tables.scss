@@ -17,6 +17,14 @@
     padding: 15px;
     border-bottom: 1px solid #efefef;
   }
+  &.table-bordered{
+    th,td{
+      border: 1px solid #efefef;
+    }
+    th{
+      background-color:rgba(240, 242, 248, 0.6);
+    }
+  }
 }
 .table-responsive{
   display: block;
@@ -79,3 +87,4 @@
     }
   }
 }
+

@@ -1,0 +1,46 @@
+.goong-price{
+  margin: 50px 0;
+  &__title{
+    margin-bottom: 30px;
+    h2{
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 45px;
+      color: #1F3349;
+    }
+  }
+  &__table{
+    .table{
+      margin: 0;
+      p{
+        margin: 0;
+      }
+      th{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1F3349;
+      }
+      td{
+        font-size: 14px;
+        line-height: 16px;
+        color: #566571;
+        background-color: #fff;
+      }
+      .d-flex{
+        justify-content: space-between;
+        align-items: center;
+        p{
+          &.p1{
+            color: #469AF7;
+            font-weight: 500;
+            padding-right: 10px;
+          }
+          &.p2{
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
