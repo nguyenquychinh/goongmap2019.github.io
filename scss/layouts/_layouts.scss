@@ -5,8 +5,25 @@
 @import "login";
 @import "menu-mobile";
 
+.goong-body{
+  background-color: #f4f6fb;
+  .goong-header{
+    box-shadow: none;
+  }
+  .goong-footer{
+    background-color: transparent;
+    .goong-navbar{
+      &__logo{
+        h1{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 .goong-wrapper{
   @include breakpoint(md){
-    min-height: 100vh;
+    min-height: calc(100vh - 166px);
   }
 }

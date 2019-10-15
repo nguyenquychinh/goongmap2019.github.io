@@ -27,7 +27,7 @@ body {
   font-weight: $base-font-weight;
   line-height: $base-line-height;
   color: $text-color;
-  background-color: $base-background-color;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
 }
 article,aside,details,figcaption,figure,
@@ -129,6 +129,7 @@ input, select, textarea, button {
 }
 input:disabled{
   pointer-events: none;
-  background: #eee;
+  background: #e5e8ef;
+  border-color: transparent;
 }
 *, :after, :before{box-sizing: border-box;}

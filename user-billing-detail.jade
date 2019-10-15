@@ -3,7 +3,7 @@ doctype html
 html(lang="vi")
     head
         include jades/head
-    body(ontouchstart='')
+    body.goong-body(ontouchstart='')
         include jades/menu-mobile-login.jade
         include jades/header-login.jade
 
@@ -59,7 +59,7 @@ html(lang="vi")
                                     .billing-detail__contact
                                         p
                                             | Have questions about your invoice?&nbsp;
-                                            a Contact us.
+                                            button(type='button') Contact us.
                             .billing-detail__right
                                 .billing-detail__status
                                     svg(width='20', height='20', viewbox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')

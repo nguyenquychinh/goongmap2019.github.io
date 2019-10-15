@@ -48,9 +48,12 @@
       }
     }
   }
+  .heading{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #efefef;
+  }
 }
 .goong-chart{
-
   @include breakpoint(sm){
     display: flex;
     justify-content: space-between;

@@ -128,6 +128,11 @@
   @include breakpoint(sm){
     width: 600px;
   }
+  .modal-body{
+    @include breakpoint(md){
+      padding: 15px 30px;
+    }
+  }
 }
 .create-keys{
   &__item{
@@ -137,6 +142,7 @@
   &__name{
     .form-control{
       width: 100%;
+      height: 44px;
     }
     p{
       font-size: 14px;

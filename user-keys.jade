@@ -3,7 +3,7 @@ doctype html
 html(lang="vi")
     head
         include jades/head
-    body(ontouchstart='')
+    body.goong-body(ontouchstart='')
         include jades/menu-mobile-login.jade
         include jades/header-login.jade
 
@@ -163,7 +163,7 @@ html(lang="vi")
                                         p.p1 API Key name
                                         p.p2 Choose a name to help associate it with a project.
                                     .create-keys__name
-                                        input.form-control(type='text' placeholder='Enter name…')
+                                        textarea.form-control(placeholder='Enter name…')
                                         p (0/180)
                                 .create-keys__item
                                     .create-keys__title

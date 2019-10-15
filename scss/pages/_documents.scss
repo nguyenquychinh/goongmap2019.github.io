@@ -1,6 +1,5 @@
 .goong-docs{
-  background-color: #fff;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   &__intro{
     position: relative;
   }
@@ -119,6 +118,7 @@
     }
   }
   &__sub{
+    padding-left: 15px;
     &__item{}
     &__link{
       font-size: 16px;
@@ -154,6 +154,11 @@
       font-size: 16px;
       line-height: 19px;
       color: #566571;
+      display: flex;
+      align-items: center;
+      svg{
+        margin-right: 5px;
+      }
     }
   }
   &__icon{
@@ -172,6 +177,7 @@
     margin-bottom: 25px;
     img{
       width: 100%;
+      border-radius: 0 80px 0 0;
     }
   }
   &__main{}

@@ -3,7 +3,7 @@ doctype html
 html(lang="vi")
     head
         include jades/head
-    body(ontouchstart='')
+    body.goong-body(ontouchstart='')
         include jades/menu-mobile-login.jade
         include jades/header-login.jade
 
@@ -61,7 +61,7 @@ html(lang="vi")
                                             label
                                                 | Email address
                                                 a Resend email confirmation
-                                            input.form-control(type='text' placeholder='maxx16t@gmail.com')
+                                            input.form-control(type='text' placeholder='maxx16t@gmail.com' disabled='disabled')
                                         .profile-box__btn
                                             button.btn.btn-blue(type='text') Save Changes
                                 #tab-2.goong-settings__item.change-password
