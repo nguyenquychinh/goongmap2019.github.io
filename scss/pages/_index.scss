@@ -144,7 +144,9 @@
       width: 66.666%;
     }
     p{
-      a{
+      button{
+        font-size: 18px;
+        vertical-align: baseline;
         color: #48A0F8;
       }
     }
@@ -161,6 +163,30 @@
       iframe{
         width: 100%;
         height: 245px;
+      }
+    }
+  }
+}
+.modal-dialog.modal-view-map{
+  @include breakpoint(sm){
+    width: 600px;
+  }
+  @include breakpoint(md){
+    width: 800px;
+  }
+  .modal-body{
+    @include breakpoint(sm){
+      padding: 15px 35px;
+    }
+  }
+  .services-box{
+    &__iframe{
+      &__item{
+        iframe{
+          @include breakpoint(sm){
+            height: 400px;
+          }
+        }
       }
     }
   }
